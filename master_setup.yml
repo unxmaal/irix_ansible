@@ -9,9 +9,9 @@
       name: testing
   - import_role:
       name: nekodeps
-#  - import_role:
-#      name: update_pkgs
-#  - import_role:
-#      name: base_pkgs
-#   - import_role:
-#       name: setup_zfs_store    
+
+  vars_files:
+    - group_vars/default/vault.yml
+    
+  vars:
+    ansible_become_pass: '{{ su_password }}'
