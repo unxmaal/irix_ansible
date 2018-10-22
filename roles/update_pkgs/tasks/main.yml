@@ -1,0 +1,15 @@
+-   name:  Fetch and Install Updates
+    command:  "{{ item }}"
+    when: "ansible_os_family == 'FreeBSD'"
+    ignore_errors: yes
+    with_items:
+        - "freebsd-update --not-running-from-cron fetch"
+        - "freebsd-update --not-running-from-cron install"
+
+-   name: pkg updates
+    command: " {{ item }} "
+    when: "ansible_os_family == 'FreeBSD'"
+    with_items:
+        - "pkg update -q"
+        - "pkg upgrade -y"
+        - "pkg clean -qy"

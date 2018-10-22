@@ -1,0 +1,34 @@
+# ensure nekodeps.pl exists
+- name: nekoware
+  file:
+    path: /usr/nekoware
+    owner: root
+    group: sys
+    mode: 755
+- name: conf
+  file:
+    path: /usr/nekoware/conf
+    owner: root
+    group: sys
+    mode: 755
+- name: copy nekodeps.pl
+  copy:
+    src: roles/nekodeps/files/nekodeps.pl
+    dest: /usr/nekoware/nekodeps.pl
+    owner: root
+    group: sys
+    mode: 0755
+- name: copy current.ion
+  copy:
+    src: roles/nekodeps/files/current.ion
+    dest: /usr/nekoware/conf/current.ion
+    owner: root
+    group: sys
+    mode: 0744
+- name: copy nekodeps.conf
+  copy:
+    src: roles/nekodeps/files/nekodeps.conf
+    dest: /usr/nekoware/conf/nekodeps.conf
+    owner: root
+    group: sys
+    mode: 0744

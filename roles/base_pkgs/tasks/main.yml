@@ -1,0 +1,13 @@
+# install basic packages
+- name: install bash
+  pkgng:
+    name: bash,bash-completion
+- name: install vim
+  pkgng:
+    name: vim
+- name: install wget and curl
+  pkgng:
+    name: wget,curl
+- name: install git
+  pkgng:
+    name: git

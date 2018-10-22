@@ -1,0 +1,640 @@
+neko_BuildBot-0.8.2.tardist	BuildBot 2 762f12ed1c523faca935fee2e92f2606 Twisted,buildbot,python,setuptools
+neko_GnomePlanner-0.13.tardist	d4eaa4f5e621385c1c9526b7ac506a79 d4eaa4f5e621385c1c9526b7ac506a79 no dependencies
+neko_GnuPGInterface-0.3.2.tardist	GnuPGInterface 1 a483b1c1c1e1a3c34ba4f94a83831df5 python
+neko_OpenEXR-1.4.0a.tardist	openexr 2 6942f3790ef520136ad31bfd34df6a09 expat,fltk,fontconfig,freetype2,zlib
+neko_Squeak-3.9.8.tardist	Squeak 2 7c7e77474d56995fd59610001de1b4ec libiconv
+neko_ThisForth.tardist	ThisForth 1 4b05f3b91885efdbb4e0afb06347b7e7 no dependencies
+neko_Twisted-9.0.0.tardist	Twisted 1 f931e7fabbef05f302a169448a4251b2 ZopeInterface,python
+neko_ZopeInterface-3.3.0.tardist	ZopeInterface 1 bb60654a4973ada436dddfee45e7006d python
+neko_a2ps-4.13b.tardist	a2ps 3 e246cb76b0f09d878303c5ac99e1d3ab psutils
+neko_aalib-1.4rc4.tardist	aalib 2 0b43fa241f778314b61d7dbc2fc927b6 no dependencies
+neko_abiword-2.2.7_gcc.tardist	abiword 2 28ad7b58f841293d15b76bebb249f6b5 expat,fontconfig,fribidi,gtk,imagemagick,ispell,libglade,libiconv,libpng,libxft,libxml2,perl,popt,zlib
+neko_alephone-cvs.tardist	alephone 1 7224b88580d678b72dd5eaae06f8965b libjpeg,libpng,sdl,sdl_image,sdl_net,zlib
+neko_amanda-2.5.2pl1.tardist	amanda 1 8c88700580ccaae57faac5bb8c2aef65 db4,gettext,libiconv,openssh,perl,readline,tar
+neko_antiword-0.36.tardist	antiword 1 1626874e63ece87d523cc0a52f4a562c no dependencies
+neko_apache-1.3.37.tardist	apache 3 8951123561e75410e72195a0a06e92b4 expat
+neko_apache2_prefork-2.0.61.tardist	apache2_prefork 5 3a5f85bf6197c57a45ba557a3ca74628 apache2,apache2_worker,apr,apr_util,cyrus_sasl,db4,expat,gdbm,gmp,openldap,openssl,zlib
+neko_apr-0.9.12.tardist	apr 2 457b9747a367709c6ec9f6de3e128b52 no dependencies
+neko_apr_util-0.9.12.tardist	apr_util 2 194df24e608816fcd0a1066363e78f52 no dependencies
+neko_arts-1.5.6.tardist	arts 3 4ffe7f9ae7be5504c219adfc0879bbd1 expat,fontconfig,freetype2,gettext,glib,libaudiofile,libiconv,libxft,libxrender,qt,zlib
+neko_asciidoc-8.6.4.tardist	asciidoc 1 a22beed477572b261c9d2e70b6a210ba python
+neko_aspell-0.60.2.tardist	aspell 1 7c2146cf257deaae0ca7bb7b8c9e131f perl
+neko_atari800.2.0.2.tardist	atari800 1 01fd0888c254196ad3fc6e5814c3f466 libpng,zlib
+neko_aterm-0.4.2.tardist	aterm 1 d5d365d0471053e9f118c36cf36c3be1 no dependencies
+neko_atk-1.32.0-7.tardist	atk 7 a993391977d7dfd1bfb1c478f3fb6737 gettext,glib,libiconv
+neko_atlas-0.3.0.tardist	atlas 1 630b3f9c02f52e5de7718b8cef28bfa0 fgfs_base,glut,libjpeg,libpng,zlib
+neko_auctex-11.81.tardist	auctex 1 3790524318ebc0da1ba9902fe31cb835 emacs,tetex
+neko_audacity-1.3.3.tardist	audacity 2 88ce82aa646e43a1844b75908c1daae3 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libjpeg,libmad,libogg,libpixman,libpng,libvorbis,libxrender,pango,tiff,wxGTK,zlib
+neko_autoconf-2.63.tardist	autoconf 4 43e61b39a2e69eb705bb2c1c40a0c63c m4,perl
+neko_autogen-2.68.tardist	autoconf 5 c080e97b662b5a0a804e3d7ab04d7a30 emacs,m4,perl
+neko_automake-1.11.1.tardist	automake 7 fbfad4e68c3137a2aae2e62165167772 m4,perl
+neko_bacula-2.4.3.tardist	bacula 1 7a1adfcddbc3721227e167a34de7c27a libbonoboui,libgnomecanvas,libgnomeui,mysql5,ncurses,openssl,qt4,zlib
+neko_bakefile-0.2.5.tardist	bakefile 2 cb5acfc3b13284ecbb77159a7f0c3329 python
+neko_balance-3.35.tardist	balance 1 a64e22949f62a7afdc0eb33173cddda5 openssl
+neko_bash-4.2.10.tardist	bash 8 169cf34c57edf0edcde4fb07cde8e165 gettext,libiconv
+neko_billardgl-1.75.tardist	billardgl 1 505fc2792b4fb08cfdfbcb7ac11ecb1e glut
+neko_bind-9.6.1-P1.tardist	bind9 22 93908ba3520e6021c0e7348d19f31428 libiconv,libxml2,openssl,zlib
+neko_binutils-2.18.tardist	binutils 1 0c0458c4915ac271b37bab628be5b22f gettext,libiconv
+neko_bison-2.4.1.tardist	bison 4 7e09e497b03c9284d99c3ba6e098b897 gettext,libiconv
+neko_bitchx-1.1-final.tardist	bitchx 1 9d57991aabd028431d441113e3922432 openssl
+neko_black-box-1.4.7.tardist	black_box 1 66d7457f808575d20a98f90bc8fbb8ef black,libiconv,libjpeg,libogg,libpng,libvorbis,sdl,sdl_image,sdl_mixer,tiff,zlib
+neko_blob_and_conquer-1.05-1.tardist	blob_and_conquer 1 c8e9d36ac196c3ca091f95d08b19fc87 sdl,sdl_image,sdl_mixer,sdl_ttf
+neko_bluefish-0.7-gtk1.tardist	bluefish1 1 310c25ec8c8594ef5ee80d64ce93cca1 gettext,glib1,gtk1,libiconv
+neko_bmp-0.9.7.tardist	bmp 2 1bede187f8d4a6d0edb7d6f7cdb04767 atk,esound,expat,fontconfig,freetype2,gettext,glib,gtk,libglade,libiconv,libvorbis,libxft,libxml2,libxrender,pango,zlib
+neko_bochs-2.3.7.tardist	bochs 1 0a0352b11ffb6f8e3b2bc7613816b7d2 no dependencies
+neko_boinc_client-5.4.9.tardist	boinc_client 1 b46fb3d20048b7e48cba98672c27aa52 boinc,curl,libiconv,libidn,openssl,zlib
+neko_boto-1.9b.tardist	boto 1 86b6a90237c3634d515cb4587672df92 python
+neko_bzflag-2.0.4.20050930.tardist	bzflag 5 8435c1e539a9bd5325df63402a7667e2 c,curl,libiconv,libidn,openssl,zlib
+neko_bzip2-1.0.6.tardist	bzip2 5 ee78993f1f5dbb921974bd40f2c2ee28 no dependencies
+neko_c-ares-1.3.0.tardist	c-ares 1 b4d5dcba10e3ec5061ec51e2d7ab829e c,cares
+neko_cairo-1.10.2.tardist	cairo 6 cf8144d90e5490b0dcbc1aa7b4e48ca9 expat,fontconfig,freetype2,gettext,glib,libiconv,libpng,libxrender,pixman,zlib
+neko_cal3d-0.10.0+0.11.0+rc2.tardist	cal3d 2 56ef5ccb73ba66c6bdaca439393694ea no dependencies
+neko_ccache-2.4.tardist	ccache 1 eed8ed8783886f24e0443e74a2a02647 no dependencies
+neko_cdrdao-1.2.1.tardist	cdrdao 1 c4ea59dc8d97fa402d3131df8fb513f7 dvdrtools,lame,libao,libmad,libogg,libvorbis
+neko_cdrtools-3.00.tardist	cdrtools 4 213936c2c710d7d7d073420edc406700 dvdrtools
+neko_celestia-1.3.2.tardist	celestia 1 41509324b0486e732be7546bf7a2a570 glut,libjpeg,libpng,zlib
+neko_cgoban-1.9.14.tardist	cgoban1 2266741235a7bf2c8fdd03c231e39000 no dependencies
+neko_chemtool-2.6.7.tardist	chemtool 1 e03c07906929fe8e9b7c296bb014b74d atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxft,libxrender,pango,zlib
+neko_clamav-0.92.1.tardist	clamav 5 9c8f263c31e0cd4a5a42018697f3bf52 bzip2,gmp,libiconv,zlib
+neko_cmake-2.6.4.tardist	cmake 2 cf046bf5fa24fd076cee460e9058b948 no dependencies
+neko_coin-2.4.4.tardist	coin 1 53e09558575c8d0fd784644ffae67003 no dependencies
+neko_crackattack-1.1.14.tardist	crackattack 2 c11db6916b0f82d50851ea7502c2281a atk,expat,fontconfig,freetype2,gettext,glib,glut,gtk,libiconv,pango,relnotes,zlib
+neko_crimson_fields-0.4.7.tardist	crimson 2 337b26a07440a15bcd8547fd08a278bc freetype2,sdl,sdl_mixer,sdl_ttf,zlib
+neko_crossfire_client-1.8.0cvs.tardist	crossfire_client 1 eabc2783d798497cee2cc84f2ccd8743 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glib1,glitz,glut,gtk,gtk1,libiconv,libjpeg,libpixman,libpng,libxrender,pango,sdl,sdl_image,zlib
+neko_cscope-15.5.tardist	cscope 2 f1669b0ef142c0aa3faeda68c27b558a no dependencies
+neko_ctags-5.5.4.tardist	ctags 1 f8fecda7e2d36806620ca62c5927bcf8 no dependencies
+neko_ctorrent-1.3.4-dnh2.tardist	ctorrent 1 41ac52fbe673c2831c7dd501badd1bce openssl
+neko_cups-1.2.9-r3.tardist	cups 3 57302d6b6fce1e55917a681c79022175 gettext,gnutls,libgcrypt,libgpg_error,libiconv,libtasn1,zlib
+neko_curl-7.19.7.tardist	curl 5 7a1e1ca0ca8e2408855658348fbd2417 libiconv,libidn,openssl,zlib
+neko_cvs-1.11.20.tardist	cvs 2 9a09ebc56275c0f51bdc62a36a946b37 no dependencies
+neko_cvsgraph-1.5.0.tardist	cvsgraph 1 9bfe354505b0fb79683feff44bc64f50 freetype2,gd,libjpeg,libpng,zlib
+neko_cyrus_imapd-2.2.12.tardist	cyrus_imapd 3 812fc411f248e3957ee237031ee5f998 cyrus_sasl,db4,krb5,openssl
+neko_cyrus_sasl-2.1.22.tardist	cyrus_sasl 2 3f9c4034545fa539030919835297354f db4,krb5
+neko_db4-4.4.20.tardist	db4 4 912c11527ef4c9a28b6798acb610df6b no dependencies
+neko_dcraw-8.23.tardist	dcraw 1 0af225e758c32a0b02caaec2d01f71aa gimp,lcms,libjpeg
+neko_ddd-3.3.11.tardist	ddd 1 39b5877cec978224fa3320d526e964c2 no dependencies
+neko_defendguin-0.0.11.tardist	defendguin 1 d3ea5ba03aec836516b57140f2e5fae6 libiconv,libogg,libvorbis,sdl,sdl_mixer
+neko_dejagnu-1.4.4.tardist	dejagnu 1 7cc6fa03d403555ba1f6ccf0acc028bf expect
+neko_descent2x-0.2.5.tardist	descent2x 1 e0abcc7f6985e527807ffffefa839739 libjpeg,libpng,sdl,sdl_image,zlib
+neko_dia-0.97.tardist	dia 1 710b4d3f0fdd0575a6485ce790e554cb no dependencies
+neko_diffutils-2.8.1.tardist	diffutils 1 8b95ec3ec2d1c5f10c9acdf4cbd90b31 no dependencies
+neko_dillo-0.8.6.tardist	dillo 3 0e9db948346d04dbf7bcfb74d7892953 gettext,glib1,gtk1,libiconv,libjpeg,libpng,openssl,zlib
+neko_dime-0.9.tardist	dime 1 71335bfc49debbd6517239dc8196b03d no dependencies
+neko_djv-0.5.0.tardist	djv 1 221b0a073fe289c18a1d4ff21ef3de5c expat,fltk,fontconfig,freetype2,libjpeg,libpng,openexr,tiff,zlib
+neko_docbook-414.tardist	docbook 1 f899b1b718c0994a57265b541b15f99a gettext,libiconv,libxml2,libxslt,zlib
+neko_dovecot-1.2.10.tardist	dovecot 3 502d89bd81864263dc43b22a2f1c4afd bzip2,cyrus_sasl,gmp,krb5,libiconv,mysql5,openldap,openssl,zlib
+neko_drawp3d-3.2.tardist	drawp3d 1 c79a21e7c3ac32f961c37a639b16e66c no dependencies
+neko_drqueue-0.63.3.tardist	drqueue 1 ba334e498d98cc090fd9445456cb4e5f atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,pango,perl,zlib
+neko_duplicity-0.6.06.tardist	duplicity 1 7692026b72486a314b4736073b36922e GnuPGInterface,boto,librsync,ncftp,python
+neko_dvdauthor-0.6.11.tardist	dvdauthor 1 897a8ec4365b2f20d9a38fd984bddd9a bzip2,expat,fontconfig,freetype2,imagemagick,lcms,libdvdread,libiconv,libjpeg,libpng,libtool,libxml2,tiff,zlib
+neko_dvdplusrw_tools-6.1.tardist	dvdplusrw_tools 1 23be9d75e438a04dbe92ccb8f1047ac5 no dependencies
+neko_dvdstyler-1.4.tardist	dvdstyler 1 bbe579b22e0210a09916389d346e709b cdrtools,dvdauthor,dvdplusrw_tools,gettext,glib1,gtk1,libiconv,libjpeg,libpng,mjpegtools,mpgtx,netpbm,tiff,wxwindows,zlib
+neko_e-uae-0.8.28.tardist	e_uae 1 a2feadb51cedffe58e6d91fa82d6bfd8 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_e16-0.16.8.9.tardist	e16 1 9b9a5a54e2ee79e0b6479591d95a01fa esound,freetype2,gettext,imlib2,libaudiofile,libiconv,zlib
+neko_emacs-22.1.tardist	emacs 2 b1fece7c15189e6318f9e2f368ba216c libjpeg,libpng,libungif,perl,tiff,zlib
+neko_enemylines5-1.0.tardist	enemylines5 1 0c01d7faa7a7513c9b137902d93aad28 libiconv,libjpeg,libogg,libpng,libvorbis,sdl,sdl_image,sdl_mixer,tiff,zlib
+neko_enscript-1.6.1.tardist	enscript 1 fd650d55f32bb935085b06a049fb8b99 no dependencies
+neko_eric3-3.7.2.tardist	eric3 1 e8c6491f1a7dfe3e64e75373541ed676 pyqt,python,qscintilla,qt,sip
+neko_esound-0.2.34.tardist	esound 1 d6dfb52ce5bcacf58020895bf723730d libaudiofile
+neko_ethereal-0.10.12.tardist	ethereal 3 9eda38f651666e3e42f46232ef3ca27d atk,expat,fontconfig,freetype2,gettext,glib,gtk,libiconv,libpcap,libxft,libxrender,pango,pcre,zlib
+neko_evince-0.4.0.tardist	evince 1 914aad780b3adb35717f7b5737cf9d96 atk,cairo,esound,expat,fontconfig,freetype2,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gtk,libart,libaudiofile,libbonobo,libbonoboui,libglade,libgnome,libgnomeprint,libgnomeprintui,libgnomeui,libiconv,libjpeg,libpixman,libpng,libxft,libxml2,libxrender,openssl,orbit2,pango,poppler,popt,shared_mime_info,tiff,zlib
+neko_evolution-2.4.2.1.tardist	evolution 6 fe8166507a998acd69e6db6555eda12a atk,cairo,cyrus_sasl,esound,expat,firefox,fontconfig,freetype2,gail,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gnutls,gtk,gtkhtml,libart,libaudiofile,libbonobo,libbonoboui,libgcrypt,libglade,libgnome,libgnomeprint,libgnomeprintui,libgnomeui,libgpg_error,libiconv,libjpeg,libpixman,libpng,libsoup,libtasn1,libxft,libxml2,libxrender,openldap,openssl,orbit2,pango,popt,zlib
+neko_evolutiondataserver-1.4.2.1.tardist	evolutiondataserver 2 723ef1cb467074d5da62f1c741414518 atk,cairo,cyrus_sasl,esound,expat,firefox,fontconfig,freetype2,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gnutls,gtk,libart,libaudiofile,libbonobo,libbonoboui,libgcrypt,libglade,libgnome,libgnomeui,libgpg_error,libiconv,libjpeg,libpixman,libpng,libsoup,libtasn1,libxml2,libxrender,openldap,openssl,orbit2,pango,popt,zlib
+neko_evolutionexchange-2.4.2.tardist	evolutionexchange 2 295bc776baaff1510e0839abf3746f38 atk,cairo,cyrus_sasl,esound,evolution,evolutiondataserver,expat,firefox,fontconfig,freetype2,gail,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gnutls,gtk,gtkhtml,libart,libaudiofile,libbonobo,libbonoboui,libgcrypt,libglade,libgnome,libgnomeprint,libgnomeprintui,libgnomeui,libgpg_error,libiconv,libjpeg,libpixman,libpng,libsoup,libtasn1,libxft,libxml2,libxrender,openldap,openssl,orbit2,pango,popt,zlib
+neko_exiftags-1.01.tardist	exiftags 2 1671f06ce0cb480b77bade6190191e2d no dependencies
+neko_expat-2.1.0.tardist	expat 6 755be369e89c4d61929d6912958c1bc4 no dependencies
+neko_expect-5.43.0.tardist	expect 2 30a8f83f975e42dc4383def298d962d8 tcl,tk
+neko_exrtools-0.4.tardist	exrtools 2 a708ab518a3c92c74577483ddc7982cb libjpeg,libpng,openexr,zlib
+neko_faac-1.25.tardist	faac 2 a57b3552c8796ef06ab2d72f26a0e80a no dependencies
+neko_faad2-2.5.tardist	faad2 2 915856e4373e9451c5d5e9437f32657b gettext,glib1,gtk1,libiconv,xmms
+neko_fastjar-0.93.tardist	fastjar 2 58c7f28d081c0252c7e2e8d0ea32c91e zlib
+neko_fceu-0.98.tardist	fceu 1 7e5c8ee21cf6cdf419c34ebfab9b1ad5 no dependencies
+neko_fe3d-0.8-3.tardist	fe3d 2 5ebe18f6dcb92f06dd12f272114ec8cd freetype2,libpng,sdl,sdl_ttf,xerces,zlib
+neko_fetchmail-6.3.8.tardist	fetchmail 3 f3aaeb4acc92a65be022d8083e12a594 gettext,krb5,libiconv,openssl,python
+neko_ffcall-1.10.tardist	ffcall 1 d4bbd88f2b150fe54ed97fb81a7f990f no dependencies
+neko_ffmpeg-SVN-r6775.tardist	ffmpeg 3 169b3674cce863bec46f402d876a36d1 faac,faad2,freetype2,imlib2,lame,libiconv,libogg,libvorbis,sdl,x264,zlib
+neko_fftw-3.1.2.tardist	fftw 3 43a5a026c5edb738f23a2dab7559548b no dependencies
+neko_fgfs_base-0.9.9.tardist	fgfs_base 1 80cb1710038e308f856a3f2a04177128 flightgear
+neko_figlet-2.2.2.tardist	figlet 1 e98ab0e0c482607d2d221d5a2db70bca no dependencies
+neko_fileutils-4.1.tardist	fileutils 1 b441eb24525d8288c45033ea387e3382 no dependencies
+neko_findutils-4.2.20.tardist	findutils 3 9f65df5a4c72c28bb1b33351950f8f8b gettext,libiconv
+neko_fireflies-2.06.tardist	fireflies 2 e89b0c5290653defe6c52152094caf46 sdl
+neko_firefox-2.0.0.22pre_nov2012.tardist	firefox 39 8cdebd17bc259d66ac24fc33772b0310 gettext,glib1,gtk1,libiconv
+neko_firefox3.0.19.tardist	firefox3 4 62e6479e873dc86073837371465d4aa7 atk,bzip2,expat,fontconfig,freetype2,gdk_pixbuf,gettext,glib,glitz,gtk,libiconv,libxft,libxrender,pango,pixman
+neko_flac-1.2.1.tardist	flac 2 805f5f639d6c142facf3a63d96e8368a libiconv,libogg
+neko_flex-2.5.35.tardist	flex 2 597a37e402fd258f784fcc5b70d204d8 gettext,libiconv
+neko_flightgear-0.9.9.tardist	flightgear 1 14bfbcb478aeeb689831fb17e178ca31 fgfs_base,glut,libogg,libvorbis,openal,sdl,simgear,zlib
+neko_fltk-1.1.7.tardist	fltk 2 dee9d5ab0c1e69dc9c1e54708b6a6e4f expat,fontconfig,freetype2,libjpeg,libpng,libxft,libxrender,zlib
+neko_fontconfig-2.6.0.tardist	fontconfig 4 1f780ffb65e2c01451023794fc1629a4 expat,freetype2,libiconv,zlib
+neko_fontforge-20060703.tardist	fontforge 2 7f7d56f81ec094063d05067ad5f0e3bb gettext,libiconv
+neko_foobillard-3.0a.tardist	foobillard 1 2d666368f477399d5297d7c813c916ec freetype2,libpng,sdl,zlib
+neko_fox-1.6.36.tardist	fox 1 98ef1b1a2e6cb1591c4da266f31edc2b bzip2,libjpeg,libpng,tiff,zlib
+neko_free42-1.4.70.tardist	free42 3 226a9fa171d7656271bd797997fed80f no dependencies
+neko_freeciv2-2.0.8.tardist	freeciv2 5 f3c561841386908e7304a94de3f22f3e atk,cairo,esound,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libaudiofile,libiconv,libmikmod,libogg,libpixman,libpng,libvorbis,libxrender,pango,readline,sdl,sdl_mixer,zlib
+neko_freetds-0.63rc10.tardist	freetds 2 7ffb3e8547232141bab142998fd499c1 libiconv,ncurses,readline,unixodbc
+neko_freetype2-2.4.11-infinality.tardist	freetype2 17 8a511631cbecafae8a4f94ffecab8aed bzip2,fontconfig,zlib
+neko_fribidi-0.10.4.tardist	fribidi 1 7a45a442c0af7ca364adddefe4c93e8d no dependencies
+neko_frotz-2.43.tardist	frotz 1 525c16f461617725d3c2384f830f9834 ncurses
+neko_fvwm2-2.4.20.tardist	fvwm2 1 e6993784632cf24c32a786165c24b303 gettext,glib1,gtk1,libiconv,perl,readline
+neko_gail-1.8.8.tardist	gail 2 994642b0c7a2d982d143798e0718531c atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libart,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_gal-2.5.3.tardist	gal 1 9d1343a4f422456acd9a5e867265f004 atk,cairo,esound,expat,fontconfig,freetype2,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gtk,libart,libaudiofile,libbonobo,libbonoboui,libglade,libgnome,libgnomecanvas,libgnomeprint,libgnomeui,libiconv,libjpeg,libpixman,libpng,libxft,libxml2,libxrender,orbit2,pango,popt,zlib
+neko_gawk-3.1.5.tardist	gawk 1 049b5d6dca704696c30ff16bf5a5d7ef gettext,libiconv
+neko_gc-6.6.tardist	gc 1 d3f70e1902ac125ea6688fb29c2c9c7a no dependencies
+neko_gcc-3.4.6.tardist	gcc 3 c17d3cc17ec327fb199f21d4f7b9192f no dependencies
+neko_gcc47-4.7.1.tardist	gcc47 1 f85d52fbc9eae1fe0be016f28faa55a1 no dependencies
+neko_gconf-2.12.1.tardist	gconf 4 edf54052bd2233a1dc32019954a4d054 atk,cairo,cyrus_sasl,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxml2,libxrender,openldap,openssl,orbit2,pango,popt,zlib
+neko_gd-2.0.28.tardist	gd 1 08d22ebe6b4ec3db3353b2017e24e098 no dependencies
+neko_gdal-1.2.6.tardist	gdal 1 0de6b11883ae8e457cf1f97193175e1a giflib,libiconv,libjpeg,libpng,mysql4,tiff,unixodbc,zlib
+neko_gdb-6.3.tardist	gdb 1 9fead342782d79c913afba5d64bfcc15 libiconv
+neko_gdbm-1.8.3.tardist	gdbm 2 f9f765c3d9477a9ef90fa7d6fd4f2ed9 no dependencies
+neko_gdis-0.77.4.tardist	gdis 1 c5e1857f72edc4b9dbaab0991295b345 gettext,glib1,glut,gtk1,gtkglarea,libiconv
+neko_gdk_pixbuf-0.22.0.tardist	gdk_pixbuf 2 52b286ee3ccd97015a94f17b53bf6077 glib,gtk1
+neko_gengetopt-2.12.tardist	gengetopt 1 9eae80e2c95a9c74c3933c038febece4 no dependencies
+neko_geoip-1.4.2.tardist	geoip 1 d51ee4c3835feb6e28044a37833d36a1 zlib
+neko_getopt-1.1.4.tardist	getopt 1 999245374532b2835b739b7b60a7cab0 gettext
+neko_gettext-0.18.1.1.tardist	gettext 9 878e004affa4bd011489a3705784fe13 glib,libcroco,libiconv,libxml2,ncurses,zlib
+neko_gftp-2.0.17.tardist	gftp 2 1211221d9da8a658b233603b4210618d gettext,glib,gtk,libiconv,readline
+neko_ghostscript-8.51.tardist	ghostscript 1 8b1567b07b5c343d05f2c70ea0f4c4c5 libjpeg,libpng,zlib
+neko_giflib-4.1.3.tardist	giflib 1 d6ea694a340fd0f45e380317651b51e1 no dependencies
+neko_gimp-2.4.6.tardist	gimp 12 84211ad3b553a5b41d1c983146473fae aalib,atk,bzip2,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,lcms,libart,libcroco,libgnomecanvas,libgnomeui,libgsf,libiconv,libjpeg,libpixman,libpng,librsvg,libwmf,libxml2,libxrender,pango,poppler,python,tiff,zlib
+neko_git-1.7.5.1.tardist	git 6 cc907f6d6cc2a2c17cc2b37b6c49d038 bash,curl,cyrus_sasl,expat,gmp,libiconv,libidn,openldap,openssl,perl,python,tcl,tk,zlib
+neko_gle-3.1.0.tardist	gle 1 20484acc3d1268e65a573437048d2fe9 no dependencies
+neko_glew-1.5.1.tardist	glew 6 a5363abbb5e63bdbd7aa0c0431d62d15 no dependencies
+neko_glib-1.2.10.tardist	glib1 2 227f30d7cceab194fb9ae9cbc44a3d00 no dependencies
+neko_glib-2.28.8-11.tardist	glib 11 f6cda8cc9c251e7e2b519b7922c3a482 gettext,libiconv
+neko_glibmm-2.8.0.tardist	glibmm 1 42b0768992adffa47b178dab0bf60a30 gettext,glib,libiconv,libsigcxx2
+neko_glitz-0.5.6.tardist	glitz 2 be6a6d25fdf401fe60b0e20b69d3470a no dependencies
+neko_gltron-0.70.tardist	gltron 1 b29ec424a2e94e489905518ee84fc47b flac,libmikmod,libogg,libpng,libvorbis,sdl,sdl_sound,zlib
+neko_glut-3.7p25.tardist	glut 2 0e5fe7ea4387081a3b15453f5a6e373c tiff
+neko_gmp-4.2.1.tardist	gmp 1 3c10e644232671e060bc77fc39d50be5 no dependencies
+neko_gnash-cvs20060823.tardist	gnash 1 7cb3f5bc12a18138163b92c06fd48645 curl,gtk,gtkglext,libidn,libvorbis,openssl,sdl,sdl_mixer
+neko_gnome-mime-info-2.4.2.tardist	gnome_mime_data 2 44941f6917aebe472e5ee0926ae1529e gettext,gnome
+neko_gnomeicontheme-2.10.1.tardist	gnomeicontheme 1 e0ec3e445020ebd50cdf13c00d3801d5 gnome,relnotes
+neko_gnomekeyring-0.4.6.tardist	gnomekeyring 2 c11ae60fbf9bb92a37eac62463b7607f atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_gnomevfs-2.12.2.tardist	gnomevfs 2 b4f26cb2bd3f290c305cb7039c6810cd bzip2,gconf,gettext,glib,libbonobo,libiconv,libxml2,openssl,orbit2,popt,zlib
+neko_gnugo-3.4.tardist	gnugo 2754e66977087bbb4ca5fa6654f928b0 no dependencies
+neko_gnupg-1.4.7.tardist	gnupg 7 ce433187d66c456c34bab78397f233f4 bzip2,curl,cyrus_sasl,gettext,gmp,libiconv,libidn,openldap,openssl,zlib
+neko_gnuplot-4.0.0.tardist	gnuplot 1 8b08312a1a5e368f50902018b0ac2540 freetype2,gd,libiconv,libjpeg,libpng,ncurses,pdflib,readline,tiff
+neko_gnutls-1.0.20.tardist	gnutls 1 0b6e95d3006ebc261f819aa6bc186942 gettext,libgcrypt,libgpg_error,libiconv,libtasn1,opencdk,zlib
+neko_gpa-0.7.5.tardist	gpa 2 64c2a20e10561d45605429d4a623ec49 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gpgme1,gtk,libgpg_error,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_gpgme-0.3.16.tardist	gpgme 1 380aaf26a8b7fdf4f61a6a2fc1b07e26 no dependencies
+neko_gpgme1-1.1.4.tardist	gpgme1 2 b92e61671cabaf6a9e202757a42b4d34 gettext,libgpg_error,libiconv
+neko_gqmpeg-0.20.0.tardist	gqmpeg 3 b4b1a5b58e3ac18c5065212349b881b4 gdk_pixbuf,gettext,glib1,gtk1,libiconv,libpng,mpg123,zlib
+neko_gqview-2.1.1.tardist	gqview 1 f7f681eb124f439a2d4fec18af13eed9 gtk
+neko_grafx2-2.0.970.tardist	grafx2 1 e4b8b1b5d7f0526a1bfaa1fb1232437b freetype2,libiconv,libjpeg,libpng,sdl,sdl_image,sdl_ttf,tiff,zlib
+neko_graphicsmagick-1.3.18.tardist	graphicsmagick 4 40e163dff0cd50300860df582adf7927 bzip2,freetype2,jbigkit,lcms,libjpeg,libpng,libtool8,libwmf,libxml2,perl,tiff,zlib
+neko_grep-2.5.1a.tardist	grep 1 ef8f717704c6847c00a83d201d7a69c2 gettext,libiconv,pcre
+neko_groff-1.19.1.tardist	groff 1 9f3b1d3397688c76a8b845c20ebd7f11 no dependencies
+neko_gsl-1.12.tardist	gsl 2 a0c968083aa70780961c6b60096ab440 no dependencies
+neko_gtk+-1.2.10.tardist	gtk1 1 196816dac2f0e9eb23232843834b0aa2 gettext,glib1,libiconv
+neko_gtk+-2.12.12.tardist	gtk 9 52325e3c6ad67dd0e24d953468f4c6cc atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,libiconv,libjpeg,libpixman,libpng,libxrender,pango,tiff,zlib
+neko_gtk_chtheme-0.2.tardist	gtk_chtheme 1 0d78887c10a7ade8964f2f0a2057cae5 gtk
+neko_gtk_qt_engine-0.8.tardist	gtk_qt_engine 1 1866227a62f7dbe18923560fc06b6469 atk,cairo,fontconfig,freetype2,gettext,glib,glitz,gtk,libpng,libxrender,pango,zlib
+neko_gtkglarea-1.2.3.tardist	gtkglarea 1 116e80c68a740e397299c35e10f16627 gettext,glib1,gtk1,libiconv
+neko_gtkglext-1.2.0.tardist	gtkglext 2 ea4205bf934b0f601137f47afea91f5a atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_gtkhtml-3.9.2.tardist	gtkhtml 2 1e284f074905c12554634e77d5129ce9 atk,cairo,esound,expat,fontconfig,freetype2,gail,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gtk,libart,libaudiofile,libbonobo,libbonoboui,libglade,libgnome,libgnomeprint,libgnomeprintui,libgnomeui,libiconv,libjpeg,libpixman,libpng,libxml2,libxrender,openssl,orbit2,pango,popt,zlib
+neko_gtkmm-2.8.0.tardist	gtkmm 1 6276dde195c08207934ff9ad3f2e14bc atk,cairo,expat,fontconfig,freetype2,gettext,glib,glibmm,glitz,gtk,libiconv,libsigcxx2,libxrender,pango,zlib
+neko_guifications-2.13beta3.1.tardist	guifications 7 f390c4d0a50bfd2a1a08ee767690485a gaim
+neko_guile-1.6.7.tardist	guile 1 785160c5f5edd5a741d70fc0b937811e ncurses,readline
+neko_h5utils-1.10.tardist	h5utils 1 101577f543a415187cbd5fd3fe7f4b41 hdf5,libmatheval,libpng,openssl,zlib
+neko_hdf5-1.6.4.tardist	hdf5 1 73f69312c92655a56006825f86325abc openssl,zlib
+neko_hexedit-1.2.10.tardist	hexedit 1 0499ac79a56c57f204cd267ba5d513ed no dependencies
+neko_http_load-12march2006.tardist	http_load 1 98195616f86b4d3ee06ca8b6acf36b8d openssl
+neko_icebreaker-1.95.tardist	icebreaker 1 34d3c50e511bbcdf73d67abc77d313ed libiconv,libogg,libvorbis,sdl,sdl_mixer
+neko_icecast-2.3.0.tardist	icecast 2 d11b22085599f6143d10f7fae5914d51 curl,libiconv,libidn,libogg,libtheora,libvorbis,libxml2,libxslt
+neko_ices2-2.0.0.tardist	ices2 1 fdbf782f5b684f2d8fcde6e1942f5eb9 ices,libiconv,libogg,libshout,libvorbis,libxml2,zlib
+neko_icu-3.6.d01.tardist	icu 1 0a70edc3e8c12514287b9502ab3632a9 no dependencies
+neko_id3lib-3.8.3.tardist	id3lib 1 c85838356024606dd53a528bf1a077c7 libiconv,zlib
+neko_ifchk-0.95b3.tardist	ifchk 1 623e938aa09d4f3b7d764a59d55898b4 no dependencies
+neko_imagemagick-6.8.4-1.tardist	imagemagick 13 ccd3427f413f61c2c7f581cb01cf35c6 bzip2,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,jbigkit,lcms,libiconv,libjpeg,libpng,libtool8,libwmf,libxml2,libxrender,openexr,pango,perl,pixman,tiff,zlib
+neko_imapproxy-1.2.4.tardist	imapproxy 1 a04af44c25f55fb45aaf3bf96489fc4e openssl
+neko_imlib-1.9.15.tardist	imlib 1 93cfa26afd1cd02d6261be69877509a0 gettext,giflib,glib1,gtk1,libjpeg,libpng,tiff,zlib
+neko_imlib2-1.4.0.tardist	imlib2 3 aec6300afe6daf84bb7656048b406476 bzip2,freetype2,giflib,libjpeg,libpng,tiff,zlib
+neko_inkscape-20051217_gcc.tardist	inkscape_gcc 2 877e35a02c2e4a20672df18ed7942096 atk,cairo,expat,fontconfig,freetype2,gconf,gettext,glitz,gnomevfs,libbonobo,libiconv,libpixman,libpng,libxft,libxml2,libxrender,libxslt,openssl,orbit2,popt,zlib
+neko_irssi-0.8.10a.tardist	irssi 3 2f29e20444c2a622ab8a02af7ea6fcc2 gettext,glib,libiconv,openssl,perl
+neko_ispell-3.2.06.tardist	ispell 1 4f6be487c7a605ab53ed72cc1e0be005 no dependencies
+neko_iverilog-0.8.6.tardist	iverilog 1 781ff6fc97d801d648c22004025614a8 no dependencies
+neko_ivy_generator-1.3.tardist	ivy_generator 2 9364c4198050499102ef84d6618fae94 ivy,qt4
+neko_jam-2.5.tardist	jam 1 93cc3035491e409f4c4fd67190ad23d8 no dependencies
+neko_jbigkit-2.0.tardist	jbigkit 1 28e193b0949b07677e731c61766dfe35 no dependencies
+neko_jboss-4.0.3SP1.tardist	jboss 1 81faea35704f85aaeba599bfc952b29e no dependencies
+neko_jikes-1.22.tardist	jikes 2 9a8e75f21a4ab7405cca5623b1842400 libiconv
+neko_joe-3.7.tardist	joe 5 a56f072a57016eb1771d253ed8426c23 ncurses
+neko_jumpnbump-1.55.tardist	jumpnbump 1 e0c4772b3df70c56f49c58c490cf4c8b libmikmod,libogg,libvorbis,sdl,sdl_mixer,sdl_net
+neko_k3dsurf-0.5.4.tardist	k3dsurf 1 b235ad01a84e077172f7c396dd6519a0 expat,fontconfig,freetype2,libxft,libxrender,qt,zlib
+neko_kdeartwork-3.5.6.tardist	kdeartwork 1 631ba68fd214ba8f4165ebedf062efc7 arts,expat,fontconfig,freetype2,gettext,glib,kdebase,kdelibs,libart,libaudiofile,libiconv,libidn,libpng,libxft,libxrender,qt,zlib
+neko_kdebase-3.5.6.tardist	kdebase 3 e851df572b9a79bb0393fb0d4a8ce44c arts,cyrus_sasl,expat,fontconfig,freetype2,gettext,glib,gmp,kdelibs,krb5,libart,libaudiofile,libiconv,libidn,libjpeg,libpng,libxft,libxrender,openexr,openldap,openssl,pcre,qt,samba,zlib
+neko_kdebindings-3.5.6.tardist	kdebindings 1 2391dede9ee82b61e36b79c839111b55 expat,fontconfig,freetype2,kdelibs,libart,libiconv,libidn,libjpeg,libpng,libxft,libxrender,pcre,pyqt,qt,quanta,zlib
+neko_kdegames-3.5.6.tardist	kdegames 2 5c578fcdd0d1278c619e17324b83834b arts,esound,expat,fontconfig,freetype2,gettext,glib,kdelibs,libart,libaudiofile,libiconv,libidn,libmad,libogg,libpng,libvorbis,libxft,libxrender,qt,zlib
+neko_kdelibs-3.5.6.tardist	kdelibs 3 8cd03eecbbd8c1440f95a7c744d008bd arts,aspell,bzip2,cups,expat,fontconfig,freetype2,gettext,glib,gnutls,krb5,libart,libaudiofile,libgcrypt,libgpg_error,libiconv,libidn,libjpeg,libpng,libtasn1,libxft,libxml2,libxrender,libxslt,openexr,pcre,qt,zlib
+neko_kdenetwork-3.5.6.tardist	kdenetwork 1 602f61594789428304d701f5ec326ae0 expat,fontconfig,freetype2,gettext,glib,glib1,gtk1,kdelibs,libart,libiconv,libidn,libjpeg,libpng,libxft,libxml2,libxrender,libxslt,openssl,pcre,qt,xmms,zlib
+neko_kdesdk-3.5.6.tardist	kdesdk 2 b5e35bdad2417b90242736f01d105d50 apr,apr_util,cyrus_sasl,db4,expat,fontconfig,freetype2,gdbm,gettext,gmp,kdelibs,libart,libiconv,libidn,libjpeg,libpng,libxft,libxml2,libxrender,libxslt,openldap,openssl,pcre,qt,subversion,zlib
+neko_kdewebdev-3.5.6.tardist	kdewebdev 2 9fd33f47bf42cfd32ba0ce89cf29c5e6 expat,fontconfig,freetype2,kdelibs,kdesdk,libart,libiconv,libidn,libjpeg,libpng,libxft,libxml2,libxrender,libxslt,pcre,qt,quanta,zlib
+neko_kegs-0.91.tardist	kegs 1 3d035001e1b3ed2c571e93ecd4db317e no dependencies
+neko_kobodl-0.4pre10.tardist	kobodl 2 63c99c6a2aff7cc42129f3f409e3e836 libiconv,libjpeg,libpng,sdl,sdl_image,tiff,zlib
+neko_krb5-1.8.tardist	krb5 2 d0cc6929d58768225db46b1e23e7c4d8 no dependencies
+neko_ksudoku-0.3.tardist	ksudoku 1 d442efcefd19823366d96eacfd7231bd expat,fontconfig,freetype2,kdelibs,libart,libiconv,libidn,libpng,libxft,libxrender,qt,zlib
+neko_lame-3.96.1.tardist	lame 2 dfe0a772406d08e8744280ff95ca346c ncurses
+neko_lastfm-1.3.0.50.tardist	lastfm 2 4c5cd80f62a42a64994f0d9914e10642 expat,fontconfig,freetype2,gettext,glib,libiconv,libpng,libxrender,qt4,zlib
+neko_lcms-2.1.tardist	lcms 115 b78847271fa7dcd9c86e8f10440e44b2 jbigkit,libjpeg,tiff,zlib
+neko_less-436.tardist	less 2 ae70aae28cb3b6e37612addd3d0d24b7 ncurses
+neko_lftp-3.2.1.tardist	lftp 1 a93c024f8456a77816d40b143ecba95a expat,gettext,libiconv,openssl,readline
+neko_lha-114i.tardist	lha 1 cde16653944d5e25829d2403e1a3cb37 no dependencies
+neko_libXft-2.1.10.tardist	libxft 2 381e24c33d04f8b65df048d19cc5bd33 fontconfig,libxrender
+neko_libao-0.8.5.tardist	libao 1 d981807e667594de4778323f04bdd663 no dependencies
+neko_libart-2.3.16.tardist	libart 2 6e21c19129ed3cbef4305b4dcef9511a no dependencies
+neko_libaudiofile-0.2.6.tardist	libaudiofile 1 61c1a0e262f998d5e1bb0b04129a84bc no dependencies
+neko_libbonobo-2.32.0.tardist	libbonobo 5 e26c6589c1596af398dea96fdc4192dd gettext,glib,libiconv,libxml2,orbit2,popt,zlib
+neko_libbonoboui-2.10.1.tardist	libbonoboui 2 51b087005a8c761dc4fef29de88a570c atk,cairo,esound,expat,fontconfig,freetype2,gconf,gettext,glib,glitz,gnomevfs,gtk,libart,libaudiofile,libbonobo,libglade,libgnome,libiconv,libpixman,libpng,libxml2,libxrender,openssl,orbit2,pango,popt,zlib
+neko_libboost-1.35.0.tardist	libboost 1 c7bf2db1c919a2d21da9e16d8ee37bfd bzip2,zlib
+neko_libcgi-0.5.tardist	libcgi 4 d4b79ad25c3c35388a127039a60a2396 no dependencies
+neko_libcroco-0.6.2-5.tardist	libcroco 5 cc3785a7a4443b3558e9019a84882715 gettext,glib,libiconv,libxml2,zlib
+neko_libdvdread-0.9.6.tardist	libdvdread 1 2a409cb4be47ead18d30f947383038ae no dependencies
+neko_libetpan-0.46.tardist	libetpan 1 63acc590859f98c392e295e4841ddfbb cyrus_sasl,db4,libiconv,openssl
+neko_libevent-1.4.9.tardist	libevent 2 7830964aff8c5c03238b65006f6ff32a memcached,tor
+neko_libgcrypt-1.2.4.tardist	libgcrypt 2 0bea466b27804f8ccfb523399cc7db2f gettext,libgpg_error,libiconv
+neko_libglade-2.5.1.tardist	libglade 3 dac3040105b355f2229728c041590ca1 atk,cairo,expat,fontconfig,gettext,glib,glitz,gtk,libiconv,libpng,libxml2,pango,python,zlib
+neko_libgnome-2.12.0.1.tardist	libgnome 2 590a5d6d60f1583da4749bcdaa28179c esound,gconf,gettext,glib,gnomevfs,libaudiofile,libbonobo,libiconv,libxml2,openssl,orbit2,popt,zlib
+neko_libgnomecanvas-2.12.0.tardist	libgnomecanvas 3 ae94c9f97bc64ce9a19dea94585f02e8 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libart,libglade,libiconv,libpixman,libpng,libxml2,libxrender,pango,zlib
+neko_libgnomecups-0.2.2.tardist	libgnomecups 1 3e649515f912b12e4608c93492973ef7 cups,gettext,glib,libiconv,openssl
+neko_libgnomeprint-2.12.1.tardist	libgnomeprint 2 655f0bdc437480100db9b14ddcd55556 cups,expat,fontconfig,freetype2,gettext,glib,libart,libgnomecups,libiconv,libxml2,openssl,pango,popt,zlib
+neko_libgnomeprintui-2.8.2.tardist	libgnomeprintui 3 78e2d204283c2cfbcb89f19385e1e958 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gnomeicontheme,gtk,libart,libgnomecanvas,libgnomeprint,libiconv,libpixman,libpng,libxft,libxml2,libxrender,pango,zlib
+neko_libgnomeui-2.12.0.tardist	libgnomeui 2 94201e10c9640f0138961305ba12d8c0 atk,cairo,esound,expat,fontconfig,freetype2,gconf,gettext,glib,glitz,gnomekeyring,gnomevfs,gtk,libart,libaudiofile,libbonobo,libglade,libgnome,libiconv,libjpeg,libpixman,libpng,libxft,libxml2,libxrender,openssl,orbit2,pango,popt,zlib
+neko_libgpg_error-1.4.tardist	libgpg_error 2 37eaf66fafbbe395b51d955fe7a5293c gettext,libiconv
+neko_libgsasl-0.2.9.tardist	libgsasl 1 6581bca5c3eb787562ce647f66836911 gettext,libiconv
+neko_libgsf-1.14.19.tardist	libgsf 3 e971a5a902ab2577565ace60d90717f9 bzip2,gettext,glib,libbonobo,libiconv,libxml2,orbit2,popt,zlib
+neko_libiconv-1.14.tardist	libiconv 4 f38655dd763826554554aa795a6f55c2 gettext
+neko_libidl-0.8.9.tardist	libidl 4 9055880d75d0d1333a4ba64956674529 gettext,glib,libiconv
+neko_libidn-0.5.4.tardist	libidn 1 892fad7560c01a2cfa02aa22cdd48360 gettext,libiconv
+neko_libjpeg-turbo-1.2.1.tardist	libjpeg 6 8cb64fe93779319092ff181dfa6bd713 no dependencies
+neko_libmad-0.15.1b.tardist	libmad 1 5fda6fbcdc6a24fac54bf4e3ddaa7402 no dependencies
+neko_libmatheval-1.1.2.tardist	libmatheval 1 f19e29f56a8ff06001f311d4a7867f34 no dependencies
+neko_libmcrypt-2.5.8.tardist	libmcrypt 2 68b0074a71852062ae16f58d14e9a37c no dependencies
+neko_libmemcache-1.4.0.rc2.tardist	libmemcache 1 4fe6e71daf777947b37087f39e9d1ba0 no dependencies
+neko_libmikmod-3.2.0b2.tardist	libmikmod 1 f8aa4688c65873137582892a80b813a3 no dependencies
+neko_libmusicbrainz-2.1.5.tardist	libmusicbrainz 1 97f54c9af0f579a1270e0cfcade16cb4 expat
+neko_libnasl-2.2.8.tardist	libnasl 1 047f8bed8a2f3bcd05e22b0e26462fb5 nessus_libraries,openssl
+neko_libogg-1.1.tardist	libogg 1 de4055ff71f586fcbd713188a8776111 no dependencies
+neko_libpcap-0.9.8.tardist	libpcap 10 d6d9379e0e091b360c656a8ba4d2e9c6 no dependencies
+neko_libpixman-0.1.6.tardist	libpixman 2 f2b7548b18d5f3193ccd0e93a634d240 no dependencies
+neko_libpng-1.2.47.tardist	libpng 9 dbbd945235afbcf32d506aa15e379b53 zlib
+neko_librsvg-2.18.2.tardist	librsvg 3 66ae13ac9cbd8277d39a1f5eb18b101b gtk,libart,libcroco,libgsf,popt
+neko_librsync-0.9.7.tardist	librsync 1 3f319d75ba1ea7c7f036fd3677c3b2c6 bzip2,gettext,libiconv,popt,zlib
+neko_libshout-2.2.2.tardist	libshout 2 2bfeff78efd81f1ed1f91ae66067d73d libogg,libtheora,libvorbis
+neko_libsigcxx-2.0.10.tardist	libsigcxx2 1 e67c8dd5b1afc2b623ed671109dc3cb4 libsigc
+neko_libsigsegv-2.6.tardist	libsigsegv 1 28518e8eabc0c8a73ae9fdda94717966 no dependencies
+neko_libsndfile-1.0.11.tardist	libsndfile 1 3ecef00f717ba1a1b752e18eb15619cf no dependencies
+neko_libsoup-2.2.5r1.tardist	libsoup 2 8c12c848dc9c8c9d1340ead96bf69c07 gettext,glib,gnutls,libgcrypt,libgpg_error,libiconv,libtasn1,libxml2,zlib
+neko_libstringprep-0.0.8.tardist	libstringprep 1 f44796779c7f15285047b56dea25ee59 libiconv,libstringgrep
+neko_libtasn1-0.2.18.tardist	libtasn1 2 9a80993f4fb359ed83adf3da90d9d289 no dependencies
+neko_libtheora-1.0alpha5.tardist	libtheora 1 190e3ea6f66c012ab07a658e08fb3394 libogg
+neko_libtool-1.5.26.tardist	libtool 3 d938333f83e7be84105edca8f7fc2a96 no dependencies
+neko_libtool8-2.2.6a.tardist	libtool8 4 ff2b0dc9587a83f6371945df25706fcc no dependencies
+neko_libungif-4.1.3.tardist	libungif 1 8b88880aadcc7693cc13601baa763399 no dependencies
+neko_libvorbis-1.0.1.tardist	libvorbis 1 4b16f1bb39b7bcc2a140dc2eee1daa10 libogg
+neko_libwmf-0.2.8.3.tardist	libwmf 3 7b79b0337cac487960e164ff85f7bb22 expat,freetype2,gettext,glib,gtk,libiconv,libjpeg,libpng,zlib
+neko_libxml2-2.7.8.tardist	libxml2 7 a182de12bd9720c3d338d4678865f1f6 libiconv,zlib
+neko_libxrender-0.8.4.tardist	libxrender 2 818d575a4ffc9813b0759cdbfe62d3f2 render
+neko_libxslt-1.1.26.tardist	libxslt 2 0509a795be4e9a55f48c9abe1dc38dc8 libiconv,libxml2,python,zlib
+neko_lighttpd-1.5.0.r1811.tardist	lighttpd 8 42dfbd8d4ae5f1e59af67ae69eb9f9b2 bzip2,cyrus_sasl,gdbm,gettext,glib,gmp,krb5,libiconv,libxml2,mysql4,mysql5,openldap,openssl,pcre,pgsql,sqlite3,zlib
+neko_links2_2.7.tardist	links2 10 2fb886e84e9fc0235139d573c0506aae bzip2,jbigkit,libjpeg,libpng,openssl,tiff,zlib
+neko_log4cpp-0.3.5rc3.tardist	log4cpp 1 aaf4f022da882b7de975d4f1064a7b60 no dependencies
+neko_lua-5.1.4.tardist	lua 4 66e3fea8345e7d3e5a27f3abd373bc97 no dependencies
+neko_luma-2.2.1.tardist	luma 1 934b720020819451aaa3d9553aef37c5 py_smbpasswd,pyqt,python,python_ldap,qt
+neko_lynx-2.8.5.tardist	lynx 1 7a19e3271ec6d3fe2e49fe8fccc6bf86 bzip2,gettext,libiconv,openssl,zlib
+neko_m4-1.4.12.tardist	m4 4 6d290d8fb225149dcdc29d67925b7e2e libsigsegv
+neko_maelstrom-3.0.6.tardist	maelstrom 1 20c3dedd28bfd6f9a93d1f2753afcd5c libiconv,sdl,sdl_net
+neko_make-3.82.tardist	make 3 8557b37731332cdd783e4936f52c2d49 gettext,libiconv
+neko_makehuman-0.9.1-RC1.tardist	makehuman 1 6b70f78a1eaa072734bd3754a59b9ccd no dependencies
+neko_mandelbulber-1.11.tardist	mandelbulber 1 ef84b4ae36c4701c33614a1dde2ad12c gtk,libjpeg,libpng
+neko_mapserver-4.6.1.tardist	mapserver 2 13a2efd170a60ea5d4a28a4caa237275 curl,freetype2,gd,gdal,giflib,libiconv,libidn,libjpeg,libpng,ming,mysql4,openssl,pdflib,proj,tiff,unixodbc,zlib
+neko_mathomatic-12.9.2.tardist	mathomatic 1 db276926da59dc12d09c0dbf8377f13d no dependencies
+neko_mc-4.6.1.tardist	mc 1 1a0ab9d485bbe20a7017ff87a0ca740c libiconv,libxml2,ncurses,readline,zlib
+neko_mcrypt-2.6.4.tardist	mcrypt 1 433508ce0a44841feccc87dec7289920 gettext,libiconv,libmcrypt,mhash,zlib
+neko_memcached-1.1.13.tardist	memcached 2 a37aea83f2a3f2a21805bbfd988e2a25 libevent
+neko_mftrace-1.2.5.tardist	mftrace 1 9ae0ef1b4928e6f96420f73fd01bb240 python
+neko_mgv-3.1.5.tardist	mgv 1 0547b03bb30efabf1d52b52510d166b3 no dependencies
+neko_mhash-0.9.1.tardist	mhash 2 0941f12542ab1e3d440ab413b71d73ef no dependencies
+neko_ming-0.3beta1.tardist	ming 1 6dfbe22a2743c9aab5cf35c89e07364d giflib,libpng,zlib
+neko_mjpegtools-1.8.0.tardist	mjpegtools 1 78d4e7c827a89ef130ee6d23124664a1 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libjpeg,libpixman,libpng,libxrender,pango,sdl,zlib
+neko_mktemp-1.5.tardist	mktemp 3 7b2b641ea275b223cdc846f1e69f04ba no dependencies
+neko_mm-1.4.2.tardist	mm 1 604fe5fc1c825061abc58c9fe23c0ba9 no dependencies
+neko_mnogosearch-3.2.35.tardist	mnogosearch 2 8b0e678fcc7fa08bc1702193711ec1b7 mysql4,ncurses,openssl,readline,zlib
+neko_mod_python-3.2.7.tardist	mod_python 1 94df466677fa499f025052213b00b2ff apache2_prefork,python_so
+neko_mpd-0.12.1.tardist	mpd 1 f1fd1cb06b922e0970c1f83c166a4a38 faad2,flac,libao,libaudiofile,libiconv,libmad,libmikmod,libogg,libshout,libtheora,libvorbis,speex
+neko_mpeg2dec-0.4.0b.tardist	mpeg2dec 1 1678e5850c8dba1499a8729555aadfa2 openssl,sdl
+neko_mpfr-2.3.1.tardist	mpfr 2 2195c30395f84cb6093f05eaf0b4f07d gmp
+neko_mpg123-1.10.0.tardist	mpg123 8 285a7bf898b7c32ce9c96440e02d702b libtool
+neko_mpgtx-1.3.tardist	mpgtx 1 aa34d6ac62e6c9ed1e23c629f64e28b2 no dependencies
+neko_mplayer-1.0rc1-r1.tardist	mplayer 4 dc2dc5c4efe654a678469bd44e02ddcc aalib,atk,cairo,esound,expat,faac,fontconfig,freetype2,gettext,glib,glitz,gtk,lame,libaudiofile,libdvdnav,libdvdread,libiconv,libjpeg,libmad,libogg,libpixman,libpng,libtheora,libungif,libvorbis,libxrender,ncurses,openal,pango,sdl,speex,x264,zlib
+neko_mrtg-2.12.0.tardist	mrtg 1 dbd6990ae149ef7ac0fbc3e7dbec11bd freetype2,gd,libjpeg,libpng,perl,zlib
+neko_mrxvt-0.4.2.tardist	mrxvt 2 3c7b016ab5751e59d6089ebedcc3c334 libjpeg,libpng,zlib
+neko_msmtp-1.4.5.tardist	msmtp 1 93ab55156185c83bd7785b530a55fd16 gettext,libgsasl,libiconv,openssl
+neko_mtr-0.69.tardist	mtr 1 91342b09253b195a8feb081da1300101 gettext,glib1,gtk1,libiconv
+neko_mutt-1.5.10i.tardist	mutt 2 ed6d22c70944882aa645a72d9f3cdd53 gettext,libiconv
+neko_mysql-4.1.22.tardist	mysql4 4 23aabfa591e0be3542090a54e46a21d9 ncurses,openssl,perl,readline,zlib
+neko_mysql-5.0.45.tardist	mysql5 4 e800fdb6f84596c38020f15745424e15 ncurses,openssl,perl,readline,zlib
+neko_mysql5_python-1.2.2.tardist	mysql5_python 1 10ed88a69fe9e0e60b023c5f51be53f8 mysql5,python
+neko_mysql_python-1.2.0.tardist	mysql_python 2 8035a08a94b5aa25c03e8a1a282c52b8 mysql4,python,zlib
+neko_nagios-3.0.1.tardist	nagios 3 827fab4b69dfa238b461ef1b1c5df253 freetype2,gd,gettext,glib,libiconv,libjpeg,libpng,libtool,zlib
+neko_nagios_plugins-1.4.11.tardist	nagios_plugins 2 4cd160882bf3b7dc30ad768bcfdff06e cyrus_sasl,gettext,gmp,krb5,libiconv,openldap,openssl,perl,pgsql,zlib
+neko_nano-2.2.6.tardist	nano 5 36eb30b616bf4fecae0d89cc168d965a gettext,libiconv
+neko_ncftp-3.2.3.tardist	ncftp 2 1903d2941660bbf5a7751a6ec0333c39 no dependencies
+neko_ncurses-5.7.tardist	ncurses 4 dd252263e0c408cf09511bb75934a55c no dependencies
+neko_nedit-5.5.tardist	nedit 2 fff09d6923a4c191ab9a19ac6874b877 no dependencies
+neko_nekotool-1.0.2.tardist	nekotool 2 47e9798dcaeb30fe9f9dae8d27c76cc3 no dependencies
+neko_neon-0.28.3.tardist	neon 2 56aaad4809743992cc20d3780f087fbc gettext,krb5,libiconv,libxml2,openssl,subversion,zlib
+neko_nessus_core-2.2.8.tardist	nessus_core 2 038adb304d799f59b5bd184d610a4eb8 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libnasl,libpixman,libpng,libxrender,nessus_libraries,nessus_plugins,openssl,pango,zlib
+neko_nessus_libraries-2.2.8.tardist	nessus_libraries 2 e1b9f90cee957bd4ced0e4f273359b85 no dependencies
+neko_nessus_plugins-2.2.8.tardist	nessus_plugins 2 ba6d406ece88fa9aae44f5a68712e40d aspell,bzip2,curl,db4,freetds,freetype2,gettext,gmp,libiconv,libidn,libjpeg,libmcrypt,libpng,libtool,libxml2,libxslt,mhash,mysql5,ncurses,nessus_libraries,openssl,pgsql,php5,python,unixodbc,zlib
+neko_net-snmp-5.4.tardist	net_snmp 2 4e6daa1b632a10bfd2642e3bfbf9d382 openssl,perl
+neko_netcat-0.7.1.tardist	netcat 4 5e1f165dfb4c5d9bc1fee6bf22a60012 gettext,libiconv
+neko_netpbm-10.26.3.tardist	netpbm 1 e643a49704c748ed35b78da9ae3ff889 libjpeg,libpng,tiff,zlib
+neko_neverball-1.4.0.tardist	neverball 1 cc40b22d35240f51532c9282e43b9035 freetype2,libjpeg,libpng,sdl,sdl_image,sdl_mixer,sdl_ttf,zlib
+neko_nmap-4.20.tardist	nmap 6 fe5c529fa9e2503a7370a2b0f8558f74 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,openssl,pango,pcre,zlib
+neko_numpy-1.0.tardist	numpy 2 9246940dbecb56cf5f2adaf750cf69d2 python
+neko_ocaml-3.08.4.tardist	ocaml 1 4641b56c7d57e05b51333abbe54a59e0 tcl,tk
+neko_openal-1.1.tardist	openal 2 d3b4e62de8a5a9f5cc92b3662665a26f libogg,libvorbis,sdl
+neko_opencdk-0.5.5.tardist	opencdk 1 1bcb451853e2024a2b0aea676a2ea853 gettext,libgcrypt,libgpg_error,libiconv,zlib
+neko_opencv-0.9.7.tardist	opencv 1 52c325645aa6abe37972b1cb50f61d7b ffmpeg,gtk
+neko_openjpeg-1.3.tardist	openjpeg 1 7df6f3bc99bcf334f877308244c10bfa no dependencies
+neko_openldap-2.3.26.tardist	openldap 3 5668ef365db0bc87912c481f31edce7c cyrus_sasl,db4,gmp,libiconv,libtool,openssl,perl,unixodbc
+neko_openntpd-3.9p1.tardist	openntpd 5 dab3066b95df5213a4973734547bec15 openssl
+neko_openscenegraph-1.2.tardist	openscenegraph 3 86bb8203ca6ab29270766e96cc61de54 gdal,gettext,giflib,glib,libiconv,libjpeg,libpng,libxml2,mysql4,openssl,tiff,unixodbc,zlib
+neko_openssh-6.2p1.tardist	openssh 35 cf45d1dc7cbe85ad4de9907dcab63c12 openssl,zlib
+neko_openssl-0.9.8x.tardist	openssl 23 06779f9057c2c48feda2c2486f922b19 no dependencies
+neko_orbit2-2.14.9.tardist	orbit2 4 9189b1476e4112393888b1fbdd574eaf gettext,libiconv,libidl,popt
+neko_osgcal-0.1.44.tardist	osgcal 6 21959d48ba1fd1c13f0e970efbdac64d cal3d,gettext,glib,libiconv,libxml2,openscenegraph,sdl,zlib
+neko_p7zip-9.13.tardist	p7zip 2 01f175a17a95401ca7d1e08bffdb4b70 no dependencies
+neko_pango-1.28.4.tardist	pango 12 683f22c2e680a30ce7934189835bcbcd cairo,expat,fontconfig,freetype2,gettext,glib,glitz,libiconv,libpixman,libpng,libxft,libxrender,zlib
+neko_paraview323.tardist	paraview323 3 abfb734ff0ea70c539ee1cf27b0d7f6b qt4
+neko_pari-2.2.13.beta.tardist	pari 2 5ccce1908fe521619befe9f3e6463d4b ncurses,perl,readline
+neko_patch-2.5.9.tardist	patch 1 8f987f2c474dd6d361c7ee5a7f0ebba6 no dependencies
+neko_pbzip2-1.1.6.tardist	pbzip2 4 838a7488a398f3148df38e98eadf1c27 bzip2
+neko_pcre-6.3.tardist	pcre 3 04af44ab559001a4e5c88b7e92deb1f4 no dependencies
+neko_pdflib-4.0.3.tardist	pdflib 1 7c8d1940242e0f2aa888db4ae1333e6d libjpeg,libpng,tiff,zlib
+neko_pencil-r54.tardist	pencil 1 8d75863e73f3c5ab9ea5f538cfe111c4 qt4
+neko_perl-5.8.9.tardist	perl 4 39dd4988884316b9e666932f47519c1a no dependencies
+neko_perl_Alien_wxWidgets-0.31.tardist	perl_Alien_wxWidgets 1 45d2b99e522eafd3cc696e9159420b0d perl,wxGTK
+neko_perl_Module_Build-0.2808.tardist	perl_Module_Build 1 71879b28a9a3a4ad738319691d051285 perl
+neko_perl_Module_Pluggable-3.6.tardist	perl_Module_Pluggable 1 fe4842a662adeea64a182bb621f4000e perl
+neko_perl_Wx-0.74.tardist	perl_Wx 1 1d5d553ffe0717e2e023fc303e1913a6 perl,perl_Alien_wxWidgets,wxGTK
+neko_perl_XML_LibXML-1.63.tardist	perl_XML_LibXML 1 e7042fbb25a205841605a87422e69654 perl,perl_XML_NamespaceSupport,perl_XML_SAX
+neko_perl_XML_LibXML_Common-0.13.tardist	perl_XML_LibXML_Common 1 3433d175e70e03994e9765fbd2315b7c libiconv,libxml2,perl,zlib
+neko_perl_XML_NamespaceSupport-1.09.tardist	perl_XML_NamespaceSupport 1 dd24f848e8d210703ad061c00548984d perl
+neko_perl_XML_SAX-0.1.5.tardist	perl_XML_SAX 1 3f2b848415ba1da8f1ada2c464cbee8e perl
+neko_perl_algorithm_diff-1.1901.tardist	perl_algorithm_diff 1 b9e42d3a02ef03af1d677a22f732b115 perl
+neko_perl_archive_tar-1.29.tardist	perl_archive_tar 1 f14dbb19bbb923a2d4e1e6a418152759 perl,perl_io_zlib,perl_text_diff
+neko_perl_compress_zlib-1.42.tardist	perl_compress_zlib 1 0c0143d7627e174f1fbfd43f0bd18123 perl,perl_compess_zlib
+neko_perl_cpan-1.87.tardist	perl_cpan 1 f79b3c38feba03a1eee02907c167f179 perl,perl_archive_tar,perl_compress_zlib,perl_net_telnet,perl_pathtools,perl_term_readline_perl,perl_termreadkey
+neko_perl_db_file-1.814.tardist	perl_db_file 3 86633533783deae51918f147597b5a7d db4,perl
+neko_perl_dbd_oracle-1.17.tardist	perl_dbd_oracle 1 e2b985d367600062f742c7c87fd71c27 perl,perl_dbi
+neko_perl_dbi-1.51.tardist	perl_dbi 1 430fe27a0e1ba18beca7eb6fe799e32c perl
+neko_perl_digest_sha1-2.11.tardist	perl_digest_sha1 2 eedad94012c2cd670440268dfb037320 perl
+neko_perl_html_parser-3.55.tardist	perl_html_parser 2 b41348f9bd8e4e85b2ad60276afda02c perl,perl_html_tagset
+neko_perl_html_tagset-3.10.tardist	perl_html_tagset 2 1d4bf4234f93fb2b30a4cf77ba40a905 perl
+neko_perl_io_zlib-1.04.tardist	perl_io_zlib 1 7da12ef6a1d91a56915b50382609efea perl
+neko_perl_mail_spamassassin-3.1.4.tardist	perl_mail_spamassassin 4 645ff327ec3bfbc44f05691d7180027e perl,perl_db_file,perl_digest_sha1,perl_html_parser
+neko_perl_net_telnet-3.03.tardist	perl_net_telnet 1 66ea02fe195f089e53f202d19317f226 perl
+neko_perl_pathtools-3.19.tardist	perl_pathtools 1 1ee65ea28ea6c7f3d626dfdf103fd7b9 perl
+neko_perl_term_readline_perl-1.0302.tardist	perl_term_readline_perl 1 9cab925308af30f45dd3cb6c4149c817 perl
+neko_perl_termreadkey-2.30.tardist	perl_termreadkey 1 a0b73f5af177ef36683135264462c6af perl
+neko_perl_text_diff-0.35.tardist	perl_text_diff 1 10ecfbea90d91d07d32b6fdc80002bc7 perl,perl_algorithm_diff
+neko_perl_xml_parser-2.34.tardist	perl_xml_parser 1 b1c4e51feb28d6e643ee5aa5fca5b965 perl
+neko_pgsql-8.3.1.tardist	pgsql 5 0368d07fb996b3983efa1593712ab799 krb5,libiconv,libxml2,openssl,readline,zlib
+neko_php5-5.2.1.tardist	php5 4 8de9c36f3d0a7b65fb86835c79fa81f2 apache,apache2_prefork,db4,gmp,libiconv,libxml2,openssl,zlib
+neko_php5_calendar-5.2.1.tardist	php5_calendar 1 101cd3c9c042fe69d7242e3ebf67fc7a php5
+neko_php5_curl-5.2.1.tardist	php5_curl 3 a60d87be851004eb87d03ae34aec60e2 curl,libiconv,libidn,openssl,php5,zlib
+neko_php5_dba-5.2.1.tardist	php5_dba 2 89c9d62b8e0c90c6700d4a8917de1e38 db4,php5
+neko_php5_dbase-5.2.1.tardist	php5_dbase 2 88ff4ab74ab562d75be86033732f45d8 php5
+neko_php5_dom-5.2.1.tardist	php5_dom 1 c54ca832d6b865903005bd4849d50ff9 libiconv,libxml2,php5,zlib
+neko_php5_exif-5.2.1.tardist	php5_exif 3 ba1bee663bb59711f6324333acae2373 php5
+neko_php5_filter-5.2.1.tardist	php5_filter 1 c14255989a35ad565bf323e44bc60bb8 php5
+neko_php5_ftp-5.2.1.tardist	php5_ftp 3 7feb74b0ed689ff3fc96a298be4ae358 openssl,php5
+neko_php5_gd-5.2.1.tardist	php5_gd 3 d5e7732d556e5f3c97b069ca87b2db4b freetype2,libjpeg,libpng,php5,zlib
+neko_php5_gettext-5.2.1.tardist	php5_gettext 2 6332d9b1a511aef2b3eb85a441aebbb2 gettext,libiconv,php5
+neko_php5_gmp-5.2.1.tardist	php5_gmp 1 06405768a472fc88a247f031aa1ab1c0 gmp,php5
+neko_php5_iconv-5.2.1.tardist	php5_iconv 1 6d47bf27e5ae0632da2b16232ad73bcc php5
+neko_php5_imap-5.2.1.tardist	php5_imap 2 4e70501ee4b0e70b8ce94077391893c6 openssl,php5
+neko_php5_imlib2-0.1.00.tardist	php5_imlib2 3 79501713dc8fa381bd7139c3c0b48f08 freetype2,imlib2,php5,zlib
+neko_php5_json-5.2.1.tardist	php5_json 1 196bf718fa289bb51f8bd2addaeffdfa php5
+neko_php5_ldap-5.2.1.tardist	php5_ldap 2 f171270beeea415aad939b41a32bcf77 cyrus_sasl,gmp,openldap,openssl,php5
+neko_php5_mbstring-5.2.1.tardist	php5_mbstring 2 71e4d1243750f3aa9abfe231dd1c1009 php5
+neko_php5_mcrypt-5.2.1.tardist	php5_mcrypt 3 185c3238c1cdd426aa6c5dee19fe8690 libmcrypt,libtool,php5
+neko_php5_mhash-5.2.1.tardist	php5_mhash 3 a564a61e5a73de8cdfcb5917b0c575ab mhash,php5
+neko_php5_mssql-5.2.1.tardist	php5_mssql 2 a7da8a8b26b9d7c1d98ba66c3cea1cdd freetds,libiconv,php5
+neko_php5_mysql4-5.2.1.tardist	php5_mysql4 3 b0943aa6a54aa7016e5518e19e41dfc1 mysql4,openssl,php5,php5_mysql5,php5_mysqli5,php5_pdo_mysql,php5_pdo_mysql5,zlib
+neko_php5_ncurses-5.2.1.tardist	php5_ncurses 2 a29e12c21ee1c71663992da269a25d75 ncurses,php5
+neko_php5_odbc-5.2.1.tardist	php5_odbc 2 d31bc9cba7a3619a543caf5c79571b0c libiconv,php5,unixodbc
+neko_php5_oggvorbis-0.2.tardist	php5_oggvorbis 3 9bd2298e633195b98a79428761762139 libogg,libvorbis,php5
+neko_php5_openssl-5.2.1.tardist	php5_openssl 3 4e6949de0729a4a6558e9a2a3294389a openssl,php5
+neko_php5_pcntl-5.2.1.tardist	php5_pcntl 3 1e0290edbf4c4151d2a3027e8901ad4a php5
+neko_php5_pdf-2.1.3.tardist	php5_pdf 2 02051da827adad0f01ba47906d34c67f libjpeg,libpng,pdflib,php5,tiff,zlib
+neko_php5_pgsql-5.2.1.tardist	php5_pgsql 2 6f2faa7aecbc0af5180e2f759f08e58f openssl,pgsql,php5
+neko_php5_posix-5.2.1.tardist	php5_posix 1 287417f32a7b899b894c1a96d9220cdb php5
+neko_php5_pspell-5.2.1.tardist	php5_pspell 3 578e5069e00d9d68190b7f610ccfdea5 aspell,php5
+neko_php5_session-5.2.1.tardist	php5_session 2 1b26b299ba4ce7b91f511d57dc401b1a php5
+neko_php5_simplexml-5.1.2.tardist	php5_simplexml 1 95752bd271c8844e9e29d0649536f8b2 libiconv,libxml2,php5,zlib
+neko_php5_snmp-5.2.1.tardist	php5_snmp 2 625a614ed45327c42a240cd292ccc2d0 net_snmp,openssl,php5
+neko_php5_soap-5.2.1.tardist	php5_soap 2 a3fcffceedf6a1d1ea03a27e6d7ed635 libiconv,libxml2,php5,zlib
+neko_php5_sqlite-5.2.1.tardist	php5_sqlite 3 b3392fca87a548d070fefdf4363a5672 php5
+neko_php5_tidy-5.2.1.tardist	php5_tidy 2 5e9ae4d56145eac99a460d55377b98a5 php5
+neko_php5_tokenizer-5.2.1.tardist	php5_tokenizer 1 7177a63e59ae7e8103118d51618435cd php5
+neko_php5_wddx-5.2.1.tardist	php5_wddx 1 49a79d562678bc1d5357f453191ee7ee php5
+neko_php5_xmlreader-5.2.1.tardist	php5_xmlreader 2 2616a910789ee67eb2667987bb971ddf libiconv,libxml2,php5,zlib
+neko_php5_xmlwriter-5.2.1.tardist	php5_xmlwriter 1 ab55036b3c602a65ec914f47aa17e76e libiconv,libxml2,php5,zlib
+neko_php5_xsl-5.2.1.tardist	php5_xsl 2 dbbfa76e1d590cf9d0bce15c1991caeb libiconv,libxml2,libxslt,php5,zlib
+neko_php5_zip-5.2.1.tardist	php5_zip 1 5d686dcbae1ca7843ab1febc6dcb593a libiconv,libxml2,php5,zlib
+neko_physicsfs-1.0.0.tardist	physicsfs 2 cbc4a97f2afd39be03a1dc253b0711b5 readline,zlib
+neko_pidgin-2.5.7.tardist	pidgin 3 57cfd061e6f73e9475d2ae12ded3774e glib,gnutls,gtk
+neko_pil-1.1.6.tardist	pil 2 625b3cfe7711b60b7139fd6051f3ae8b freetype2,libjpeg,python,tcl,tk,zlib
+neko_pixman-0.21.4.tardist	pixman 2 7c30a24fa0e493ff23263a80a89ed4cd no dependencies
+neko_pkgconfig-0.23.tardist	pkgconfig 3 d9ed1cbe4a5195cf5624e05aafba41ab pkg
+neko_plib-1.8.4.tardist	plib 1 21fba998dc2cb33b5f1f5ace968429b7 no dependencies
+neko_pmacct-0.8.0.tardist	pmacct 1 f8a282a56ff2b9a2872e3c19d4084ed3 libpcap,mysql4,zlib
+neko_pngcrush-1.6.7.tardist	pngcrush 1 963ff186384f3ee9b6ecb76b7a208691 no dependencies
+neko_pngquant-1.2.tardist	pngquant 2 b86ec4d6443db9a9b618804b09ec7861 libpng,zlib
+neko_pnp-0.4.9.tardist	pnp 1 aa4a04012ef83453b1cc9b7d2010f61e nagios,perl
+neko_poppler-0.5.0.tardist	poppler 1 745f66408e64f622d9f287f32536cb4f cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libjpeg,libpixman,libpng,libxrender,pango,zlib
+neko_popt-1.17.tardist	popt 3 0d1facb631a5c6a0799b6ab2ab3fbed7 gettext,libiconv
+neko_postfix-2.5.6.tardist	postfix 10 644775dfe7edefc8185726d4cf9c55da cyrus_sasl,gmp,openldap,openssl,pcre
+neko_potrace-1.7.tardist	potrace 1 ed239e30750d10cff455f9f8800b2a24 zlib
+neko_pound-2.1.tardist	pound 1 9009fd8676e4c0222e88e2086d944d4b openssl,pcre
+neko_povray-3.6.1.tardist	povray 1 a0cb31f7b0302f5212dc99ffc497bc91 libjpeg,libpng,tiff,zlib
+neko_ppracer-0.3.1.tardist	ppracer 1 c6e8f8ecb4640194aa2a93fb73770608 freetype2,libiconv,libogg,libpng,libvorbis,sdl,sdl_mixer,tcl,zlib
+neko_privoxy-3.0.10.tardist	privoxy 3 8d01243f9a8e7626027a862eaf3e0024 pcre,zlib
+neko_procmail-3.22.tardist	procmail 1 c2bcb5253786f39e475810fda426a581 no dependencies
+neko_proftpd-1.2.10.tardist	proftpd 1 b1f5a70ce021da51be11c0f79db35892 openssl
+neko_proj-4.4.9.tardist	proj 2 162418d5781141db7ae5a8b1a7d3a667 no dependencies
+neko_pstree-2.33.tardist	pstree 1 2779235441f4020e6ef815681707f851 no dependencies
+neko_psutils-p17.tardist	psutils 1 de669dc7c2bea21d0880fc5179f0cbbd expat,fontconfig,fribidi,gtk,imagemagick,ispell,libglade,libiconv,libpng,libxft,libxml2,perl,popt,zlib
+neko_pvm-3.4.5.tardist	pvm 1 57b078cecd3b4f8e26531ec5b425a184 no dependencies
+neko_py_smbpasswd-1.0.1.tardist	py_smbpasswd 1 1780616a5ab9d9bf997082806d1160d9 python
+neko_pycairo-0.9.0.tardist	pycairo 1 4b2842514de9eefa5a7b7e097ab64312 cairo,expat,fontconfig,freetype2,glitz,libpng,libxrender,python,zlib
+neko_pygame-1.7.1.tardist	pygame 1 e3410518d93484e08b236ac62e2c5479 freetype2,libjpeg,libmikmod,libogg,libpng,libvorbis,python,sdl,sdl_image,sdl_mixer,sdl_ttf,zlib
+neko_pygtk-2.10.6.tardist	pygtk 5 a430cfb51969adfb73142d43e2889b6a atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libglade,libiconv,libpixman,libpng,libxml2,libxrender,pango,python,zlib
+neko_pyopengl-2.0.2.01.tardist	pyopengl 1 daaaca6502d1b7319b42c8f41b3fc5a0 glut,python,tcl,tk
+neko_pyqt-x11-gpl-3.15.tardist	pyqt 1 ec411d6738c266db094adfa06fd62b40 python,qt,sip
+neko_pysqlite-2.4.0.tardist	pysqlite 1 6553aba961d64ce49aef616775108478 python,sqlite3
+neko_python-2.7.3.tardist	python 8 f1988283e24c31b609706c8cefec3a64 bzip2,db4,expat,gdbm,gettext,libiconv,ncurses,openssl,readline,sqlite3,tcl,tk,zlib
+neko_python3-3.1.1.tardist	python3 1 a8151679b11ff8006e78f9f754907519 bzip2,gdbm,gettext,libiconv,ncurses,openssl,python,readline,sqlite3,tcl,tk,zlib
+neko_python_ldap-2.2.0.tardist	python_ldap 2 950d2dbf57801e0a2d954fa82c9e54ad cyrus_sasl,gmp,openldap,openssl,python
+neko_python_so-2.4.2.tardist	python_so 1 29f7c8d2a2429986edc8f87c3a083119 python
+neko_pyxml-0.8.4.tardist	pyxml 1 62ccc91fa50f74f72ecd00144b60344a python
+neko_qcad-2.0.4.0-1.tardist	qcad 2 e143ae7860b1c40e679a77c9630076d7 qt
+neko_qscintilla-1.65-gpl-1.6.tardist	qscintilla 1 d8d6c7ab071a1109d90b002ca78e658e qt
+neko_qstat-2.10.tardist	qstat 1 79cd2b164bd05d1eecc13b355c39e7f0 no dependencies
+neko_qt-3.3.5.tardist	qt 2 404e81dfacee872443c556b00bd5448d expat,fontconfig,freetype2,libxft,libxrender,zlib
+neko_qt4-4.3.0.tardist	qt4 2 1329767f7a073872b5e212d0b0839344 expat,fontconfig,freetype2,gettext,glib,krb5,libiconv,libjpeg,libpng,libxrender,mysql4,openssl,pgsql,unixodbc,zlib
+neko_quake-dp20110628.tardist	quake 1 80a3ab382c48744e50307559750c5301 no dependencies
+neko_quake3.tardist	quake3 2 d6df77933a54bb00c41c38b01f283e64 libiconv,sdl
+neko_quat-1.20.tardist	quat 1 9b25f3ed69f8e4f94f007880bf6578e3 expat,fltk,fontconfig,freetype2,gettext,libiconv,libjpeg,libpng,libxft,libxrender,zlib
+neko_qucs-0.0.12.tardist	qucs 2 4efb9a401bb7e7b8a0e24f4ceb9332e0 qt
+neko_r-2.2.1.tardist	r 1 c50b4a633ebb61ecbb6032869849c544 bzip2,gettext,libiconv,pcre,zlib
+neko_rdesktop-1.5.0.tardist	rdesktop 2 0c395d7e0a9326b7b959819d70c3815f libiconv,openssl
+neko_re2c-0.10.2.tardist	re2c 1 d29b4ce12a5f940a98dec171f15bae54 no dependencies
+neko_readline-6.1-4.tardist	readline 4 044159707aa87e96a3355390fcffb94b no dependencies
+neko_reminiscence-0.1.9.tardist	reminiscence 1 0f209797b84ea8a110c45b282631d659 libiconv,sdl,zlib
+neko_render-0.8.tardist	render 2 91c7b081cc11358462a303f9fc0e924b no dependencies
+neko_reportlab-1.20.tardist	reportlab 1 3b4204ee3c329065c2ec34eb1f1e90de python
+neko_rrdtool-1.2.19.tardist	rrdtool 5 664a73747a64e26a69b20ec1964bc731 freetype2,libart,libpng,perl,zlib
+neko_rssglx-0.9.0.tardist	rssglx 4 fb64f450a9ee2fb7eb1d57e1801559f4 bzip2,glew,rss_glx
+neko_rsync-2.6.8.tardist	rsync 4 85bab7176850db98c196179cf5f0c083 gettext,libiconv,popt
+neko_ruby-1.8.4.tardist	ruby 2 4b2f4a61c6905375b5be80fac345d0ee zlib
+neko_rubygems-0.9.0.tardist	rubygems 2 10174e9f3dd3b4c3ea6edd7c1973076a ruby
+neko_rush2005-0.4.12c.tardist	rush2005 1 c2652c09daa8f95967047d834a357958 libjpeg,libmikmod,libogg,libpng,libvorbis,sdl,sdl_image,sdl_mixer,zlib
+neko_rxvt-2.7.10.tardist	rxvt 1 a1b117b6446bf06eada16729e62dc908 no dependencies
+neko_samba-3.0.25rc1.tardist	samba 10 5bf47792a624dab2e309bd0b23890a22 cups,cyrus_sasl,gettext,gmp,gnutls,krb5,libgcrypt,libgpg_error,libiconv,libtasn1,ncurses,openldap,openssl,popt,readline,zlib
+neko_sane_backends-1.0.19.tardist	sane_backends 9 5663823f3a72e3cfe42d0a31bc82892f libjpeg,tiff,zlib
+neko_scite-167.tardist	scite 1 3089863352c986fc78ed004a668fae6b gtk,lua
+neko_scons-0.96.1.tardist	scons 1 58715cddd342742b8050d365c5a38809 python
+neko_scorched3d-38.1b.tardist	scorched3d 1 afa927511dbdfa9c2f8f6aeab4180ff3 freetype2,gettext,glib1,gtk1,libiconv,libjpeg,libpng,sdl,sdl_mixer,sdl_net,tiff,wxwindows,zlib
+neko_screen-4.0.2.tardist	screen 1 fdc16ae5b98e648d595e86e6af3e1002 no dependencies
+neko_scribus-1.2.tardist	scribus 34821c39960ef52f5a49953ac69c7d6d freetype2,lcms,libart,libjpeg,libpng,qt,tiff,zlib
+neko_scrollkeeper-0.3.14.tardist	scrollkeeper 1 f47c40ef9012edefce3fc58b28b1e9a0 docbook,gettext,libiconv,libxml2,libxslt,zlib
+neko_scummvm-1.0branch.tardist	scummvm 9 4a326b4ff1ba167ad3c7a04660056383 flac,libiconv,libmad,libogg,libvorbis,mjpegtools,sdl,zlib
+neko_scummvmgames-0.1.tardist	scummvmgames 1 fe3b9aae242896295d5066d627f7dc87 scummvm
+neko_sdl-1.2.13.tardist	sdl 8 46732fb3e720e569d96be51942d1cfb8 libiconv
+neko_sdl_gfx-2.0.13.tardist	sdl_gfx 1 7e92d40a7cade6ad83e84176063c3539 libiconv,sdl
+neko_sdl_image-1.2.5.tardist	sdl_image 3 c72d6d2de3b53f509c5641884f5ce4ab libjpeg,libpng,sdl,zlib
+neko_sdl_mixer-1.2.7.tardist	sdl_mixer 5 d3589e0520806bc8db5b48d149bd7f7b libogg,libvorbis,sdl
+neko_sdl_net-1.2.6.tardist	sdl_net 2 4d2591dae69552aef0a7b7c02ff22696 sdl
+neko_sdl_sound-1.0.1.tardist	sdl_sound 1 3876251fe83ad2702a42333fd0f0d1b3 flac,libmikmod,libogg,libvorbis,physicsfs,sdl,zlib
+neko_sdl_ttf-2.0.8.tardist	sdl_ttf 3 7d85b5efaaa8e6166b7a90957e746b33 freetype2,libiconv,sdl,zlib
+neko_seamonkey-1.1.20pre_nov2012.tardist	seamonkey 23 432479a188a696ed14dcdb11d395859f gettext,glib1,gtk1,libiconv
+neko_sed-4.1.5.tardist	sed 2 b35883aa4c0e998aed22dc9c184f7f14 libiconv
+neko_setiathome_enhanced-5.12.tardist	setiathome_enh 1 18ca4be155184677cf0b482ac7ed9bcc boinc_client,openssl
+neko_setuptools-0.6c11.tardist	setuptools 1 9a1b06fd0ba69e2f1b16afcb85b1c2ab no dependencies
+neko_shared_mime_info-0.16.tardist	shared_mime_info 1 a9d2e36e9a79940a4517d0b0afe3a594 gettext,glib,libiconv,libxml2,zlib
+neko_sim-0.9.3-2.tardist	sim 1 dae7d0075ff324bfa91e76cd56546f04 libart,libiconv,libjpeg,libpng,libxml2,libxslt,openssl,qt,zlib
+neko_simage-1.6.1.tardist	simage 1 7504acd71eb6e16474b0284fe6cddcc3 libjpeg,libogg,libpng,libungif,libvorbis,qt,tiff,zlib
+neko_simgear-0.3.9.tardist	simgear 1 74b2ee616e9c7f6dd87f1ae3214731db libpng,zlib
+neko_sip-4.3.1.tardist	sip 1 2bba70529c7a72a1807bb6e07b17b869 python,qt
+neko_skencil-0.6.17.tardist	skencil 1 137882a57ddfbe7d7f2ec49f60e20952 pil,python,pyxml,reportlab,tcl,tk
+neko_slang-1.4.9.tardist	slang 1 45c78744484fb30ad2e3010b6eb3f315 no dependencies
+neko_slrn-0.9.8.1.tardist	slrn 1 c1d3dc46b2741fce52f6a6ede2e100b5 gettext,libiconv,openssl
+neko_smake-1.2a36.tardist	smake 1 5268352894be9816e43ecb0fb8005772 no dependencies
+neko_snd-7.18.tardist	snd 1 bf50de1b5d94d479387d504927592756 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,guile,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_sodipodi-0.34.tardist	sodipodi 1 c7c4a06a29238f26778c8f6c19cb9f89 gtk,libart,libxml2
+neko_speex-1.1.11.1.tardist	speex 1 67ab01c211f715039bea2afe208bf074 gettext,libiconv,libogg
+neko_spl-1.0rc3.tardist	spl 1 17be2fa98010ca42a64005ae1a8037a1 no dependencies
+neko_sqlalchemy-0.4.2p3.tardist	sqlalchemy 1 9f541eb7e00cda6ddd45a63dc6294e99 mysql5,mysql5_python,python
+neko_sqlite3-3.7.10.tardist	sqlite3 3 8a8a1be54474f5659ad435463bb23389 readline
+neko_squid-2.6.stable3.tardist	squid 2 08c4d22cf6e3bfc9f638e2f4d4c7aa59 openssl
+neko_starfighter-1.1.tardist	starfighter 1 76b5bcb1f8b72f9986f803b7069015c4 libiconv,libjpeg,libogg,libpng,libvorbis,sdl,sdl_image,sdl_mixer,tiff,zlib
+neko_stella-3.8.1.tardist	stella 5 c89be2b3ac692d091a990fd65c314306 libiconv,libpng,sdl,zlib
+neko_stunnel-4.20.tardist	stunnel 1 e28bc53b54db12e60c08371112bc6dda openssl,zlib
+neko_subversion-1.5.5.tardist	subversion 8 c4b5a20dbf90ddc69ade2cb1538d7184 apache2_prefork,apr,apr_util,cyrus_sasl,db4,expat,gdbm,gettext,gmp,krb5,libiconv,libxml2,neon,openldap,zlib
+neko_sudo-1.6.8p9.tardist	sudo 2 702c17a6ce48f765161558eb4ce7fe0d no dependencies
+neko_supertux-0.1.3.tardist	supertux 1 61cdecf80c6439b2be98f425381efba8 libiconv,libjpeg,libogg,libpng,libvorbis,sdl,sdl_image,sdl_mixer,tiff,zlib
+neko_supertuxkart-0.5.tardist	supertuxkart 1 401db82815c6f3291ddc84d78a9f8db9 no dependencies
+neko_swig-1.3.39.tardist	swig 1 57292fa4e1c41e2172b74b5d5257a348 no dependencies
+neko_sylpheed-1.0.0beta3.tardist	sylpheed 8923485ef8dadad286d09c8333a95d94 gdk_pixbuf,gettext,glib1,gpgme,gtk1,libiconv,openssl
+neko_sylpheed_claws-1.0.5.tardist	sylpheed_claws 9 758d127c37d2881303a59d716c0049df aspell,bzip2,clamav,cyrus_sasl,gdk_pixbuf,gettext,glib1,gmp,gpgme,gtk1,libiconv,openldap,openssl,sylpheed,zlib
+neko_sylpheed_claws_gtk2-2.4.0.tardist	sylpheed_claws_gtk2 7 3a598613659c525319b17831310cdfda aspell,atk,bzip2,cairo,clamav,cyrus_sasl,db4,expat,fontconfig,freetype2,gettext,glib,glitz,gmp,gpgme1,gtk,libart,libetpan,libgnomecanvas,libgnomeprint,libgnomeprintui,libgpg_error,libiconv,libpixman,libpng,libxft,libxml2,libxrender,openldap,openssl,pango,sylpheed,sylpheed_claws,zlib
+neko_synergy-1.4.2.tardist	synergy 3 02e8ab61cfd338ca8d84dbe6d2b0dcf2 no dependencies
+neko_t1lib-5.1.0.tardist	t1lib 2 0899367a34c1a2068362d43055300cfc no dependencies
+neko_taglib-1.4.tardist	taglib 1 2c47cdd75a95651c5a1d98d32b75a4e8 zlib
+neko_tar-1.25.tardist	tar 3 48f2270b53ca248af25b5aa75cb02a2c bzip2,gettext,libiconv,xz
+neko_tcl-8.4.11.tardist	tcl 2 e8404d4d4d3d9fdc2c6d1b010cf2872d no dependencies
+neko_tcpdump-3.9.8.tardist	tcpdump 1 b62502fd8d97c048cc7d1ff008a96615 libpcap,openssl
+neko_tcsh-6.14.00.tardist	tcsh 1 b9f30444d9a8f8246d3acfa2e4ee41ae no dependencies
+neko_tecoc-0398.tardist	tecoc 1 b5d20bedf923a96f2b88c7f0e1c523a4 no dependencies
+neko_terragear-0.9.8.tardist	terragear 1 5da38f34de1ca5e6c545d4c6bbae345b gettext,glib,glib1,glut,libiconv,zlib
+neko_tetex-3.0.tardist	tetex 2 c94fd37f330894299929b8df4e831474 libiconv,ncurses
+neko_texinfo-4.7.tardist	texinfo 1 b857b2ff5489efd518afb26d115a6c8f gettext,libiconv
+neko_texmaker-1.8.tardist	texmaker 3 49a534f895d9fb272fed0cd5df585599 expat,fontconfig,freetype2,gettext,ghostscript,glib,libiconv,libpng,libxrender,qt4,zlib
+neko_textutils-2.1.tardist	textutils 1 daff6ae2362f448e8fdda71b3ccbb80e gettext,libiconv
+neko_thunderbird-2.0.0.25pre_nov2012.tardist	thunderbird 19 6f82858bbc380a8e81a36fe3a1d8d0e7 gettext,glib1,gtk1,libiconv
+neko_tidy-cvs-27Feb2006.tardist	tidy 1 01d5ce54c0a16b185342ddf752d2ba65 no dependencies
+neko_tiff-4.0.3.tardist	tiff 8 b2a7f6843c18ec49f1f8e4acf2ee1286 jbigkit,libjpeg,zlib
+neko_tightvnc-1.2.9.tardist	tightvnc 2 af95b1f4d585a0f74e383cf7c2d3933e libjpeg,zlib
+neko_timidity++-2.13.2.tardist	timidity++ 1 2b20475f401c9dad18614c8c9a0d639d timidity
+neko_tipograf-0.5.tardist	tipograf 1 1ccd9d11bdc8f7e1fc12f3962d4e0827 a2ps,qt
+neko_tk-8.4.11.tardist	tk 1 9f208f9179f60f603ac097a9ac1c6331 tcl
+neko_tls-1.5.0.tardist	tls 1 93b74dd9a3f027c131ca8ea5cf05accb openssl,tcl
+neko_toppler-1.1.3.tardist	toppler 8 716a045e58f78ebd70ff8a61e4cec9e5 flac,libiconv,libmad,libogg,libvorbis,sdl,zlib
+neko_tor-0.2.0.33.tardist	tor 2 11ee4b44a8bbb62e2e1e7d6a6a65d90b libevent,openssl,zlib
+neko_transfig-3.2.5-alpha5.tardist	transfig 2 ad336a2975bf2c45fe57ec267b4ccf5d libpng,zlib
+neko_unarj-2.65.tardist	unarj 2 b1361fbaec2d66bcdc11bfed271df16d no dependencies
+neko_unixodbc-2.2.10.tardist	unixodbc 1 c32fe9c28f230413034177213a666c63 libiconv,readline
+neko_unrar-4.1.3.tardist	unrar 5 e3912a6ad33444fe807f425efb77b0fe no dependencies
+neko_unzip-6.00.tardist	unzip 6 b9a4a54b2e55362a4bc5d0bfea8c4b23 no dependencies
+neko_uw_imap-2006g.DEV.SNAP-0703231601.tardist	uw_imap 3 af49cc2710339245bdda35ef923eeda6 openssl
+neko_vanessa_logger-0.0.6.tardist	vanessa_logger 1 4ac116513f06265cac75e2f4772aa9d4 no dependencies
+neko_vanessa_socket-0.0.7.tardist	vanessa_socket 1 ec2b16e0602be5539d41a79dc3d8d5ba gettext,libiconv,popt,vanessa_logger
+neko_vim-7.4.tardist	vim 7 34e15824427a00517940d97447577192 gettext,libiconv,ncurses
+neko_viruskiller-0.9-1.tardist	viruskiller 1 d6381fb949df981e263fdab1d961ef80 freetype2,libjpeg,libpng,sdl,sdl_image,sdl_mixer,sdl_ttf,zlib,zziplib
+neko_vis5d+-1.3.0beta.tardist	vis5d 1 fb359a6cb93d05a860bbd14d0fb71721 libpng,zlib
+neko_vorbistools-1.0.1-r1.tardist	vorbistools 3 2506b48315d5ac26b85b1d96ea3e70fe curl,flac,gettext,libao,libiconv,libidn,libogg,libvorbis,openssl,zlib
+neko_w3m-0.5.2.tardist	w3m 5 1901b15d5e2855d374d79d7d59c37671 atk,cairo,expat,fontconfig,freetype2,gc,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,openssl,pango,zlib
+neko_webalizer-2.01-10.tardist	webalizer 2 e28a912e36c919431b31eaf18a46fe21 db4,freetype2,gd,libjpeg,libpng,zlib
+neko_wesnoth-0.9.5.tardist	wesnoth 2 95db9f8dafb6fb4538de1a77e7bf5def freetype2,gettext,libiconv,libjpeg,libmikmod,libogg,libpng,libvorbis,sdl,sdl_image,sdl_mixer,sdl_net,zlib
+neko_wget-1.11.3.tardist	wget 5 961e1d9aa895e1e9f715f2ebac950bad gettext,libiconv,openssl
+neko_whois-4.7.2.tardist	whois 1 6795c5ad2bc7e168d75c0a374a4e341a no dependencies
+neko_windowmaker-0.92.0-r1.tardist	windowmaker 2 6811bb1b056ad97ae39c155c13b6e735 expat,fontconfig,freetype2,libjpeg,libpng,libungif,libxft,libxrender,tiff,zlib
+neko_windowmaker_extra-0.1.tardist	windowmaker_extra 1 d1234a4416cd2e817fba25d1915e9419 windowmaker
+neko_wmcpuload-1.1.0pre5.tardist	wmcpuload 1 18c26c098bf9b24d6326e3c98da12408 no dependencies
+neko_wmmemmon-1.0.2pre2.tardist	wmmemmon 1 fd4de1278cbafcf397009cf1c9123737 no dependencies
+neko_wv2-0.2.2.tardist	wv2 1 78675bb66e9c783cc49d28eee0c035b3 bzip2,gettext,glib,libgsf,libiconv,libxml2,zlib
+neko_wxGTK-2.8.4.tardist	wxGTK 1 0cef922fc4307c4aa1baa77b2c3c4e26 atk,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libjpeg,libpng,libxrender,openssl,pango,tiff,wxwindows,zlib
+neko_wxwindows-2.4.2.tardist	wxwindows 1 978430ffc3c58891d9d800b8baccf702 gettext,glib1,gtk1,libiconv,libjpeg,libpng,tiff,zlib
+neko_x264-0.54.594.tardist	x264 2 6d935693a1f11a5a18b51b6ff957e607 no dependencies
+neko_x2vnc-1.7.2.tardist	x2vnc 1 9d2b1a197ac16549be2d0aa1b3aa9d42 no dependencies
+neko_x2x-1.27.tardist	x2x 1 95040f8ae9e268bd9a016ea35496226b no dependencies
+neko_x48-0.6.3.tardist	x48 5 4323e34a43d0f872c0ab5efc9b5ed06e readline
+neko_xanalyser-1.32.tardist	xanalyser 9 70081eb35dd397b3ee80fbcc60ee7fc5 no dependencies
+neko_xaos-3.5.tardist	xaos 6 a4e3ab3521645719e20648db8c5ab918 gettext,gsl,libiconv
+neko_xaw3d-1.5e.tardist	xaw3d 4 41141054a693971a96ddea39bf2cfa77 no dependencies
+neko_xcdroast-0.98alpha15.tardist	xcdroast 2 c5e283cbbada96de0d11f96d792cd55e cdrtools,dvdrtools,gdk_pixbuf,gettext,glib1,gtk1,libiconv
+neko_xchat-2.6.8.tardist	xchat 2 696c3536ee503e544ce67b9e3121c812 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,openssl,pango,zlib
+neko_xcircuit-3.3.38.tardist	xcircuit 1 bcc5675afe077706e0c244ad3fa3e907 tcl,tk
+neko_xdialog-2.3.1.tardist	xdialog 1 b1b87ef37da1b30e5879cf0346501bb0 atk,cairo,expat,fontconfig,freetype2,gettext,glib,glitz,gtk,libiconv,libpixman,libpng,libxrender,pango,zlib
+neko_xephem-3.6.4.tardist	xephem 1 f24ad16147010135211d4e7d418c951e no dependencies
+neko_xerces-c-2.7.0.tardist	xerces 1 81c29f0c800a70126ade01f876412c6e no dependencies
+neko_xfe-1.19.2.tardist	xfe 1 c9e581ecf767cdaa0b5fdaf726ea9b31 fox,gettext,libiconv
+neko_xfig-3.2.5-alpha5.tardist	xfig 3 810304ae9d898d167bcacd4f887a6888 libjpeg,libpng,transfig,xaw3d,zlib
+neko_xlhtml-0.4.9.3.tardist	xlhtml 1 e665e074c1e9fb92f753db38a4b2254f no dependencies
+neko_xli-20050227.tardist	xli 2 5692aaee466f61b86c446ef83d1f3268 libjpeg,libpng,zlib
+neko_xmlto-0.0.23.tardist	xmlto 1 e54e33c02c465d34a3c14142f6c58971 bash,fileutils,findutils,getopt,libxml2,libxslt,links2,mktemp,textutils
+neko_xmms-1.2.11.tardist	xmms 10 95025d23d65b0ace1ccf88ffdf1ac4d5 esound,gettext,glib1,gtk1,libaudiofile,libiconv,libmikmod,libogg,libvorbis,unzip,zlib
+neko_xmms_bezier-0.0.3.tardist	xmms_bezier 1 aef30ff6a5c93ae00c012ed5c4d340ae gettext,glib1,gtk1,libiconv,xmms
+neko_xmms_dspectogram-1.2.1.tardist	xmms_dspectogram 1 3b762be187d2d98f29a5c4cf813eeb3f xmms
+neko_xmms_scrobbler-0.4.0.tardist	xmms_scrobbler 1 753f2f0f93654c5b1211171defa6c5fd bmp,curl,expat,libiconv,libidn,libmusicbrainz,openssl,taglib,xmms,zlib
+neko_xosview-1.8.3.tardist	xosview 1 3b28d4d5cc442d04cef2846c1ad3d7ec no dependencies
+neko_xpdf-3.0.1pl1.tardist	xpdf 3 7729280b41545eb159ccbc29913398f5 freetype2,t1lib,zlib
+neko_xpilot_ng-4.7.2.tardist	xpilot_ng 1 42d99ade7e0e63578b4fa9cae6abcc5f expat,freetype2,libiconv,libjpeg,libogg,libpng,libvorbis,openal,sdl,sdl_image,sdl_ttf,tiff,zlib
+neko_xpp-1.5.tardist	xpp 1 9a4763237a636bd1531530f204e99394 cups,expat,fltk,fontconfig,freetype2,libjpeg,libpng,libxft,libxrender,openssl,zlib
+neko_xsane-0.995.tardist	xsane 3 d7bf895f9a953744e9bba399defd2caf atk,cairo,expat,fontconfig,freetype2,gettext,gimp,glib,glitz,gtk,lcms,libiconv,libjpeg,libpixman,libpng,libxrender,pango,sane_backends,tiff,zlib
+neko_xscreensaver-4.21.tardist	xscreensaver 3 d469a9db6554c8b35b52b8b1edbc46e1 atk,expat,gettext,glib,gtk,libglade,libiconv,libjpeg,libxml2,pango,zlib
+neko_xskat-4.0.tardist	xskat 1 39103198363272c2913f21acd85c98c7 no dependencies
+neko_xv-3.10a-patched.tardist	xv 2 348bf62269fa73375e078f4003616525 libjpeg,libpng,tiff,zlib
+neko_xz-5.1.0.tardist	xz 2 02e24f6300a19f7c7052f156fa78d690 gettext,libiconv
+neko_yafray-0.0.9a.tardist	yafray 5 7d03107a27412567f3dd05a11518e19f libjpeg,openexr,zlib
+neko_youtube_dl-2007.08.24.tardist	youtube_dl 2 230f120150edbce6d8ebb458a062d465 python
+neko_yudit-2.7.6.tardist	yudit 36ca44eab65d9844461858c70147b546 no dependencies
+neko_z88-12.0.tardist	z88 1 36fdfbb9a74dc14ab224bac0fcd63c48 no dependencies
+neko_zip-2.3.1.tardist	zip 1 a64b3cd8bcfa4d8dad93ecc1dfed3afd no dependencies
+neko_zlib-1.2.5.tardist	zlib 7 b7ca154121ac2e659497b0f65c0265cf no dependencies
+neko_zsh-4.3.9.tardist	zsh 5 a020fb84644e21f2c3623bd5187a33a3 gdbm,libiconv
+neko_zziplib-0.10.82.tardist	zziplib 1 eee1ba6a2ca18723200b5716c0ca5b36 zlib
