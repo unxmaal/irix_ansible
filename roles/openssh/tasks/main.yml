@@ -1,0 +1,7 @@
+- name: fetch openssh
+  command: /usr/nekoware/nekodeps.pl openssh
+  become: true
+- name: install openssh
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
