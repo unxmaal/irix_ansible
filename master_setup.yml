@@ -1,14 +1,16 @@
 ---
 
-- name: install pkgs
+- name: initial setup
   hosts: all
   become: yes
   become_user: root
   tasks:
+ - import_role:
+     name: nekodeps
+ - import_role:
+     name: openssh
   - import_role:
-      name: testing
-  - import_role:
-      name: nekodeps
+      name: base_pkgs
 
   vars_files:
     - group_vars/default/vault.yml

@@ -25,6 +25,16 @@
     owner: root
     group: sys
     mode: 0744
+- name: fetch openssh
+  command: /usr/nekoware/nekodeps.pl --config
+  become: true
+- name: copy current.ion
+  copy:
+    src: roles/nekodeps/files/current.ion
+    dest: /usr/nekoware/conf/current.ion
+    owner: root
+    group: sys
+    mode: 0744
 - name: copy nekodeps.conf
   copy:
     src: roles/nekodeps/files/nekodeps.conf

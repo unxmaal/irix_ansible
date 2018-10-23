@@ -57,7 +57,7 @@ use IO::Socket qw//;
 autoflush STDERR;
 
 # Load config, warn if files/directories missing
-my $C= do './conf/nekodeps.conf';
+my $C= do '/usr/nekoware/conf/nekodeps.conf';
 my %C= $C ? %$C : ();
 
 my $usage= qq{$0 [options] [PACKAGE...]
@@ -113,12 +113,12 @@ if( $C{default_mirrors}) {
   @{$C{mirrors}} or $C{mirrors}= $C{default_mirrors};
 }
 
-{ my $cfg= "./conf/nekodeps.conf";
+{ my $cfg= "/usr/nekoware/conf/nekodeps.conf";
 if( $C{config}) {
-	warn "Creating dist directory ./dist/\n";
-	mkdir './dist/', 0755;
-	warn "Creating config directory ./conf/\n";
-	mkdir './conf/', 0755;
+	warn "Creating dist directory /usr/nekoware/dist/\n";
+	mkdir '/usr/nekoware/dist/', 0755;
+	warn "Creating config directory /usr/nekoware/conf/\n";
+	mkdir '/usr/nekoware/conf/', 0755;
 
 	if( !-e $cfg) {
 		warn "Creating default config file $cfg\n";
@@ -527,10 +527,10 @@ my $uname= `uname -a`;
 	branch => 'current',
 
 	# Directory for downloading all packages
-	distdir => './dist',
+	distdir => '/usr/nekoware/dist',
 
 	# Directory for saving/loading <branch>.ion files
-	confdir => './conf',
+	confdir => '/usr/nekoware/conf',
 
 	# Default filename to which download script should be output
 	output => 'install.sh',

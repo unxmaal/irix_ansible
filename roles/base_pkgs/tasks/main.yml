@@ -1,13 +1,41 @@
 # install basic packages
+- name: get mtr
+  command: /usr/nekoware/nekodeps.pl mtr
+  become: true
+- name: install mtr
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
+
+- name: get bash
+  command: /usr/nekoware/nekodeps.pl bash
+  become: true
 - name: install bash
-  pkgng:
-    name: bash,bash-completion
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
+
+- name: get vim
+  command: /usr/nekoware/nekodeps.pl vim
+  become: true
 - name: install vim
-  pkgng:
-    name: vim
-- name: install wget and curl
-  pkgng:
-    name: wget,curl
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
+
+- name: get less
+  command: /usr/nekoware/nekodeps.pl less
+  become: true
+- name: install less
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
+
+- name: get git
+  command: /usr/nekoware/nekodeps.pl git
+  become: true
 - name: install git
-  pkgng:
-    name: git
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
+    
