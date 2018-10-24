@@ -1,0 +1,5 @@
+- name: Add user
+  user:
+    name: johnd
+    comment: John Doe
+    group: user

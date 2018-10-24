@@ -13,6 +13,8 @@
       name: base_pkgs
   - import_role:
       name: setup_bash 
+  - import_role:
+      name: user_setup 
 
   vars_files:
     - group_vars/default/vault.yml
