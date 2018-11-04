@@ -39,9 +39,14 @@
     regexp: '^:0'
     line: ':0 secure /usr/bin/X11/X -bs -nobitscale -c -pseudomap 4sight -solidroot sgilightblue -cursorFG red -cursorBG white -securityExt'
     backup: yes
+- name: stop xdm
+  command: /etc/init.d/xdm stop 
+  become: true
+  ignore_errors: true
+- name: start xdm
+  command: /etc/init.d/xdm start 
+  become: true
 - name: restart sshd
-  command: /etc/init.d/neko_sshd stop ; /etc/init.d/neko_sshd start 
+  command: /etc/init.d/neko_sshd restart
   become: true
-- name: restart xdm
-  command: /etc/init.d/xdm stop ; /etc/init.d/xdm start 
-  become: true
+

@@ -1,0 +1,14 @@
+---
+
+- name: Configure X11 for remote display
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - import_role:
+      name: remote_x11 
+  vars_files:
+    - group_vars/default/vault.yml
+    
+  vars:
+    ansible_become_pass: '{{ su_password }}'
