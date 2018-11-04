@@ -1,0 +1,47 @@
+# setup x11 for remote display
+- name: set perms
+  file:
+    path: /var/X11/xdm/xdm-config
+    owner: root
+    group: sys
+    mode: 0644
+- name: fix xdm-config
+  lineinfile:
+    path: /var/X11/xdm/xdm-config
+    regexp: '^DisplayManager\*authorize'
+    line: 'DisplayManager*authorize:               on'
+    owner: root
+    group: sys
+    mode: 0444
+    backup: yes
+- name:  Replace sshd-config
+  copy:
+    src: roles/remote_x11/files/sshd_config
+    dest: /usr/nekoware/etc/sshd_config
+    owner: root
+    group: sys
+    mode: 0644
+- name: Enable xhost in Xsession
+  lineinfile:
+    path: /var/X11/xdm/Xsession
+    regexp: '^#/usr/bin/X11/xhost'
+    line: '/usr/bin/X11/xhost +'
+    backup: yes
+- name: Enable xhost in Xsession-remote
+  lineinfile:
+    path: /var/X11/xdm/Xsession-remote
+    regexp: '^#/usr/bin/X11/xhost'
+    line: '/usr/bin/X11/xhost +'
+    backup: yes
+- name: Enable security extensions in Xservers
+  lineinfile:
+    path: /var/X11/xdm/Xservers
+    regexp: '^:0'
+    line: ':0 secure /usr/bin/X11/X -bs -nobitscale -c -pseudomap 4sight -solidroot sgilightblue -cursorFG red -cursorBG white -securityExt'
+    backup: yes
+- name: restart sshd
+  command: /etc/init.d/neko_sshd stop ; /etc/init.d/neko_sshd start 
+  become: true
+- name: restart xdm
+  command: /etc/init.d/xdm stop ; /etc/init.d/xdm start 
+  become: true

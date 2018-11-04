@@ -23,3 +23,9 @@ ansible-vault encrypt host_vars/default --vault-password-file ~/.vault_pass.txt
 Then invoke ansible:
 ansible-playbook  -i inventory.ini -u <your user> master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
 
+=========
+http://www.sillypages.org/sgi 
+http://nixdoc.net/man-pages/irix/man1/pwconv.1.html
+
+https://techpubs.jurassic.nl/manuals/0650/admin/IA_ConfigOps/sgi_html/index.html
+https://techpubs.jurassic.nl/manuals/0650/admin/IA_ConfigOps/sgi_html/ch05.html#LE15895-PARENT
