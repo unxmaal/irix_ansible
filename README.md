@@ -5,8 +5,7 @@ Configures an already-installed IRIX system.
 # Requirements
 
 * Host with ansible installed
-* IRIX target host with
-  * telnet available
+* IRIX target host with telnet available
     
 # Usage:
 Make a new file ~/.vault_pass.txt with your vault password in it.
