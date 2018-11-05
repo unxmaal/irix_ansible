@@ -32,8 +32,7 @@ ansible-playbook  -i inventory.ini -u <your user> master_setup.yml -k  --become-
 
 
 
-
-=========
+# Reading
 http://www.sillypages.org/sgi 
 http://nixdoc.net/man-pages/irix/man1/pwconv.1.html
 
