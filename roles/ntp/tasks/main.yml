@@ -1,0 +1,2 @@
+# configure ntpd 
+- import_tasks: configure_ntpd.yml

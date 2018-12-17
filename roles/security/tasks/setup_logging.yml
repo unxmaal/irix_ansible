@@ -1,0 +1,38 @@
+- name: setup loginlog
+  file: 
+    path: /var/adm/loginlog
+    state: touch
+    owner: root
+    group: sys
+    mode: 0600
+- name: setup authlog
+  file: 
+    path: /var/adm/authlog
+    state: touch
+    owner: root
+    group: sys
+    mode: 0600
+- name: add new log files to syslog
+  lineinfile: 
+    path: /etc/syslog.conf
+    line: 'auth.info      /var/adm/authlog'
+    state: present
+    insertafter: EOF
+- name: create cron entry to ensure new authlogs are rotated
+  cron:
+    name: "rotate logs"
+    weekday: 0
+    minute: 1
+    hour: 1
+    user: root
+    job: "umask 077; cd /var/adm; if test -s authlog && test \"`/sbin/stat -qs authlog`\" -ge 10240; then mv -f authlog OLDauthlog; touch authlog; killall 1 syslogd; fi"
+
+- name: create cron entry to ensure new login logs are rotated
+  cron:
+    name: "rotate logs"
+    weekday: 0
+    minute: 21
+    hour: 1
+    user: root
+    job: "umask 077; cd /var/adm; if test -s loginlog && test \"`/sbin/stat -qs loginlog`\" -ge 10240; then mv -f loginlog OLDloginlog; touch loginlog; killall 1 syslogd; fi"
+

@@ -1,0 +1,43 @@
+- name: disable services
+  shell: chkconfig {{ item }} off
+  with_items:
+    - webface_apache
+    - webface
+    - sgi_apache
+    - numastatd
+    - esp
+    - lp
+    - ipfilterd
+    - sesdaemon
+    - tfxd
+    - snmpd
+    - routed
+    - route6d
+    - sdpd
+    - proclaim_server
+    - ts
+    - mkpd
+    - visuallogin
+  failed_when: result.rc != 1
+  register: result
+- name: stop services
+  shell: /etc/init.d/{{ item }} stop
+  with_items:
+    - webface_apache
+    - webface
+    - sgi_apache
+    - numastatd
+    - esp
+    - lp
+    - ipfilterd
+    - sesdaemon
+    - tfxd
+    - snmpd
+    - routed
+    - route6d
+    - sdpd
+    - proclaim_server
+    - ts
+    - mkpd
+    - visuallogin
+  ignore_errors: true

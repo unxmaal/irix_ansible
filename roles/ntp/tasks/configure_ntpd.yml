@@ -1,0 +1,22 @@
+- name: add ntp server
+  lineinfile: 
+    path: /etc/ntp.conf
+    regexp: '^server'
+    line: 'server ntp-d.nist.gov'
+- name: enable ntp
+  shell: chkconfig ntp on
+- name: start ntp
+  shell: /etc/init.d/ntp start
+- name: disable timed
+  shell: chkconfig timed off
+  failed_when: result.rc != 1
+  register: result
+- name: stop timed
+  shell: /etc/init.d/timed stop
+  ignore_errors: true
+- name: add ntpdate to cron
+  cron:
+    name: "run ntpdate"
+    minute: 55
+    user: root
+    job: "ntpdate ntp-d.nist.gov > /dev/null 2>&1"
