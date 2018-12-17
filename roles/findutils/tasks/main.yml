@@ -1,0 +1,14 @@
+- name: fetch findutils
+  command: /usr/nekoware/nekodeps.pl findutils
+  become: true
+- name: install findutils
+  command: /usr/nekoware/install.sh 
+  become: true
+  ignore_errors: yes
+- name: set up cron entry for updatedb
+  cron:
+    name: "run updatedb"
+    minute: 0
+    hour: 3
+    user: root
+    job: "/usr/nekoware/bin/updatedb --prunepaths='/dev /hw /CDROM /mnt /tmp /usr2/MIPS /usr2/GCC /stand' > /dev/null 2>&1"
