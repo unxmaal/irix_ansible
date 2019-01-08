@@ -1,0 +1,87 @@
+# - name: Create ansible user
+#   telnet:
+#     user: root
+#     password: 
+#     login_prompt: "login: "
+#     prompts:
+#       - "[>|#]"
+#     command:
+#       - /usr/sysadm/privbin/addUserAccount -l ansible -u 801 -g 20 -C -H /usr/people/ansible -S /bin/csh
+# - name: Set password for ansible user
+#   telnet:
+#     user: root
+#     password: 
+#     login_prompt: "login: "
+#     prompts:
+#       - "[>|#]"
+#     command:
+#       - echo "ansible" | /usr/sysadm/privbin/modifyAccountPassword -l ansible -P
+# - name: copy openshift bundle
+#   raw: curl -T roles/bootstrap/files/openssh_bundle-0.0.1.tardist ftp://{{ansible_host}} --user ansible:ansible
+# - name: copy python bundle
+#   raw: curl -T roles/bootstrap/files/python_bundle-0.0.1.tardist ftp://{{ansible_host}} --user ansible:ansible
+# - name: copy wget bundle
+#   raw: curl -T roles/bootstrap/files/wget_bundle-0.0.1.tardist ftp://{{ansible_host}} --user ansible:ansible
+# - name: extract openssh bundle
+#   telnet:
+#     user: root
+#     password: 
+#     login_prompt: "login: "
+#     prompts:
+#       - "[>|#]"
+#     command:
+#       - inst -a -f /usr/people/ansible/openssh_bundle-0.0.1.tardist
+- name: extract python bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - inst -a -f /usr/people/ansible/python_bundle-0.0.1.tardist
+- name: extract wget bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - inst -a -f /usr/people/ansible/wget_bundle-0.0.1.tardist
+- name: install openssh bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
+      -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
+      -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
+
+
+- name: install wget bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
+      -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
+      -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
+
+- name: install python bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
+      -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
+      -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"

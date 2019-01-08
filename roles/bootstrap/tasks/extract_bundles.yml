@@ -1,0 +1,27 @@
+- name: extract openssh bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - inst -a -f /usr/people/ansible/openssh_bundle-0.0.1.tardist
+- name: extract python bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - inst -a -f /usr/people/ansible/python_bundle-0.0.1.tardist
+- name: extract wget bundle
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - inst -a -f /usr/people/ansible/wget_bundle-0.0.1.tardist
