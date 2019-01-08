@@ -1,0 +1,19 @@
+- name: Create sshd user
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - echo "sshd::23:sshd" >> /etc/group
+
+- name: Create sshd user
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - /usr/sysadm/privbin/addUserAccount -l sshd -u 23 -g 23 -H /dev/null -S /dev/null
