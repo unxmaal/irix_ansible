@@ -2,3 +2,4 @@
 - import_tasks: copy_bundles.yml
 - import_tasks: extract_bundles.yml
 - import_tasks: install_bundles.yml
+- import_tasks: setup_sshd.yml

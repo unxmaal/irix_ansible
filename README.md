@@ -22,12 +22,37 @@ Then encrypt it:
 ansible-vault encrypt group_vars/default/vault.yml --vault-password-file ~/.vault_pass.txt
 ```
 
-Then invoke ansible:
+Run the bootstrap playbook on a system that has just been installed. It expects the root password to be blank. 
+
+This playbook will 
+    * create an 'ansible' user
+    * copy several bundles via ftp
+    * install wget, python, and openssh
+    * start sshd
 
 ```
-ansible-playbook  -i inventory.ini -u <your user> master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
+ansible-playbook -i inventory.ini bootstrap.yml --vault-password-file ~/.vault_pass.txt
 ```
 
+Examine and modify the master_setup playbook to your liking, then run it.
+
+The master_setup playbook currently
+  * installs nekodeps
+  * installs base packages
+  * sets up bash as an available shell
+  * adds a user
+  * enables remote x11
+  * configures ntp
+  * installs findutils
+  * performs security hardening
+  - import_role:
+      name: base_pkgs
+
+
+```
+ansible-playbook  -i inventory.ini -u ansible master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
+```
+When prompted for "SSH password", enter 'ansible'.
 
 
 
