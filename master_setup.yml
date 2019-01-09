@@ -7,22 +7,22 @@
   tasks:
   - import_role:
      name: nekodeps
-  - import_role:
-     name: openssh
-  - import_role:
-      name: base_pkgs
-  - import_role:
-      name: setup_bash 
-  - import_role:
-      name: user_setup 
-  - import_role:
-      name: remote_x11
-  - import_role:
-      name: ntp
-  - import_role:
-      name: findutils
-  - import_role:
-      name: security
+#   - import_role:
+#      name: openssh
+#   - import_role:
+#       name: base_pkgs
+#   - import_role:
+#       name: setup_bash 
+#   - import_role:
+#       name: user_setup 
+#   - import_role:
+#       name: remote_x11
+#   - import_role:
+#       name: ntp
+#   - import_role:
+#       name: findutils
+#   - import_role:
+#       name: security
   vars_files:
     - group_vars/default/vault.yml
     

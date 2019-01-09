@@ -7,8 +7,14 @@
       - "[>|#]"
     command:
       - "inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
-      -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
-      -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
+      -a -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
+      -a -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
+  register: installout
+
+- name: print output
+  debug: 
+    msg: "{{ installout }}"
+
 
 - name: install wget bundle
   telnet:
@@ -27,6 +33,11 @@
       -f neko_ncurses-5.7.tardist \
       -f neko_openssl-0.9.8x.tardist \
       -f neko_zlib-1.2.5.tardist"
+  register: installout
+
+- name: print output
+  debug: 
+    msg: "{{ installout }}"
 
 - name: install python bundle
   telnet:
@@ -36,4 +47,26 @@
     prompts:
       - "[>|#]"
     command:
-      - "cd /tmp/python_bundle ; chmod +x install.sh ; ./install.sh"
+      - "cd /tmp/python_bundle ; \
+      /usr/sbin/inst -a -f 'neko_python-2.7.3.tardist' \
+      -a -f 'neko_bzip2-1.0.6.tardist' \
+      -a -f 'neko_db4-4.4.20.tardist' \
+      -a -f 'neko_expat-2.1.0.tardist' \
+      -a -f 'neko_gdbm-1.8.3.tardist' \
+      -a -f 'neko_gettext-0.18.1.1.tardist' \
+      -a -f 'neko_libiconv-1.14.tardist' \
+      -a -f 'neko_ncurses-5.7.tardist' \
+      -a -f 'neko_openssl-0.9.8x.tardist' \
+      -a -f 'neko_readline-6.1-4.tardist' \
+      -a -f 'neko_sqlite3-3.7.10.tardist' \
+      -a -f 'neko_tcl-8.4.11.tardist' \
+      -a -f 'neko_tk-8.4.11.tardist' \
+      -a -f 'neko_zlib-1.2.5.tardist' \
+      -a -f 'neko_glib-2.28.8-11.tardist' \
+      -a -f 'neko_libcroco-0.6.2-5.tardist' \
+      -a -f 'neko_libxml2-2.7.8.tardist'"
+  register: installout
+
+- name: print output
+  debug: 
+    msg: "{{ installout }}"

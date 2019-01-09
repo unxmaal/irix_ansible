@@ -7,6 +7,12 @@
       - "[>|#]"
     command:
       - inst -a -f /usr/people/ansible/openssh_bundle-0.0.1.tardist
+  register: bundleout
+
+- name: print output
+  debug: 
+    msg: "{{ bundleout }}"
+
 - name: extract python bundle
   telnet:
     user: root
@@ -16,6 +22,12 @@
       - "[>|#]"
     command:
       - inst -a -f /usr/people/ansible/python_bundle-0.0.1.tardist
+  register: bundleout
+
+- name: print output
+  debug: 
+    msg: "{{ bundleout }}"
+
 - name: extract wget bundle
   telnet:
     user: root
@@ -25,3 +37,8 @@
       - "[>|#]"
     command:
       - inst -a -f /usr/people/ansible/wget_bundle-0.0.1.tardist
+  register: bundleout
+
+- name: print output
+  debug: 
+    msg: "{{ bundleout }}"

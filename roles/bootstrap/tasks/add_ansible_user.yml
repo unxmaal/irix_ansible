@@ -7,6 +7,12 @@
       - "[>|#]"
     command:
       - /usr/sysadm/privbin/addUserAccount -l ansible -u 801 -g 20 -C -H /usr/people/ansible -S /bin/csh
+  register: userout
+
+- name: print output
+  debug: 
+    msg: "{{ userout.output }}"
+
 - name: Set password for ansible user
   telnet:
     user: root
@@ -16,3 +22,8 @@
       - "[>|#]"
     command:
       - echo "ansible" | /usr/sysadm/privbin/modifyAccountPassword -l ansible -P
+  register: pwout
+
+- name: print output
+  debug: 
+    msg: "{{ pwout.output }}"
