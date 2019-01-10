@@ -1,0 +1,10 @@
+- name: download files
+  become: no
+  get_url: 
+    url: "ftp://209.195.4.155/pub/irixboot/{{ item }}"
+    dest: "roles/bootstrap/files/{{ item }}"
+  delegate_to: 127.0.0.1
+  with_items:
+    - openssh_bundle-0.0.1.tardist
+    - python_bundle-0.0.1.tardist
+    - wget_bundle-0.0.1.tardist
