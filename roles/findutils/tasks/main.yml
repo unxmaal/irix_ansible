@@ -1,10 +1,13 @@
-- name: fetch findutils
-  command: /usr/nekoware/nekodeps.pl findutils
-  become: true
 - name: install findutils
-  command: /usr/nekoware/install.sh 
+  shell: "cd /usr/nekoware ; ./nekodeps.pl findutils ; ./install.sh"
   become: true
   ignore_errors: yes
+  register: findutils_output
+
+- name: findutils results
+  debug: 
+    msg: "{{ findutils_output }}"
+
 - name: set up cron entry for updatedb
   cron:
     name: "run updatedb"

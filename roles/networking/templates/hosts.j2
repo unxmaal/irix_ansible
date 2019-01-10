@@ -1,0 +1,23 @@
+# WARNING: As shipped by SGI this system has no passwords on the following
+#          accounts: root, lp, nuucp, EZsetup, demos, OutOfBox, guest.
+#          If you leave these or any other accounts open when you enable
+#          networking, your system will be at significant risk for malicious
+#          attacks.  Use the EZsetup GUI to close open accounts, or use
+#          passwd(1) to accomplish the same thing from the command line.
+
+#          See passwd(1), or EZsetup(1M) for more information.
+
+#  IP address-hostname database (see hosts(4) for more information).
+
+
+# Default IP address for a new IRIS. It should be changed immediately to
+# the address appropriate for your network.
+# (The '192.0.2' network number is the officially blessed 'test' network.)
+
+# 192.0.2.1     IRIS
+
+
+# This entry must be present or the system will not work.
+127.0.0.1       localhost
+
+{{ ansible_host }}    {{ inventory_hostname }}.{{ domain }}     {{ inventory_hostname }}

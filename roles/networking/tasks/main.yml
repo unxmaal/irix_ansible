@@ -1,16 +1,28 @@
+- name: configure hostname
+  template:
+    src: templates/sys_id.j2
+    dest: /etc/sys_id
+    owner: root
+    group: sys
+    mode: 644
+- name: configure hosts
+  template:
+    src: templates/hosts.j2
+    dest: /etc/hosts
+    owner: root
+    group: sys
+    mode: 644
+- name: configure resolv.conf
+  template:
+    src: templates/resolv.conf.j2
+    dest: /etc/resolv.conf
+    owner: root
+    group: sys
+    mode: 644
 - name: add default route
   lineinfile:
     path: /etc/config/static-route.options
     line: $ROUTE $QUIET add -net default {{ default_gw }}
-- name: set up resolv.conf
-  lineinfile:
-    path: /etc/resolv.conf
-    line: domain {{ domain }}
-    create: yes
-- name: set up resolv.conf
-  lineinfile:
-    path: /etc/resolv.conf
-    line: nameserver {{ nameserver }}
 - name: copy network restart script
   copy:
     src: files/restart_net.sh

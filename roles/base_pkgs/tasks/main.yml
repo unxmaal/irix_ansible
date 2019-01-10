@@ -1,41 +1,16 @@
 # install basic packages
-- name: get mtr
-  command: /usr/nekoware/nekodeps.pl mtr
-  become: true
-- name: install mtr
-  command: /usr/nekoware/install.sh 
-  become: true
-  ignore_errors: yes
 
-- name: get bash
-  command: /usr/nekoware/nekodeps.pl bash
-  become: true
-- name: install bash
-  command: /usr/nekoware/install.sh 
+- name: install basic packages
+  shell: "cd /usr/nekoware ; ./nekodeps.pl {{ item }} ; ./install.sh"
   become: true
   ignore_errors: yes
+  register: nekodeps_output
+  with_items:
+    - mtr
+    - bash
+    - vim
+    - less
 
-- name: get vim
-  command: /usr/nekoware/nekodeps.pl vim
-  become: true
-- name: install vim
-  command: /usr/nekoware/install.sh 
-  become: true
-  ignore_errors: yes
-
-- name: get less
-  command: /usr/nekoware/nekodeps.pl less
-  become: true
-- name: install less
-  command: /usr/nekoware/install.sh 
-  become: true
-  ignore_errors: yes
-
-- name: get git
-  command: /usr/nekoware/nekodeps.pl git
-  become: true
-- name: install git
-  command: /usr/nekoware/install.sh 
-  become: true
-  ignore_errors: yes
-    
+- name: nekodeps results
+  debug: 
+    msg: "{{ nekodeps_output }}"
