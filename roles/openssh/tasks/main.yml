@@ -1,7 +1,9 @@
-- name: fetch openssh
-  command: /usr/nekoware/nekodeps.pl openssh
-  become: true
 - name: install openssh
-  command: /usr/nekoware/install.sh 
+  shell: "cd /usr/nekoware ; ./nekodeps.pl openssh ; ./install.sh"
   become: true
   ignore_errors: yes
+  register: openssh_output
+
+- name: openssh results
+  debug: 
+    msg: "{{ openssh_output }}"

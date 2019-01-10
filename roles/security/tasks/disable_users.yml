@@ -1,0 +1,16 @@
+- name: lock accounts
+  shell: "passwd -l {{ item }}"
+  become: true
+  ignore_errors: yes
+  register: lock_output
+  with_items:
+    - lp
+    - nuucp
+    - EZsetup
+    - demos
+    - OutOfBox
+    - guest
+  
+- name: lock results
+  debug: 
+    msg: "{{ lock_output }}"
