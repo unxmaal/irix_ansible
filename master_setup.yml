@@ -9,14 +9,14 @@
       name: networking
   - import_role:
       name: nekodeps
-#   - import_role:
-#      name: openssh
   - import_role:
       name: base_pkgs
   - import_role:
-      name: setup_bash 
-  - import_role:
-      name: user_setup 
+      name: setup_bash
+#   - import_role:
+#      name: openssh 
+#   - import_role:
+#       name: user_setup 
   - import_role:
       name: remote_x11
   - import_role:
