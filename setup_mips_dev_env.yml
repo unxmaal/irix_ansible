@@ -1,0 +1,14 @@
+---
+
+- name: Set up MIPSPro dev env
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+  - import_role:
+      name: mipsdevenv
+  vars_files:
+    - group_vars/default/vault.yml
+    
+  vars:
+    ansible_become_pass: '{{ su_password }}'

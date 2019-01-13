@@ -1,0 +1,17 @@
+- name: Create /etc/skel
+  file:
+    path: /etc/skel
+    owner: root
+    group: sys
+    state: directory
+- name: Install env setup scripts
+  copy:
+    src: "files/{{ item }}"
+    dest: "/etc/skel/{{ item }}"
+    owner: root
+    group: sys
+    mode: 0644
+  with_items:
+    - mipsdev.bash
+    - mipsdev.tcsh
+    - mipsdev.zsh

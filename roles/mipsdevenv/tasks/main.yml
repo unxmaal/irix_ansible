@@ -1,0 +1,4 @@
+# verify environment
+- import_tasks: verify_environment.yml
+# Add env_var scripts
+- import_tasks: env_var_scripts.yml
