@@ -3,3 +3,4 @@
   with_items:
     - verbose
     - noiconlogin
+    - verbose

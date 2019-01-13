@@ -1,0 +1,7 @@
+- name: Restrict RPC
+  template:
+    src: templates/portmap.options.j2
+    dest: /etc/config/portmap.options
+    owner: root
+    group: sys
+    mode: 0644

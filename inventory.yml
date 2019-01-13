@@ -2,10 +2,11 @@
 ungrouped:
   hosts:
     o2:
-      ansible_host:   192.168.0.78
+      ansible_host:   192.168.0.77
       become-method:  su
       default_gw:     192.168.0.1
       nameserver:     8.8.8.8
       domain:         devonshire.local
+      network:        192.168.0.0
   vars:
     ansible_python_interpreter: /usr/nekoware/bin/python
