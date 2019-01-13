@@ -1,0 +1,7 @@
+- name: Set Timezone
+  template:
+    src: templates/TIMEZONE.j2
+    dest: /etc/TIMEZONE
+    owner: root
+    group: sys
+    mode: 0644

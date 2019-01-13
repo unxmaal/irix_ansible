@@ -1,0 +1,13 @@
+- name: Detect CDROM
+  shell: "hinv | grep CDROM"
+  register: cdrom
+  ignore_errors: yes
+- name: debug
+  debug: msg="{{ cdrom.stdout }}"
+
+- name: set fact
+  set_fact:
+    unit: "{{ cdrom.stdout | regex_search('.*unit (..))'}}"
+
+- name: debug2
+  debug: msg="{{ unit }}"
