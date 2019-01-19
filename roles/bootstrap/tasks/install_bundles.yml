@@ -1,3 +1,24 @@
+- name: Clean up /var/tmp
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "rm -rf /var/tmp/tardis*"
+
+- name: Verify openssh
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/ssh -v"
+  register: sshversion
+
 - name: install openssh bundle
   telnet:
     user: root
@@ -6,9 +27,10 @@
     prompts:
       - "[>|#]"
     command:
-      - "cd /tmp/openssh_bundle ; inst -E -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
+      - "cd /tmp/openssh_bundle ; inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
       -a -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
       -a -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
+  when: sshversion.output | select('search','OpenSSH') | list | count < 0
 
 - name: Verify openssh
   telnet:
@@ -25,13 +47,22 @@
   debug:
     msg: "{{ sshversion }}"
 
-- name: Failure
+- name: Quit if OpenSSH failed to install properly
   fail:
-    msg: "OpenSSH failed to install properly"
+    msg: "OpenSSH failed to install properly. Telnet to your SGI and install it manually, then re-run this play."
   when: sshversion.output | select('search','OpenSSH') | list | count < 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
-
+- name: Verify wget
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/wget --version"
+  register: wgetversion
 
 - name: install wget bundle
   telnet:
@@ -41,7 +72,7 @@
     prompts:
       - "[>|#]"
     command:
-      - "cd /tmp/wget_bundle ; inst -E -a -f neko_wget-1.11.3.tardist \
+      - "cd /tmp/wget_bundle ; inst -a -f neko_wget-1.11.3.tardist \
       -a -f neko_gettext-0.18.1.1.tardist \
       -a -f neko_glib-2.28.8-11.tardist \
       -a -f neko_libcroco-0.6.2-5.tardist \
@@ -50,7 +81,8 @@
       -a -f neko_ncurses-5.7.tardist \
       -a -f neko_openssl-0.9.8x.tardist \
       -a -f neko_zlib-1.2.5.tardist"
-
+  when: wgetversion.output | select('search','Wget') | list | count < 0
+  
 - name: Verify wget
   telnet:
     user: root
@@ -66,14 +98,25 @@
   debug:
     msg: "{{ wgetversion }}"
 
-- name: Failure
+- name: Quit if wget failed to install properly
   fail:
-    msg: "wget failed to install properly"
+    msg: "wget failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
   when: wgetversion.output | select('search','Wget') | list | count < 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
 - name: copy python installer
   raw: curl -T roles/bootstrap/files/python_install.sh ftp://{{ansible_host}} --user ansible:ansible
+
+- name: Verify python
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/python --version"
+  register: pyversion
 
 - name: install python bundle
   telnet:
@@ -84,6 +127,7 @@
       - "[>|#]"
     command:
       - "/sbin/sh /usr/people/ansible/python_install.sh"
+  when: pyversion.output | select('search','Python') | list | count < 0
 
 - name: Verify python
   telnet:
@@ -100,8 +144,8 @@
 #   debug:
 #     msg: "{{ pyversion }}"
 
-- name: Failure
+- name: Quit if Python failed to install properly
   fail:
-    msg: "Python failed to install properly"
+    msg: "Python failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
   when: pyversion.output | select('search','Python') | list | count < 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
