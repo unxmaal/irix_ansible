@@ -1,13 +1,28 @@
-- name: Detect CDROM
-  shell: "hinv | grep CDROM"
-  register: cdrom
-  ignore_errors: yes
-- name: debug
-  debug: msg="{{ cdrom.stdout }}"
+- name: Get hinv
+  shell: hinv
+  register: hinv
+
+- name: Set cdrom fact
+  set_fact:
+    cdrom: "{{ hinv.stdout | regex_search('(CDROM*.*)') }}"
 
 - name: set fact
   set_fact:
-    unit: "{{ cdrom.stdout | regex_search('.*unit (..))'}}"
+    unit: "{{ cdrom | regex_replace('.*unit ([0-9]) *.*', '\\1') }}"
+
+- name: set fact
+  set_fact:
+    controller: "{{ cdrom | regex_replace('.*controller ([0-9]) *.*', '\\1') }}"
 
 - name: debug2
   debug: msg="{{ unit }}"
+
+- name: debug3
+  debug: msg="{{ controller }}"
+
+- name: set fact
+  set_fact:
+    disk: "sc{{controller}}d{{unit}}l0"
+
+- name: debug4
+  debug: msg="{{ disk }}"
