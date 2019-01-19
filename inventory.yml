@@ -7,5 +7,7 @@ ungrouped:
       default_gw:     192.168.0.1
       nameserver:     8.8.8.8
       domain:         devonshire.local
+      network:        192.168.0.0
+      tzone:          EST5EDT
   vars:
     ansible_python_interpreter: /usr/nekoware/bin/python

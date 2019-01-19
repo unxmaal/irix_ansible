@@ -1,0 +1,3 @@
+*.retry
+roles/bootstrap/files/*.tardist
+.DS_Store
