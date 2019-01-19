@@ -48,3 +48,18 @@
       - "[>|#]"
     command:
       - /etc/init.d/neko_sshd start
+
+- name: Make sure the known hosts file exists
+  file: 
+    path: /home/vagrant/.ssh/known_hosts 
+    state: touch
+  delegate_to: localhost
+
+
+- name: ensure target hostkey exists
+  lineinfile:
+    dest: /home/vagrant/.ssh/known_hosts
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan ' + ansible_ssh_host) }}"
+  delegate_to: localhost
