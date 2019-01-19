@@ -6,14 +6,31 @@
     prompts:
       - "[>|#]"
     command:
-      - "inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
+      - "cd /tmp/openssh_bundle ; inst -E -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
       -a -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
       -a -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
-  register: installout
+
+- name: Verify openssh
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/ssh -v"
+  register: sshversion
 
 - name: print output
-  debug: 
-    msg: "{{ installout }}"
+  debug:
+    msg: "{{ sshversion }}"
+
+- name: Failure
+  fail:
+    msg: "OpenSSH failed to install properly"
+  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  # per debug, telnet's output is a list. We have to select search it, then count it.
+
 
 
 - name: install wget bundle
@@ -24,7 +41,7 @@
     prompts:
       - "[>|#]"
     command:
-      - "cd /tmp/wget_bundle ; inst -a -f neko_wget-1.11.3.tardist \
+      - "cd /tmp/wget_bundle ; inst -E -a -f neko_wget-1.11.3.tardist \
       -a -f neko_gettext-0.18.1.1.tardist \
       -a -f neko_glib-2.28.8-11.tardist \
       -a -f neko_libcroco-0.6.2-5.tardist \
@@ -33,11 +50,27 @@
       -a -f neko_ncurses-5.7.tardist \
       -a -f neko_openssl-0.9.8x.tardist \
       -a -f neko_zlib-1.2.5.tardist"
-  register: installout
+
+- name: Verify wget
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/wget --version"
+  register: wgetversion
 
 - name: print output
-  debug: 
-    msg: "{{ installout }}"
+  debug:
+    msg: "{{ wgetversion }}"
+
+- name: Failure
+  fail:
+    msg: "wget failed to install properly"
+  when: wgetversion.output | select('search','Wget') | list | count < 0
+  # per debug, telnet's output is a list. We have to select search it, then count it.
 
 - name: copy python installer
   raw: curl -T roles/bootstrap/files/python_install.sh ftp://{{ansible_host}} --user ansible:ansible
