@@ -51,8 +51,24 @@
       - "[>|#]"
     command:
       - "/sbin/sh /usr/people/ansible/python_install.sh"
-  register: installout    
 
-- name: print output
-  debug: 
-    msg: "{{ installout }}"
+- name: Verify python
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/python --version"
+  register: pyversion
+
+# - name: print output
+#   debug:
+#     msg: "{{ pyversion }}"
+
+- name: Failure
+  fail:
+    msg: "Python failed to install properly"
+  when: pyversion.output | select('search','Python') | list | count < 0
+  # per debug, telnet's output is a list. We have to select search it, then count it.
