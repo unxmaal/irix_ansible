@@ -28,5 +28,7 @@
     src: files/restart_net.sh
     dest: /tmp/restart_net.sh
     mode: 0755
+- name: set hostname
+  shell: hostname -s {{ inventory_hostname }}
 - name: restarts networking
   shell: /tmp/restart_net.sh
