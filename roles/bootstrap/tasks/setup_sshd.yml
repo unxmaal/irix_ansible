@@ -17,3 +17,34 @@
       - "[>|#]"
     command:
       - /usr/sysadm/privbin/addUserAccount -l sshd -u 23 -g 23 -H /dev/null -S /dev/null
+
+- name: Create ssh keys
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - /usr/nekoware/bin/ssh-keygen -f /usr/nekoware/etc/ssh_host_ecdsa_key -q -N ""
+
+- name: Start sshd
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - chkconfig neko_sshd on
+
+
+- name: Start sshd
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - /etc/init.d/neko_sshd start
