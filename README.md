@@ -22,7 +22,7 @@ Then encrypt it:
 ansible-vault encrypt group_vars/default/vault.yml --vault-password-file ~/.vault_pass.txt
 ```
 
-Examine and modify the inventory.ini to match your requirements.
+Examine and modify the inventory.yml to match your requirements.
 
 Run the bootstrap playbook on a system that has just been installed. It expects the root password to be blank. 
 
@@ -33,7 +33,7 @@ This playbook will
   * start sshd
 
 ```
-ansible-playbook -i inventory.ini bootstrap.yml --vault-password-file ~/.vault_pass.txt
+ansible-playbook -i inventory.yml bootstrap.yml --vault-password-file ~/.vault_pass.txt
 ```
 
 Examine and modify the master_setup playbook to your liking, then run it. You can comment out unneeded roles.
@@ -49,7 +49,7 @@ The master_setup playbook currently
   * performs security hardening
 
 ```
-ansible-playbook  -i inventory.ini -u ansible master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
+ansible-playbook  -i inventory.yml -u ansible master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
 ```
 When prompted for "SSH password", enter 'ansible'.
 
