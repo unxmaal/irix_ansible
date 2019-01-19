@@ -18,15 +18,27 @@
     command:
       - /usr/sysadm/privbin/addUserAccount -l sshd -u 23 -g 23 -H /dev/null -S /dev/null
 
+- name: Check if key exists
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - find /usr/nekoware/etc/ssh_host_ecdsa_key -type f
+  register: keyname
+
 - name: Create ssh keys
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
     command:
       - /usr/nekoware/bin/ssh-keygen -f /usr/nekoware/etc/ssh_host_ecdsa_key -q -N ""
+  when: "{{ 'nekoware' in keyname }}"
 
 - name: Start sshd
   telnet:
