@@ -49,7 +49,7 @@ The master_setup playbook currently
   * performs security hardening
 
 ```
-ansible-playbook  -i inventory.ini -u ansible master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
+ansible-playbook  -i inventory.yml -u ansible master_setup.yml -k  --become-method=su --vault-password-file ~/.vault_pass.txt
 ```
 When prompted for "SSH password", enter 'ansible'.
 

@@ -18,8 +18,9 @@
     - ts
     - mkpd
     - visuallogin
-  failed_when: result.rc != 1
-  register: result
+  # failed_when: result.rc != 1
+  # register: result
+  ignore_errors: true
 - name: stop services
   shell: /etc/init.d/{{ item }} stop
   with_items:

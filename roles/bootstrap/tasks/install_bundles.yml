@@ -1,3 +1,32 @@
+- name: Clean up /var/tmp
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "rm -rf /var/tmp/tardis*"
+
+- name: copy wget installer
+  raw: curl -T roles/bootstrap/files/wget_install.sh ftp://{{ansible_host}} --user ansible:ansible
+- name: copy openssh installer
+  raw: curl -T roles/bootstrap/files/openssh_install.sh ftp://{{ansible_host}} --user ansible:ansible
+- name: copy python installer
+  raw: curl -T roles/bootstrap/files/python_install.sh ftp://{{ansible_host}} --user ansible:ansible
+
+
+- name: Verify openssh
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/ssh -v"
+  register: sshversion
+
 - name: install openssh bundle
   telnet:
     user: root
@@ -6,15 +35,40 @@
     prompts:
       - "[>|#]"
     command:
-      - "inst -a -f /tmp/openssh_bundle/neko_openssh-6.2p1.tardist \
-      -a -f /tmp/openssh_bundle/neko_openssl-0.9.8x.tardist \
-      -a -f /tmp/openssh_bundle/neko_zlib-1.2.5.tardist"
-  register: installout
+      - "/sbin/sh /usr/people/ansible/openssh_install.sh"
+  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+
+- name: Verify openssh
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/ssh -v"
+  register: sshversion
 
 - name: print output
-  debug: 
-    msg: "{{ installout }}"
+  debug:
+    msg: "{{ sshversion }}"
 
+- name: Quit if OpenSSH failed to install properly
+  fail:
+    msg: "OpenSSH failed to install properly. Telnet to your SGI and install it manually, then re-run this play."
+  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  # per debug, telnet's output is a list. We have to select search it, then count it.
+
+- name: Verify wget
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/wget --version"
+  register: wgetversion
 
 - name: install wget bundle
   telnet:
@@ -24,49 +78,69 @@
     prompts:
       - "[>|#]"
     command:
-      - "cd /tmp/wget_bundle ; inst -a -f neko_wget-1.11.3.tardist \
-      -a -f neko_gettext-0.18.1.1.tardist \
-      -a -f neko_glib-2.28.8-11.tardist \
-      -a -f neko_libcroco-0.6.2-5.tardist \
-      -a -f neko_libiconv-1.14.tardist \
-      -a -f neko_libxml2-2.7.8.tardist \
-      -a -f neko_ncurses-5.7.tardist \
-      -a -f neko_openssl-0.9.8x.tardist \
-      -a -f neko_zlib-1.2.5.tardist"
-  register: installout
+      - "/sbin/sh /usr/people/ansible/wget_install.sh"
+  when: wgetversion.output | select('search','Wget') | list | count < 0
 
-- name: print output
-  debug: 
-    msg: "{{ installout }}"
-
-- name: install python bundle
+- name: Verify wget
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
     command:
-      - "cd /tmp/python_bundle ; \
-      /usr/sbin/inst -a -f 'neko_python-2.7.3.tardist' \
-      -a -f 'neko_bzip2-1.0.6.tardist' \
-      -a -f 'neko_db4-4.4.20.tardist' \
-      -a -f 'neko_expat-2.1.0.tardist' \
-      -a -f 'neko_gdbm-1.8.3.tardist' \
-      -a -f 'neko_gettext-0.18.1.1.tardist' \
-      -a -f 'neko_libiconv-1.14.tardist' \
-      -a -f 'neko_ncurses-5.7.tardist' \
-      -a -f 'neko_openssl-0.9.8x.tardist' \
-      -a -f 'neko_readline-6.1-4.tardist' \
-      -a -f 'neko_sqlite3-3.7.10.tardist' \
-      -a -f 'neko_tcl-8.4.11.tardist' \
-      -a -f 'neko_tk-8.4.11.tardist' \
-      -a -f 'neko_zlib-1.2.5.tardist' \
-      -a -f 'neko_glib-2.28.8-11.tardist' \
-      -a -f 'neko_libcroco-0.6.2-5.tardist' \
-      -a -f 'neko_libxml2-2.7.8.tardist'"
-  register: installout
+      - "/usr/nekoware/bin/wget --version"
+  register: wgetversion
 
 - name: print output
-  debug: 
-    msg: "{{ installout }}"
+  debug:
+    msg: "{{ wgetversion }}"
+
+- name: Quit if wget failed to install properly
+  fail:
+    msg: "wget failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
+  when: wgetversion.output | select('search','Wget') | list | count < 0
+  # per debug, telnet's output is a list. We have to select search it, then count it.
+
+- name: Verify python
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/python --version"
+  register: pyversion
+
+- name: install python bundle
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/sbin/sh /usr/people/ansible/python_install.sh"
+  when: pyversion.output | select('search','Python') | list | count < 0
+
+- name: Verify python
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "/usr/nekoware/bin/python --version"
+  register: pyversion
+
+# - name: print output
+#   debug:
+#     msg: "{{ pyversion }}"
+
+- name: Quit if Python failed to install properly
+  fail:
+    msg: "Python failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
+  when: pyversion.output | select('search','Python') | list | count < 0
+  # per debug, telnet's output is a list. We have to select search it, then count it.
