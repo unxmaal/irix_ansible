@@ -2,10 +2,12 @@
 ungrouped:
   hosts:
     o2:
-      ansible_host:   192.168.0.78
+      ansible_host:   192.168.251.35
       become-method:  su
-      default_gw:     192.168.0.1
+      default_gw:     192.168.251.1
       nameserver:     8.8.8.8
-      domain:         devonshire.local
+      domain:         diller.org
+
   vars:
-    ansible_python_interpreter: /usr/nekoware/bin/python
+    ansible_python_interpreter:   /usr/nekoware/bin/python
+    fetchfrom:                    http://dillernet.com/apple/downloads

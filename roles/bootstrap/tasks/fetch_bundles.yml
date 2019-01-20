@@ -1,7 +1,7 @@
 - name: download files
   become: no
   get_url: 
-    url: "ftp://209.195.4.155/pub/irixboot/{{ item }}"
+    url: "{{ fetchfrom }}/{{ item }}"
     dest: "roles/bootstrap/files/{{ item }}"
   delegate_to: 127.0.0.1
   with_items:
