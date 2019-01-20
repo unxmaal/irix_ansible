@@ -10,6 +10,7 @@
     - bash
     - vim
     - less
+    - unzip
 
 - name: nekodeps results
   debug: 
