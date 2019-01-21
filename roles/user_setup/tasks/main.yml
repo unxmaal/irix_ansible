@@ -5,18 +5,20 @@
 
 - name: set shell
   set_fact:
-    shell_fact: {{ myshell }}
+    shell_fact: "{{ myshell }}"
 
 - name: set shell
   set_fact:
     shell_fact: /bin/csh
   when: shell_result.output | select('search','{{ myshell }}') | list | count < 0
 
+- name: get the next uid
+  command: echo $(grep people /etc/passwd | cut -d':' -f3 | sort -n | tail -n1)+1 | bc
+  register: next_uid
+- debug: var=next_uid.output
+
 - name: Create my user
-  shell:
-      #- /usr/sysadm/privbin/addUserAccount -l {{ myuser }} -u 801 -g 20 -C -H /usr/people/{{ myuser }} -S {{ myshell }}
-      - useradd -m {{ myuser }} -s {{ shell_fact }}
+  command: /usr/sysadm/privbin/addUserAccount -l {{ myuser }} -u {{ next_uid.output }} -g 20 -C -H /usr/people/{{ myuser }} -S {{ myshell }}
 
 - name: Set password
-  shell:
-      - echo "{{ mypw }}" | /usr/sysadm/privbin/modifyAccountPassword -l {{ myuser }} -P
+  command: echo "{{ mypw }}" | /usr/sysadm/privbin/modifyAccountPassword -l {{ myuser }} -P
