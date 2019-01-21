@@ -1,5 +1,22 @@
-- name: Add user
-  user:
-    name: johnd
-    comment: John Doe
-    group: user
+- name: ensure my desired shell exists
+  command: grep {{ myshell }} /etc/shells | head -n1
+  register: shell_result
+- debug: var=shell_result.output
+
+- name: set shell
+  set_fact:
+    shell_fact: {{ myshell }}
+
+- name: set shell
+  set_fact:
+    shell_fact: /bin/csh
+  when: shell_result.output | select('search','{{ myshell }}') | list | count < 0
+
+- name: Create my user
+  shell:
+      #- /usr/sysadm/privbin/addUserAccount -l {{ myuser }} -u 801 -g 20 -C -H /usr/people/{{ myuser }} -S {{ myshell }}
+      - useradd -m {{ myuser }} -s {{ shell_fact }}
+
+- name: Set password
+  shell:
+      - echo "{{ mypw }}" | /usr/sysadm/privbin/modifyAccountPassword -l {{ myuser }} -P
