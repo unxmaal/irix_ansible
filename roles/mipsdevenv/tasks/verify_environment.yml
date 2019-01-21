@@ -9,4 +9,4 @@
 - name: Check Development Foundations 1.3
   shell: "versions -n dev.sw.lib | grep dev.sw | head -n1"
   register: devfoundations
-  failed_when: '"7.3.1.2" not in devfoundations.stdout'
+  failed_when: '"1289662620" not in devfoundations.stdout'
