@@ -1,13 +1,4 @@
 # setup x11 for xdmcp
-- name: fix xdm-config
-  lineinfile:
-    path: /var/X11/xdm/xdm-config
-    regexp: '^DisplayManager\*authorize'
-    line: 'DisplayManager*authorize:               on'
-    owner: root
-    group: sys
-    mode: 0444
-    backup: yes
 - name: Fix xdm-config session
   lineinfile:
     path: /var/X11/xdm/xdm-config
