@@ -1,7 +1,7 @@
 - name: ensure my desired shell exists
-  command: grep {{ myshell }} /etc/shells | head -n1
+  shell: grep {{ myshell }} /etc/shells | head -n1
   register: shell_result
-- debug: var=shell_result.output
+- debug: var=shell_result.stdout
 
 - name: set shell
   set_fact:
@@ -10,15 +10,15 @@
 - name: set shell
   set_fact:
     shell_fact: /bin/csh
-  when: shell_result.output | select('search','{{ myshell }}') | list | count < 0
+  when: shell_result.stdout | select('search','{{ myshell }}') | list | count < 0
 
 - name: get the next uid
-  command: echo $(grep people /etc/passwd | cut -d':' -f3 | sort -n | tail -n1)+1 | bc
+  shell: echo $(grep people /etc/passwd | cut -d':' -f3 | sort -n | tail -n1)+1 | bc
   register: next_uid
-- debug: var=next_uid.output
+- debug: var=next_uid.stdout
 
 - name: Create my user
-  command: /usr/sysadm/privbin/addUserAccount -l {{ myuser }} -u {{ next_uid.output }} -g 20 -C -H /usr/people/{{ myuser }} -S {{ myshell }}
+  shell: /usr/sysadm/privbin/addUserAccount -l {{ myuser }} -u {{ next_uid.stdout }} -g 20 -C -H /usr/people/{{ myuser }} -S {{ myshell }}
 
 - name: Set password
-  command: echo "{{ mypw }}" | /usr/sysadm/privbin/modifyAccountPassword -l {{ myuser }} -P
+  shell: echo "{{ mypw }}" | /usr/sysadm/privbin/modifyAccountPassword -l {{ myuser }} -P
