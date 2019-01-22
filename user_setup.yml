@@ -1,14 +1,15 @@
----
 
 - name: initial setup
   hosts: all
   become: yes
   become_user: root
   tasks:
-   - import_role:
-       name: user_setup
+  - name: import settings
+    include_vars: /tmp/settings.yml 
+  - import_role:
+      name: user_setup
   vars_files:
     - group_vars/default/vault.yml
-
+    
   vars:
     ansible_become_pass: '{{ su_password }}'
