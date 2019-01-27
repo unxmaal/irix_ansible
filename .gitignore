@@ -1,3 +1,4 @@
 *.retry
 roles/bootstrap/files/*.tardist
 .DS_Store
+roles/bootstrap/files/irix-ansible-bootstrap.tar
