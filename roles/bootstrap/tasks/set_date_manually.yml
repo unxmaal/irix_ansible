@@ -1,15 +1,12 @@
-- name: get the local date/time
-  become: false
-  local_action: date  +"%m%d%H%M%Y"
-  register: date_on_the_host
-
-- debug: var=date_on_the_host
+- name: Print out date and time now to set SGI to something sane
+  command: date  +"%m%d%H%M%Y"
+  delegate_to: 127.0.0.1
+  register: date
 
 - set_fact: 
-    date={{ date_on_the_host.stdout }}
+    date={{ date.stdout }}
 
-
-- name: hard-set date and time based on host syste
+- name: Hard-set date and time on SGI based on host system
   telnet:
     user: root
     password: 
@@ -19,8 +16,3 @@
     command:
       - /sbin/date {{ date }}
   register: set_date_irix
-
-
-- name: print output
-  debug: 
-    msg: "{{ set_date_irix.output }}"

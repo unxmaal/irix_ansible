@@ -1,0 +1,47 @@
+
+- name: Print out uname of the host running me
+  command: uname
+  delegate_to: 127.0.0.1
+  register: uname
+
+# we want to run these if this is running on the booterizer debian VM
+# if we are running ansible from our own workstation assume that we have
+# these files
+
+# osx = Darwin
+# SGI = IRIX
+# debian = Linux
+
+- set_fact: 
+    uname={{ uname.stdout }}
+
+
+
+
+- name: Make sure the known hosts file exists
+  become: false
+  file: 
+    path: /home/vagrant/.ssh/known_hosts 
+    state: touch
+  delegate_to: localhost
+  when: uname == 'Linux'
+
+- name: ensure target hostkey exists
+  become: false
+  lineinfile:
+    dest: /home/vagrant/.ssh/known_hosts
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan ' + ansible_host) }}"
+  delegate_to: localhost
+  when: uname == 'Linux'
+
+- name: ensure target hostkey exists
+  become: false
+  lineinfile:
+    dest: ~/.ssh/known_hosts
+    create: yes
+    state: present
+    line: "{{ lookup('pipe', 'ssh-keyscan ' + ansible_host) }}"
+  delegate_to: localhost
+  when: uname == 'Darwin'

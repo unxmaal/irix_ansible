@@ -5,6 +5,8 @@
   gather_facts: false
   connection: local
   tasks:
+  - name: print OS Family
+    debug: var=ansible_os_family   
   - import_role:
      name: bootstrap
   vars_files:
@@ -12,3 +14,4 @@
     
   vars:
     ansible_become_pass: '{{ su_password }}'
+

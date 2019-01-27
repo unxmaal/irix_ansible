@@ -2,7 +2,7 @@
 ungrouped:
   hosts:
     o2:
-      ansible_host:   192.168.251.35
+      ansible_host:   192.168.251.37
       become-method:  su
       default_gw:     192.168.251.1
       nameserver:     8.8.8.8
@@ -10,4 +10,4 @@ ungrouped:
       tzone:          EST5EDT
   vars:
     ansible_python_interpreter:   /usr/nekoware/bin/python
-    fetchfrom:                    http://dillernet.com/apple/downloads
+    fetchfrom:                    "https://s3.amazonaws.com"
