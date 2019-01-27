@@ -1,0 +1,26 @@
+# setup x11 for xdmcp
+- name: Fix xdm-config session
+  lineinfile:
+    path: /var/X11/xdm/xdm-config
+    line: 'DisplayManager.Xmanager.session:        /var/X11/xdm/Xsession'
+    state: present
+    backup: yes
+- name: Fix xdm-config loginProgram
+  lineinfile:
+    path: /var/X11/xdm/xdm-config
+    line: 'DisplayManager.Xmanager.loginProgram:   /var/X11/xdm/Xlogin'
+    state: present
+    backup: yes
+- name: Enable 24 bit color in Xservers
+  lineinfile:
+    path: /var/X11/xdm/Xservers
+    regexp: '^:0'
+    line: ':0 secure /usr/bin/X11/X -bs -nobitscale -c -pseudomap 4sight -solidroot sgilightblue -cursorFG red -cursorBG white -class TrueColor -depth 24 -securityExt'
+    backup: yes
+- name: stop xdm
+  command: /etc/init.d/xdm stop
+  become: true
+  ignore_errors: true
+- name: start xdm
+  command: /etc/init.d/xdm start
+  become: true
