@@ -1,6 +1,14 @@
-- import_tasks: add_ansible_user.yml
-- import_tasks: fetch_bundles.yml
-- import_tasks: copy_bundles.yml
-- import_tasks: extract_bundles.yml
-- import_tasks: install_bundles.yml
-- import_tasks: setup_sshd.yml
+#- import_tasks: add_ansible_user.yml
+#- import_tasks: fetch_bundles.yml
+#- import_tasks: copy_bundles.yml
+#- import_tasks: extract_bundles.yml
+#- import_tasks: install_bundles.yml
+#- import_tasks: setup_sshd.yml
+
+- include: add_ansible_user.yml   tags=stage1
+- include: fetch_bundles.yml      tags=stage2
+- include: copy_bundles.yml       tags=stage3
+- include: extract_bundles.yml    tags=stage4
+- include: install_bundles.yml    tags=stage5
+- include: setup_sshd.yml         tags=stage6
+- include: set_date_manually.yml  tags=stage7

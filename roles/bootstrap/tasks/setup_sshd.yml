@@ -1,3 +1,9 @@
+- name: Show the system running local commands for a sanity check
+  command: uname -a
+  delegate_to: 127.0.0.1
+  register: uname
+- debug: var=uname.stdout_lines
+
 - name: Create sshd user
   telnet:
     user: root
@@ -50,7 +56,6 @@
     command:
       - chkconfig neko_sshd on
 
-
 - name: Start sshd
   telnet:
     user: root
@@ -62,13 +67,15 @@
       - /etc/init.d/neko_sshd start
 
 - name: Make sure the known hosts file exists
+  become: false
   file: 
     path: /home/vagrant/.ssh/known_hosts 
     state: touch
   delegate_to: localhost
-
+  
 
 - name: ensure target hostkey exists
+  become: false
   lineinfile:
     dest: /home/vagrant/.ssh/known_hosts
     create: yes

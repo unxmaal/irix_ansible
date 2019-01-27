@@ -1,0 +1,26 @@
+- name: get the local date/time
+  become: false
+  local_action: date  +"%m%d%H%M%Y"
+  register: date_on_the_host
+
+- debug: var=date_on_the_host
+
+- set_fact: 
+    date={{ date_on_the_host.stdout }}
+
+
+- name: hard-set date and time based on host syste
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - /sbin/date {{ date }}
+  register: set_date_irix
+
+
+- name: print output
+  debug: 
+    msg: "{{ set_date_irix.output }}"
