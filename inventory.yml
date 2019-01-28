@@ -2,10 +2,10 @@
 ungrouped:
   hosts:
     o2:
-      ansible_host:   192.168.251.37
+      ansible_host:   192.168.251.34
       become-method:  su
       default_gw:     192.168.251.1
-      nameserver:     8.8.8.8
+      nameserver:     75.75.75.75
       domain:         diller.org
       tzone:          EST5EDT
   vars:
