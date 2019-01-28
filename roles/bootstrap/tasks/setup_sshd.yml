@@ -1,4 +1,4 @@
-- name: Create sshd user
+- name: Create sshd group
   telnet:
     user: root
     password: 
@@ -40,7 +40,7 @@
       - /usr/nekoware/bin/ssh-keygen -f /usr/nekoware/etc/ssh_host_ecdsa_key -q -N ""
   when: "{{ 'nekoware' in keyname }}"
 
-- name: Start sshd
+- name: Start sshd at bootup with chkconfig
   telnet:
     user: root
     password: 
@@ -49,7 +49,6 @@
       - "[>|#]"
     command:
       - chkconfig neko_sshd on
-
 
 - name: Start sshd
   telnet:
@@ -61,17 +60,3 @@
     command:
       - /etc/init.d/neko_sshd start
 
-- name: Make sure the known hosts file exists
-  file: 
-    path: /home/vagrant/.ssh/known_hosts 
-    state: touch
-  delegate_to: localhost
-
-
-- name: ensure target hostkey exists
-  lineinfile:
-    dest: /home/vagrant/.ssh/known_hosts
-    create: yes
-    state: present
-    line: "{{ lookup('pipe', 'ssh-keyscan ' + ansible_host) }}"
-  delegate_to: localhost

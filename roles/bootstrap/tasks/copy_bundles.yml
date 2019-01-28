@@ -1,4 +1,4 @@
-- name: copy openshift bundle
+- name: copy openssh bundle
   raw: curl -T roles/bootstrap/files/openssh_bundle-0.0.1.tardist ftp://{{ansible_host}} --user ansible:ansible
 - name: copy python bundle
   raw: curl -T roles/bootstrap/files/python_bundle-0.0.1.tardist ftp://{{ansible_host}} --user ansible:ansible

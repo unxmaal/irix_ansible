@@ -8,14 +8,36 @@
     command:
       - "rm -rf /var/tmp/tardis*"
 
-- name: copy wget installer
-  raw: curl -T roles/bootstrap/files/wget_install.sh ftp://{{ansible_host}} --user ansible:ansible
-- name: copy openssh installer
-  raw: curl -T roles/bootstrap/files/openssh_install.sh ftp://{{ansible_host}} --user ansible:ansible
-- name: copy python installer
-  raw: curl -T roles/bootstrap/files/python_install.sh ftp://{{ansible_host}} --user ansible:ansible
+##################################################
+- name: create /usr/nekoware
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "mkdir -p /usr/nekoware && chmod 755 /usr/nekoware"
 
 
+##################################################
+- name: telnet as root and untar the nekoware tarball into /usr/nekoware/dist
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - cd /usr/nekoware && /sbin/tar -xf /usr/people/ansible/irix-ansible-bootstrap.tar
+  register: tarout
+
+- name: print tarout
+  debug: 
+    msg: "{{ tarout.output }}"
+
+
+##################################################
 - name: Verify openssh
   telnet:
     user: root
@@ -35,7 +57,7 @@
     prompts:
       - "[>|#]"
     command:
-      - "/sbin/sh /usr/people/ansible/openssh_install.sh"
+      - "/sbin/sh /usr/nekoware/dist/openssh_install.sh"
   when: sshversion.output | select('search','OpenSSH') | list | count < 0
 
 - name: Verify openssh
@@ -49,9 +71,9 @@
       - "/usr/nekoware/bin/ssh -v"
   register: sshversion
 
-- name: print output
-  debug:
-    msg: "{{ sshversion }}"
+#- name: print output
+#  debug:
+#    msg: "{{ sshversion }}"
 
 - name: Quit if OpenSSH failed to install properly
   fail:
@@ -59,6 +81,7 @@
   when: sshversion.output | select('search','OpenSSH') | list | count < 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
+##################################################
 - name: Verify wget
   telnet:
     user: root
@@ -78,8 +101,10 @@
     prompts:
       - "[>|#]"
     command:
-      - "/sbin/sh /usr/people/ansible/wget_install.sh"
+      - "/sbin/sh /usr/nekoware/dist/wget_install.sh"
+    timeout:  300
   when: wgetversion.output | select('search','Wget') | list | count < 0
+ 
 
 - name: Verify wget
   telnet:
@@ -92,9 +117,9 @@
       - "/usr/nekoware/bin/wget --version"
   register: wgetversion
 
-- name: print output
-  debug:
-    msg: "{{ wgetversion }}"
+#- name: print output
+#  debug:
+#    msg: "{{ wgetversion }}"
 
 - name: Quit if wget failed to install properly
   fail:
@@ -102,6 +127,7 @@
   when: wgetversion.output | select('search','Wget') | list | count < 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
+##################################################
 - name: Verify python
   telnet:
     user: root
@@ -120,9 +146,11 @@
     login_prompt: "login: "
     prompts:
       - "[>|#]"
+    timeout:  300
     command:
-      - "/sbin/sh /usr/people/ansible/python_install.sh"
+      - "/sbin/sh /usr/nekoware/dist/python_install.sh"
   when: pyversion.output | select('search','Python') | list | count < 0
+
 
 - name: Verify python
   telnet:

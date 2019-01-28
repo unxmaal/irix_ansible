@@ -22,7 +22,7 @@ Then encrypt it:
 ansible-vault encrypt group_vars/default/vault.yml --vault-password-file ~/.vault_pass.txt
 ```
 
-Examine and modify the inventory.yml to match your requirements.
+Examine and modify the inventory.yml file (in the top level directory) to match your local requirements.
 
 Run the bootstrap playbook on a system that has just been installed. It expects the root password to be blank. 
 

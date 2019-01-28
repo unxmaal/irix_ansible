@@ -2,12 +2,12 @@
 ungrouped:
   hosts:
     o2:
-      ansible_host:   192.168.0.78
+      ansible_host:   192.168.251.34
       become-method:  su
-      default_gw:     192.168.0.1
-      nameserver:     8.8.8.8
-      domain:         devonshire.local
-      network:        192.168.0.0
+      default_gw:     192.168.251.1
+      nameserver:     75.75.75.75
+      domain:         diller.org
       tzone:          EST5EDT
   vars:
-    ansible_python_interpreter: /usr/nekoware/bin/python
+    ansible_python_interpreter:   /usr/nekoware/bin/python
+    fetchfrom:                    "https://s3.amazonaws.com"
