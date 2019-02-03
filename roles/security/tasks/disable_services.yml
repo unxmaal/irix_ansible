@@ -42,3 +42,13 @@
     - mkpd
     - visuallogin
   ignore_errors: true
+  tags: security
+
+
+# stop bootp from going off via inetd
+- name: Comment out bootp archive in /etc/inetd.conf
+  replace:
+    dest: /etc/inetd.conf
+    regexp: '^bootp'
+    replace: '#bootp'
+  tags: security

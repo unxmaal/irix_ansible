@@ -1,4 +1,4 @@
-- name: lock accounts
+- name: lock demo and test accounts
   shell: "passwd -l {{ item }}"
   become: true
   ignore_errors: yes

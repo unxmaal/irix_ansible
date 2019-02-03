@@ -6,7 +6,7 @@ Configures an already-installed IRIX system.
 
 * Host with ansible installed
 * IRIX target host with telnet available
-    
+
 # Usage:
 Make a new file ~/.vault_pass.txt with your vault password in it.
 
@@ -22,6 +22,7 @@ Then encrypt it:
 ansible-vault encrypt group_vars/default/vault.yml --vault-password-file ~/.vault_pass.txt
 ```
 
+## Phase 1
 Examine and modify the inventory.yml file (in the top level directory) to match your local requirements.
 
 Run the bootstrap playbook on a system that has just been installed. It expects the root password to be blank. 
@@ -36,7 +37,10 @@ This playbook will
 ansible-playbook -i inventory.yml bootstrap.yml --vault-password-file ~/.vault_pass.txt
 ```
 
+
+## Phase 2
 Examine and modify the master_setup playbook to your liking, then run it. You can comment out unneeded roles.
+* be sure and change the username at the bottom of master_setup to your selected user for the SGI
 
 The master_setup playbook currently
   * installs nekodeps

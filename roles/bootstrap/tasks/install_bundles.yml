@@ -58,7 +58,7 @@
       - "[>|#]"
     command:
       - "/sbin/sh /usr/nekoware/dist/openssh_install.sh"
-  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  when: not sshversion.output | select('search','OpenSSH') | list | count < 0
 
 - name: Verify openssh
   telnet:
@@ -103,7 +103,7 @@
     command:
       - "/sbin/sh /usr/nekoware/dist/wget_install.sh"
     timeout:  300
-  when: wgetversion.output | select('search','Wget') | list | count < 0
+  when: not wgetversion.output | select('search','Wget') | list | count < 0
  
 
 - name: Verify wget
@@ -149,7 +149,7 @@
     timeout:  300
     command:
       - "/sbin/sh /usr/nekoware/dist/python_install.sh"
-  when: pyversion.output | select('search','Python') | list | count < 0
+  when: not pyversion.output | select('search','Python') | list | count < 0
 
 
 - name: Verify python

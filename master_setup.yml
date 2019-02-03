@@ -1,4 +1,7 @@
 ---
+#
+# change new_user_account below to your own username!
+#
 
 - name: initial setup
   hosts: all
@@ -15,12 +18,12 @@
       name: setup_bash
   - import_role:
      name: openssh 
-#   - import_role:
-#       name: user_setup
+   - import_role:
+      name: user_setup
   - import_role:
       name: base_x
-#   - import_role:
-#       name: remote_x11
+   - import_role:
+      name: remote_x11
   - import_role:
       name: ntp
   - import_role:
@@ -31,4 +34,7 @@
     - group_vars/default/vault.yml
     
   vars:
-    ansible_become_pass: '{{ su_password }}'
+    ansible_become_pass:  '{{ su_password }}'
+    new_user_account:       'dillera2'
+    new_user_first_name:    'andy'
+    new_user_last_name:     'diller'

@@ -1,8 +1,8 @@
 ---
 ungrouped:
   hosts:
-    o2:
-      ansible_host:   192.168.251.34
+    indigo:
+      ansible_host:   192.168.251.32
       become-method:  su
       default_gw:     192.168.251.1
       nameserver:     75.75.75.75

@@ -1,16 +1,25 @@
 # install basic packages
 
-- name: install basic packages
+- name: install basic packages: mtr, vim, less, unzip from neko
   shell: "cd /usr/nekoware ; ./nekodeps.pl {{ item }} ; ./install.sh"
   become: true
   ignore_errors: yes
   register: nekodeps_output
   with_items:
     - mtr
-    - bash
     - vim
     - less
     - unzip
+
+
+- name: install neko bash packages
+  shell: "cd /usr/nekoware ; ./nekodeps.pl {{ item }} ; ./install.sh"
+  become: true
+  ignore_errors: yes
+  register: bash_installed
+  with_items:
+    - bash
+
 
 - name: nekodeps results
   debug: 

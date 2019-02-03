@@ -1,5 +1,7 @@
-- name: Add user
+- name: Add user {{ new_user_account }}/{{ new_user_first_name }} {{ new_user_last_name }}
   user:
-    name: johnd
-    comment: John Doe
+    name: {{ new_user_account }}
+    comment: {{ new_user_first_name }} {{ new_user_last_name }}
     group: user
+    shell: /usr/nekoware/bin/bash
+    when: bash_installed and bash_added_to_shells
