@@ -8,7 +8,7 @@ Configures an already-installed IRIX system.
 * IRIX target host with telnet available
     
 # Usage:
-Make a new file ~/.vault_pass.txt with your vault password in it.
+Make a new file ~/.vault_pass.txt with your vault password in it. If your password is 'password', the file will only contain 'password'.
 
 Delete group_vars/default/vault.yml , and make your own file that looks like this:
 
