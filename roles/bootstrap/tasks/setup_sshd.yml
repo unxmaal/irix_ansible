@@ -42,7 +42,7 @@
     prompts:
       - "[>|#]"
     command:
-      - /usr/didbs/bin/ssh-keygen -f /usr/didbs/etc/ssh_host_ecdsa_key -q -N ""
+      - /usr/didbs/current/bin/ssh-keygen -f /usr/didbs/etc/ssh_host_ecdsa_key -q -N ""
 
 - name: Copy didbs_sshd init
   copy:

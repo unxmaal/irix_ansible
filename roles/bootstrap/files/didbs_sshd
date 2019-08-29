@@ -6,7 +6,7 @@
 ## default configuration
 
 IS_ON=/etc/chkconfig
-SSHD=/usr/didbs/0_1_0/sbin/sshd
+SSHD=/usr/didbs/current/sbin/sshd
 CONFIG=/etc/config
 
 if $IS_ON verbose; then
