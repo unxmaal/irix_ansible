@@ -1,4 +1,4 @@
-- name: Create sshd group
+- name: Create didbs_sshd group
   telnet:
     user: root
     password: 
@@ -8,7 +8,7 @@
     command:
       - echo "sshd::23:sshd" >> /etc/group
 
-- name: Create sshd user
+- name: Create didbs_sshd user
   telnet:
     user: root
     password: 
@@ -26,10 +26,15 @@
     prompts:
       - "[>|#]"
     command:
-      - find /usr/nekoware/etc/ssh_host_ecdsa_key -type f
+      - find /usr/didbs/etc/ssh_host_ecdsa_key -type f
   register: keyname
 
-- name: Create ssh keys
+- name: Create etc
+  file:
+    path: /usr/didbs/etc
+    state: directory
+
+- name: Create didbs_ssh keys
   telnet:
     user: root
     password:
@@ -37,10 +42,14 @@
     prompts:
       - "[>|#]"
     command:
-      - /usr/nekoware/bin/ssh-keygen -f /usr/nekoware/etc/ssh_host_ecdsa_key -q -N ""
-  when: "{{ 'nekoware' in keyname }}"
+      - /usr/didbs/bin/ssh-keygen -f /usr/didbs/etc/ssh_host_ecdsa_key -q -N ""
 
-- name: Start sshd at bootup with chkconfig
+- name: Copy didbs_sshd init
+  copy:
+    src: files/didbs_sshd
+    dest: /etc/init.d/didbs_sshd
+
+- name: Start didbs_sshd at bootup with chkconfig
   telnet:
     user: root
     password: 
@@ -48,9 +57,9 @@
     prompts:
       - "[>|#]"
     command:
-      - chkconfig neko_sshd on
+      - chkconfig didbs_sshd on
 
-- name: Start sshd
+- name: Start didbs_sshd
   telnet:
     user: root
     password: 
@@ -58,5 +67,5 @@
     prompts:
       - "[>|#]"
     command:
-      - /etc/init.d/neko_sshd start
+      - /etc/init.d/didbs_sshd start
 

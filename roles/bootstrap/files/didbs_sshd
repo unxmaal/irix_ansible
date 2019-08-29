@@ -1,0 +1,56 @@
+#!/bin/sh
+##
+## Start or stop the SSHD daemon
+##
+## Set custom options in /etc/config/didbs_sshd.options to override
+## default configuration
+
+IS_ON=/etc/chkconfig
+SSHD=/usr/didbs/0_1_0/sbin/sshd
+CONFIG=/etc/config
+
+if $IS_ON verbose; then
+    ECHO=echo
+else
+    ECHO=:
+fi
+
+if $IS_ON didbs_sshd && $IS_ON sshd && ! $IS_ON didbs_sshd.force-start; then
+    echo "Warning: both didbs_sshd and sshd are enabled; disabling didbs_sshd." 1>&2
+    echo "    To start multiple servers verify that there will be no port" 1>&2
+    echo "    contention and do 'chkconfig -f didbs_sshd.force-start on'" 1>&2
+    echo "    before re-enabling didbs_sshd." 1>&2
+    $IS_ON didbs_sshd off
+fi
+
+case "$1" in
+    start)
+        if $IS_ON didbs_sshd && test -x $SSHD; then
+            if [ -r $CONFIG/didbs_sshd.options ]; then
+               $SSHD `cat $CONFIG/didbs_sshd.options`
+            else
+               $SSHD
+            fi
+        fi
+        ;;
+
+    restart)
+        if $IS_ON didbs_sshd && test -x $SSHD; then
+            kill -TERM `/sbin/fuser -q 22/tcp`
+            if [ -r $CONFIG/didbs_sshd.options ]; then
+               $SSHD `cat $CONFIG/didbs_sshd.options`
+            else
+               $SSHD
+            fi
+        fi
+        ;;
+
+    stop)
+        if $IS_ON didbs_sshd; then
+            /sbin/killall -TERM sshd
+        fi
+        ;;
+    *)
+        echo "usage: $0 {start|stop|restart}"
+        ;;
+esac
