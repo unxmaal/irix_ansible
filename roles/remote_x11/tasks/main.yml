@@ -37,7 +37,7 @@
   lineinfile:
     path: /var/X11/xdm/Xservers
     regexp: '^:0'
-    line: ':0 secure /usr/bin/X11/X -bs -nobitscale -c -pseudomap 4sight -solidroot sgilightblue -cursorFG red -cursorBG white -class TrueColor -depth 24 -securityExt'
+    line: ':0 secure /usr/bin/X11/X -bs -nobitscale -c -solidroot sgilightblue -cursorFG red -cursorBG white -depth 24 -class TrueColor -securityExt'
     backup: yes
 - name: stop xdm
   command: /etc/init.d/xdm stop 

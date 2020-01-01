@@ -1,12 +1,12 @@
 ---
 ungrouped:
   hosts:
-    indigo:
-      ansible_host:   192.168.251.32
+    yellow:
+      ansible_host:   192.168.0.80
       become-method:  su
-      default_gw:     192.168.251.1
-      nameserver:     75.75.75.75
-      domain:         diller.org
+      default_gw:     192.168.0.1
+      nameserver:     192.168.0.1
+      domain:         devonshire.local
       tzone:          EST5EDT
   vars:
     ansible_python_interpreter:   /usr/nekoware/bin/python
