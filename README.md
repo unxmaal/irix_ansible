@@ -58,6 +58,11 @@ ansible-playbook  -i inventory.yml -u ansible master_setup.yml -k  --become-meth
 When prompted for "SSH password", enter 'ansible'.
 
 
+When provisioning on OSX you need the sshpass package:
+```
+brew install http://git.io/sshpass.rb
+```
+
 
 # Reading
 http://www.sillypages.org/sgi 
