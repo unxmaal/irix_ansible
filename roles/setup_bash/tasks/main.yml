@@ -2,4 +2,6 @@
   lineinfile: 
     path: /etc/shells
     line: '/usr/nekoware/bin/bash'
-    register: bash_added_to_shells
+
+# reg not allowed
+#    register: bash_added_to_shells

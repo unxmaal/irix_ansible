@@ -1,7 +1,17 @@
-- name: Add user {{ new_user_account }}/{{ new_user_first_name }} {{ new_user_last_name }}
-  user:
-    name: {{ new_user_account }}
-    comment: {{ new_user_first_name }} {{ new_user_last_name }}
-    group: user
-    shell: /usr/nekoware/bin/bash
-    when: bash_installed and bash_added_to_shells
+# create a new user account
+- name: Add user {{ new_user_account }}
+  shell: "/usr/sysadm/privbin/addUserAccount -l {{ new_user_account }} -u 501 -g 20 -G '{{ new_user_first_name }} {{ new_user_last_name }}' -C -H /usr/people/{{ new_user_account }} -S /usr/sgug/bin/bash"
+  become: true
+  ignore_errors: yes
+    
+- name: Set password for {{ new_user_account }} user
+  shell: "/bin/echo {{ new_user_plaintext_pw }} | /usr/sysadm/privbin/modifyAccountPassword -l {{ new_user_account }} -P"
+  become: true
+  ignore_errors: yes
+
+- name: copy basic sgug-rse bashrc over for user {{ new_user_account }}
+  copy:
+    src: files/basic-sgug-rse-bash
+    dest: /usr/people/{{ new_user_account }}/.bashrc
+    mode: 0755
+

@@ -18,6 +18,7 @@
     - ts
     - mkpd
     - visuallogin
+    - autoconfig_ipaddress
   # failed_when: result.rc != 1
   # register: result
   ignore_errors: true
