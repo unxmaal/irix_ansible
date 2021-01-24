@@ -1,3 +1,14 @@
+- name: Check if sshd group exists
+  telnet:
+    user: root
+    password:
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - grep sshd /etc/group
+  register: sshd_group
+
 - name: Create sshd group
   telnet:
     user: root
@@ -7,6 +18,7 @@
       - "[>|#]"
     command:
       - echo "sshd::23:sshd" >> /etc/group
+  when: sshd_group.output | select('search','sshd::23:sshd') | list | count == 0
 
 - name: Create sshd user
   telnet:
