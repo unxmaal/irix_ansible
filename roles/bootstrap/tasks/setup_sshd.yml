@@ -38,7 +38,7 @@
       - "[>|#]"
     command:
       - /usr/nekoware/bin/ssh-keygen -f /usr/nekoware/etc/ssh_host_ecdsa_key -q -N ""
-  when: "{{ 'nekoware' in keyname }}"
+  when: keyname.output | select('search','No such file or directory') | list | count == 1
 
 - name: Start sshd at bootup with chkconfig
   telnet:
