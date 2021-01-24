@@ -58,7 +58,7 @@
       - "[>|#]"
     command:
       - "/sbin/sh /usr/nekoware/dist/openssh_install.sh"
-  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  when: sshversion.output | select('search','OpenSSH') | list | count == 0
 
 - name: Verify openssh
   telnet:
@@ -78,7 +78,7 @@
 - name: Quit if OpenSSH failed to install properly
   fail:
     msg: "OpenSSH failed to install properly. Telnet to your SGI and install it manually, then re-run this play."
-  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  when: sshversion.output | select('search','OpenSSH') | list | count == 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
 ##################################################
@@ -103,7 +103,7 @@
     command:
       - "/sbin/sh /usr/nekoware/dist/wget_install.sh"
     timeout:  300
-  when: wgetversion.output | select('search','Wget') | list | count < 0
+  when: wgetversion.output | select('search','Wget') | list | count == 0
 
 
 - name: Verify wget
@@ -124,7 +124,7 @@
 - name: Quit if wget failed to install properly
   fail:
     msg: "wget failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
-  when: wgetversion.output | select('search','Wget') | list | count < 0
+  when: wgetversion.output | select('search','Wget') | list | count == 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
 ##################################################
@@ -149,7 +149,7 @@
     timeout:  300
     command:
       - "/sbin/sh /usr/nekoware/dist/python_install.sh"
-  when: pyversion.output | select('search','Python') | list | count < 0
+  when: pyversion.output | select('search','Python') | list | count == 0
 
 
 - name: Verify python
@@ -170,5 +170,5 @@
 - name: Quit if Python failed to install properly
   fail:
     msg: "Python failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
-  when: pyversion.output | select('search','Python') | list | count < 0
+  when: pyversion.output | select('search','Python') | list | count == 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
