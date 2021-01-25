@@ -3,14 +3,9 @@
 # run just one using the tag:
 # ansible-playbook -i inventory.yml bootstrap.yml --vault-password-file ~/.vault_pass.txt --tags "stage7"
 
-
-# copy and extract are no longer needed and will be removed soon
-
 - include: set_date_manually.yml
 - include: add_ansible_user.yml
 - include: fetch_bundles.yml
-##- include: copy_bundles.yml
-##- include: extract_bundles.yml
 - include: install_bundles.yml
 - include: setup_sshd.yml
 - include: setup_sshd_hostkey.yml
