@@ -9,7 +9,7 @@
      name: bootstrap
   vars_files:
     - group_vars/default/vault.yml
-    
+
   vars:
     ansible_become_pass: '{{ su_password }}'
 

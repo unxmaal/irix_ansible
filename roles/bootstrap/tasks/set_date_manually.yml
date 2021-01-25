@@ -3,13 +3,13 @@
   delegate_to: 127.0.0.1
   register: date
 
-- set_fact: 
+- set_fact:
     date={{ date.stdout }}
 
 - name: Hard-set date and time on SGI based on host system
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"

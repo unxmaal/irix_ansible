@@ -14,7 +14,7 @@
   - import_role:
       name: setup_bash
   - import_role:
-     name: openssh 
+     name: openssh
 #   - import_role:
 #       name: user_setup
   - import_role:
@@ -29,6 +29,6 @@
       name: security
   vars_files:
     - group_vars/default/vault.yml
-    
+
   vars:
     ansible_become_pass: '{{ su_password }}'

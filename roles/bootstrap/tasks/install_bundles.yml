@@ -1,7 +1,7 @@
 - name: Clean up /var/tmp
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -12,7 +12,7 @@
 - name: create /usr/nekoware
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -24,7 +24,7 @@
 - name: telnet as root and untar the nekoware tarball into /usr/nekoware/dist
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -33,7 +33,7 @@
   register: tarout
 
 - name: print tarout
-  debug: 
+  debug:
     msg: "{{ tarout.output }}"
 
 
@@ -52,7 +52,7 @@
 - name: install openssh bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -96,7 +96,7 @@
 - name: install wget bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -104,7 +104,7 @@
       - "/sbin/sh /usr/nekoware/dist/wget_install.sh"
     timeout:  300
   when: wgetversion.output | select('search','Wget') | list | count < 0
- 
+
 
 - name: Verify wget
   telnet:

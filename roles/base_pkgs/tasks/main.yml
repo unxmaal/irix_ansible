@@ -13,5 +13,5 @@
     - unzip
 
 - name: nekodeps results
-  debug: 
+  debug:
     msg: "{{ nekodeps_output }}"

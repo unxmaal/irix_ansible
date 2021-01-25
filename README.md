@@ -6,7 +6,7 @@ Configures an already-installed IRIX system.
 
 * Host with ansible installed
 * IRIX target host with telnet available
-    
+
 # Usage:
 Make a new file ~/.vault_pass.txt with your vault password in it. If your password is 'password', the file will only contain 'password'.
 
@@ -24,9 +24,9 @@ ansible-vault encrypt group_vars/default/vault.yml --vault-password-file ~/.vaul
 
 Examine and modify the inventory.yml file (in the top level directory) to match your local requirements.
 
-Run the bootstrap playbook on a system that has just been installed. It expects the root password to be blank. 
+Run the bootstrap playbook on a system that has just been installed. It expects the root password to be blank.
 
-This playbook will 
+This playbook will
   * create an 'ansible' user
   * copy several bundles via ftp
   * install wget, python, and openssh
@@ -56,7 +56,7 @@ When prompted for "SSH password", enter 'ansible'.
 
 
 # Reading
-http://www.sillypages.org/sgi 
+http://www.sillypages.org/sgi
 http://nixdoc.net/man-pages/irix/man1/pwconv.1.html
 
 https://techpubs.jurassic.nl/manuals/0650/admin/IA_ConfigOps/sgi_html/index.html

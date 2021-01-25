@@ -1,19 +1,19 @@
 - name: setup loginlog
-  file: 
+  file:
     path: /var/adm/loginlog
     state: touch
     owner: root
     group: sys
     mode: 0600
 - name: setup authlog
-  file: 
+  file:
     path: /var/adm/authlog
     state: touch
     owner: root
     group: sys
     mode: 0600
 - name: add new log files to syslog
-  lineinfile: 
+  lineinfile:
     path: /etc/syslog.conf
     line: 'auth.info      /var/adm/authlog'
     state: present

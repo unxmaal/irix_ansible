@@ -1,7 +1,7 @@
 - name: extract openssh bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -10,13 +10,13 @@
   register: bundleout
 
 - name: print output
-  debug: 
+  debug:
     msg: "{{ bundleout }}"
-    
+
 - name: extract wget bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -26,12 +26,12 @@
 
 
 - name: print output
-  debug: 
+  debug:
     msg: "{{ bundleout }}"
 - name: extract python bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -41,5 +41,5 @@
 
 
 - name: print output
-  debug: 
+  debug:
     msg: "{{ bundleout }}"

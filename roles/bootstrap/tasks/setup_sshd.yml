@@ -1,7 +1,7 @@
 - name: Create sshd group
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -11,7 +11,7 @@
 - name: Create sshd user
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -43,7 +43,7 @@
 - name: Start sshd at bootup with chkconfig
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -53,7 +53,7 @@
 - name: Start sshd
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"

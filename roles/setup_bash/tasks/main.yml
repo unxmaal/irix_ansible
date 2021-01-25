@@ -1,4 +1,4 @@
 - name: add bash to shells
-  lineinfile: 
+  lineinfile:
     path: /etc/shells
     line: '/usr/nekoware/bin/bash'

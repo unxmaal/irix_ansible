@@ -1,7 +1,7 @@
 - name: Create ansible user
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -10,13 +10,13 @@
   register: userout
 
 - name: print output
-  debug: 
+  debug:
     msg: "{{ userout.output }}"
 
 - name: Set password for ansible user
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -25,5 +25,5 @@
   register: pwout
 
 - name: print output
-  debug: 
+  debug:
     msg: "{{ pwout.output }}"

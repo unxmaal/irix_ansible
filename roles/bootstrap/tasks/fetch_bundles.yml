@@ -1,7 +1,7 @@
 - name: download neko bootstrap tarball from remote repo
   # this now fetches one tarball with all the neko packages
   become: no
-  get_url: 
+  get_url:
     url: "{{ fetchfrom }}/sgi-irix/nekobootstrap/{{ item }}"
     dest: "roles/bootstrap/files/{{ item }}"
   delegate_to: 127.0.0.1

@@ -5,5 +5,5 @@
   register: openssh_output
 
 - name: openssh results
-  debug: 
+  debug:
     msg: "{{ openssh_output }}"

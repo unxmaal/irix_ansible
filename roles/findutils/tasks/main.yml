@@ -5,7 +5,7 @@
   register: findutils_output
 
 - name: findutils results
-  debug: 
+  debug:
     msg: "{{ findutils_output }}"
 
 - name: set up cron entry for updatedb

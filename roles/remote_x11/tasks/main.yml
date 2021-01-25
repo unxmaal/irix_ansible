@@ -40,11 +40,11 @@
     line: ':0 secure /usr/bin/X11/X -bs -nobitscale -c -solidroot sgilightblue -cursorFG red -cursorBG white -depth 24 -class TrueColor -securityExt'
     backup: yes
 - name: stop xdm
-  command: /etc/init.d/xdm stop 
+  command: /etc/init.d/xdm stop
   become: true
   ignore_errors: true
 - name: start xdm
-  command: /etc/init.d/xdm start 
+  command: /etc/init.d/xdm start
   become: true
 - name: restart sshd
   command: /etc/init.d/neko_sshd restart

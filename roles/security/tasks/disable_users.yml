@@ -10,7 +10,7 @@
     - demos
     - OutOfBox
     - guest
-  
+
 - name: lock results
-  debug: 
+  debug:
     msg: "{{ lock_output }}"

@@ -1,5 +1,5 @@
 - name: add ntp server
-  lineinfile: 
+  lineinfile:
     path: /etc/ntp.conf
     regexp: '^server'
     line: 'server ntp-d.nist.gov'

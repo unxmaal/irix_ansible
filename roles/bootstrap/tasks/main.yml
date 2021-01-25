@@ -8,8 +8,8 @@
 
 - include: set_date_manually.yml
 - include: add_ansible_user.yml
-- include: fetch_bundles.yml 
-##- include: copy_bundles.yml   
+- include: fetch_bundles.yml
+##- include: copy_bundles.yml
 ##- include: extract_bundles.yml
 - include: install_bundles.yml
 - include: setup_sshd.yml
