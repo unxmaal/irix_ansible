@@ -10,12 +10,10 @@
       - "/usr/nekoware/bin/ssh -v"
   register: sshversion
 
-##################################################
 - name: Print SSH version
   debug:
     msg: "SSH Version: {{ sshversion.output }}"
 
-##################################################
 - name: install openssh bundle
   telnet:
     user: root
@@ -37,10 +35,6 @@
     command:
       - "/usr/nekoware/bin/ssh -v"
   register: sshversion
-
-#- name: print output
-#  debug:
-#    msg: "{{ sshversion }}"
 
 - name: Quit if OpenSSH failed to install properly
   fail:
@@ -88,10 +82,6 @@
       - "/usr/nekoware/bin/wget --version"
   register: wgetversion
 
-#- name: print output
-#  debug:
-#    msg: "{{ wgetversion }}"
-
 - name: Quit if wget failed to install properly
   fail:
     msg: "wget failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
@@ -132,10 +122,6 @@
     command:
       - "/usr/nekoware/bin/python --version"
   register: pyversion
-
-# - name: print output
-#   debug:
-#     msg: "{{ pyversion }}"
 
 - name: Quit if Python failed to install properly
   fail:
