@@ -15,12 +15,11 @@
   debug:
     msg: "SSH Version: {{ sshversion.output }}"
 
-
 ##################################################
 - name: install openssh bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -66,11 +65,10 @@
   debug:
     msg: "Wget Version: {{ wgetversion.output }}"
 
-
 - name: install wget bundle
   telnet:
     user: root
-    password: 
+    password:
     login_prompt: "login: "
     prompts:
       - "[>|#]"
@@ -78,7 +76,6 @@
       - "/sbin/sh /usr/nekoware/dist/wget_install.sh"
     timeout:  900
   when: wgetversion.output | select('search',' GNU') | list | count == 0
- 
 
 - name: Verify wget
   telnet:
@@ -124,7 +121,6 @@
     command:
       - "/sbin/sh /usr/nekoware/dist/python_install.sh"
   when: pyversion.output | select('search','Python') | list | count == 0
-
 
 - name: Verify python
   telnet:
