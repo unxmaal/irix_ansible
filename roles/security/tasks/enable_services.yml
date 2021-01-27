@@ -1,4 +1,4 @@
-- name: enable services
+- name: enable verbose noiconlogin services
   shell: chkconfig {{ item }} on
   with_items:
     - verbose

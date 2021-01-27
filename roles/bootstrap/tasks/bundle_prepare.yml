@@ -1,0 +1,55 @@
+---
+- name: Clean up /var/tmp
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "rm -rf /var/tmp/tardis*"
+
+##################################################
+- name: create /usr/nekoware
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - "mkdir -p /usr/nekoware && chmod 755 /usr/nekoware"
+
+
+##################################################
+- name: telnet as root and untar the nekoware tarball into /usr/nekoware/dist
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - cd /usr/nekoware && /sbin/tar -xf /usr/people/ansible/irix-ansible-bootstrap.tar
+  register: tarout
+
+- name: print tarout
+  debug: 
+    msg: "{{ tarout.output }}"
+
+##################################################
+- name: telnet as root and gunzip and untar the sgug-rse into /usr/sgug
+  telnet:
+    user: root
+    password: 
+    login_prompt: "login: "
+    prompts:
+      - "[>|#]"
+    command:
+      - cd /usr && gunzip -dc /usr/people/ansible/sgug-rse-selfhoster-0.0.4beta.tar.gz |tar xf -
+  register: tarout
+
+- name: print tarout
+  debug: 
+    msg: "{{ tarout.output }}"
+

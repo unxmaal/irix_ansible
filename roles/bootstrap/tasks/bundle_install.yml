@@ -1,43 +1,4 @@
-- name: Clean up /var/tmp
-  telnet:
-    user: root
-    password: 
-    login_prompt: "login: "
-    prompts:
-      - "[>|#]"
-    command:
-      - "rm -rf /var/tmp/tardis*"
-
-##################################################
-- name: create /usr/nekoware
-  telnet:
-    user: root
-    password: 
-    login_prompt: "login: "
-    prompts:
-      - "[>|#]"
-    command:
-      - "mkdir -p /usr/nekoware && chmod 755 /usr/nekoware"
-
-
-##################################################
-- name: telnet as root and untar the nekoware tarball into /usr/nekoware/dist
-  telnet:
-    user: root
-    password: 
-    login_prompt: "login: "
-    prompts:
-      - "[>|#]"
-    command:
-      - cd /usr/nekoware && /sbin/tar -xf /usr/people/ansible/irix-ansible-bootstrap.tar
-  register: tarout
-
-- name: print tarout
-  debug: 
-    msg: "{{ tarout.output }}"
-
-
-##################################################
+---
 - name: Verify openssh
   telnet:
     user: root
@@ -49,6 +10,13 @@
       - "/usr/nekoware/bin/ssh -v"
   register: sshversion
 
+##################################################
+- name: Print SSH version
+  debug:
+    msg: "SSH Version: {{ sshversion.output }}"
+
+
+##################################################
 - name: install openssh bundle
   telnet:
     user: root
@@ -58,7 +26,7 @@
       - "[>|#]"
     command:
       - "/sbin/sh /usr/nekoware/dist/openssh_install.sh"
-  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  when: sshversion.output | select('search','OpenSSH') | list | count < 1
 
 - name: Verify openssh
   telnet:
@@ -78,7 +46,7 @@
 - name: Quit if OpenSSH failed to install properly
   fail:
     msg: "OpenSSH failed to install properly. Telnet to your SGI and install it manually, then re-run this play."
-  when: sshversion.output | select('search','OpenSSH') | list | count < 0
+  when: sshversion.output | select('search','OpenSSH') | list | count < 1
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
 ##################################################
@@ -93,6 +61,12 @@
       - "/usr/nekoware/bin/wget --version"
   register: wgetversion
 
+
+- name: Print wget version
+  debug:
+    msg: "Wget Version: {{ wgetversion.output }}"
+
+
 - name: install wget bundle
   telnet:
     user: root
@@ -102,8 +76,9 @@
       - "[>|#]"
     command:
       - "/sbin/sh /usr/nekoware/dist/wget_install.sh"
-    timeout:  300
-  when: wgetversion.output | select('search','Wget') | list | count < 0
+    timeout:  900
+#  when: wgetversion.output | select('search',' GNU Wget 1.11.3') | list | count < 0
+  when: wgetversion.output | select('search',' GNU') | list | count < 1
  
 
 - name: Verify wget
@@ -124,7 +99,7 @@
 - name: Quit if wget failed to install properly
   fail:
     msg: "wget failed to install properly.  Telnet to your SGI and install it manually, then re-run this play."
-  when: wgetversion.output | select('search','Wget') | list | count < 0
+  when: wgetversion.output | select('search','Wget') | list | count > 0
   # per debug, telnet's output is a list. We have to select search it, then count it.
 
 ##################################################
@@ -146,10 +121,10 @@
     login_prompt: "login: "
     prompts:
       - "[>|#]"
-    timeout:  300
+    timeout:  2500
     command:
       - "/sbin/sh /usr/nekoware/dist/python_install.sh"
-  when: pyversion.output | select('search','Python') | list | count < 0
+  when: pyversion.output | select('search','Python') | list | count > 0
 
 
 - name: Verify python

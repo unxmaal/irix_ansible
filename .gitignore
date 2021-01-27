@@ -2,3 +2,6 @@
 roles/bootstrap/files/*.tardist
 .DS_Store
 roles/bootstrap/files/irix-ansible-bootstrap.tar
+roles/bootstrap/files/sgug-rse-selfhoster-0.0.4beta.tar.gz
+group_vars/default/vault.yml
+
