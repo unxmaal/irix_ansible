@@ -10,10 +10,6 @@
       - "/usr/nekoware/bin/ssh -v"
   register: sshversion
 
-- name: Print SSH version
-  debug:
-    msg: "SSH Version: {{ sshversion.output }}"
-
 - name: install openssh bundle
   telnet:
     user: root
@@ -53,11 +49,6 @@
     command:
       - "/usr/nekoware/bin/wget --version"
   register: wgetversion
-
-
-- name: Print wget version
-  debug:
-    msg: "Wget Version: {{ wgetversion.output }}"
 
 - name: install wget bundle
   telnet:
