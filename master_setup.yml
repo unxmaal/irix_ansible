@@ -1,4 +1,16 @@
 ---
+# 8888888b.  8888888888        d8888 8888888b.  888b     d888 8888888888 
+# 888   Y88b 888              d88888 888  "Y88b 8888b   d8888 888        
+# 888    888 888             d88P888 888    888 88888b.d88888 888        
+# 888   d88P 8888888        d88P 888 888    888 888Y88888P888 8888888    
+# 8888888P"  888           d88P  888 888    888 888 Y888P 888 888        
+# 888 T88b   888          d88P   888 888    888 888  Y8P  888 888        
+# 888  T88b  888         d8888888888 888  .d88P 888   "   888 888        
+# 888   T88b 8888888888 d88P     888 8888888P"  888       888 8888888888 
+
+# please read and set all vars at the bottom of this file
+# for you local env! Do not run without changing the values
+
 
 - name: initial setup
   hosts: all
@@ -8,27 +20,44 @@
   - import_role:
       name: networking
   - import_role:
-      name: nekodeps
-  - import_role:
-      name: base_pkgs
-  - import_role:
-      name: setup_bash
-  - import_role:
-     name: openssh 
-#   - import_role:
-#       name: user_setup
+      name: user_setup
   - import_role:
       name: base_x
-#   - import_role:
-#       name: remote_x11
+  - import_role:
+      name: remote_x11
   - import_role:
       name: ntp
-  - import_role:
-      name: findutils
-  - import_role:
+   - import_role:
       name: security
+  - import_role:
+      name: final_touches
+
+
+ #########
+ # take out these nekoware roles, use sgug-rse     
+ # - import_role:
+ #     name: nekodeps
+ #- import_role:
+ #   name: base_pkgs
+ # - import_role:
+ #     name: setup_bash
+ # - import_role:
+ #     name: openssh 
+ #- import_role:
+ #     name: findutils
+ #######
+
   vars_files:
     - group_vars/default/vault.yml
     
   vars:
-    ansible_become_pass: '{{ su_password }}'
+    ansible_become_pass:  '{{ su_password }}'
+    new_user_account:       'jcvalentine'
+    new_user_first_name:    'jackson'
+    new_user_last_name:     'valentine'
+    new_user_plaintext_pw:  'ilovesgi'
+    local_timezone:         'EST5EDT'
+
+# add these if you use a NFS server
+#    nfs_server:             '192.168.100.10:/nfs/files'
+#    nfs_mount_point:        '/nfs/files'

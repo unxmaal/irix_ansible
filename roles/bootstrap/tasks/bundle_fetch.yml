@@ -1,0 +1,30 @@
+
+##############################################################################
+- name: download neko bootstrap tarball from remote repo
+  # this now fetches one tarball with all the neko packages
+  become: no
+  get_url: 
+    url: "{{ fetchfrom }}/nekobootstrap/{{ item }}"
+    dest: "roles/bootstrap/files/{{ item }}"
+  delegate_to: 127.0.0.1
+  with_items:
+    - irix-ansible-bootstrap.tar
+
+##############################################################################
+- name: download sgug-rse selfhoster tarball from remote repo
+  # For SGUG_RSE - the base packages for /usr/sgug
+  become: no
+  get_url: 
+    url: "{{ fetchfrom }}/sgug/{{ item }}"
+    dest: "roles/bootstrap/files/{{ item }}"
+  delegate_to: 127.0.0.1
+  with_items:
+      - sgug-rse-selfhoster-0.0.4beta.tar.gz
+
+##############################################################################
+- name: copy neko bootstrap tarball into place on SGI host
+  raw: curl -T roles/bootstrap/files/irix-ansible-bootstrap.tar ftp://{{ansible_host}} --user ansible:ansible
+
+##############################################################################
+- name: copy sgug-rse selfhoster tarball into place on SGI host
+  raw: curl -T roles/bootstrap/files/sgug-rse-selfhoster-0.0.4beta.tar.gz ftp://{{ansible_host}} --user ansible:ansible

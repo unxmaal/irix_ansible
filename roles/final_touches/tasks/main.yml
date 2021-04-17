@@ -1,0 +1,30 @@
+# final config touches
+- name: copy motd
+  copy:
+    src: files/motd.txt
+    dest: /etc/motd
+    mode: 0755
+
+- name: Download f-config file
+  get_url:
+    url: http://irix.fun/storage/flex.txt
+    dest: /var/flexlm/license.dat
+    mode: '0440'
+
+- name: Setup proper Timezone
+  lineinfile:
+    path: /etc/TIMEZONE
+    regexp: '^TZ'
+    line: 'TZ={{ local_timezone }}'
+    backup: yes
+
+# enable this by editing master_setup.yml at bottom of file
+- name: Add NFS mount to /etc/fstab
+  lineinfile:
+    path: /etc/fstab
+    line: '{{ nfs_server }}       {{ nfs_mount_point }}     nfs     bg,soft,noac,proto=tcp  1 1'
+    state: present
+    backup: yes
+    when: (nfs_server is defined) and (nfs_server|length > 0)
+
+

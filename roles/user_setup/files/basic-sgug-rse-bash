@@ -1,0 +1,24 @@
+echo setup `hostname` for SGUG-RSE
+echo ------------------------------
+echo ' '
+
+alias devpkg='versions |grep 7.4.4'
+alias rpmlist="rpm -qa --qf '(%{INSTALLTIME:date}): %{NAME}-%{VERSION}\n' "
+
+# FOR SGUG
+export PATH=/usr/sgug/bin:/usr/sgug/sbin:~/.local/bin:/usr/sbin:/usr/bsd:/sbin:/usr/bin:/etc:/usr/etc:/usr/bin/X11
+
+# git prompt to show current branch
+# this will show you the local working copy git branch in your command
+# prompt - very handy for working w/ irixports and didbs
+
+# comment this out until AFTER you have didbs installed w/ a working git
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+alias ggg='git log -n 25 --pretty=format:"%h - %an, %ar : %s" '
+echo 'completed bash init for sgug-rse'
+
+#END

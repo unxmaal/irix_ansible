@@ -1,14 +1,20 @@
-#
+
 # the order of tasks
 # run just one using the tag:
 # ansible-playbook -i inventory.yml bootstrap.yml --vault-password-file ~/.vault_pass.txt --tags "stage7"
 
-
-# copy and extract are no longer needed and will be removed soon
-
+#############################################################
 - include: set_date_manually.yml
 - include: add_ansible_user.yml
-- include: fetch_bundles.yml 
-- include: install_bundles.yml
+- include: bundle_fetch.yml 
+- include: bundle_prepare.yml
+- include: bundle_install.yml 
+
+#  When bundle_install python fails due to timeout- 
+#  telnet to your SGI, login as root
+#  Run these commands:
+#   /sbin/sh /usr/nekoware/dist/python_install.sh
+#  Exit back out and then run the last two tasks:
+
 - include: setup_sshd.yml
 - include: setup_sshd_hostkey.yml

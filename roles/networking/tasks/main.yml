@@ -5,6 +5,7 @@
     owner: root
     group: sys
     mode: 644
+
 - name: configure hosts
   template:
     src: templates/hosts.j2
@@ -12,6 +13,7 @@
     owner: root
     group: sys
     mode: 644
+
 - name: configure resolv.conf
   template:
     src: templates/resolv.conf.j2
@@ -19,16 +21,30 @@
     owner: root
     group: sys
     mode: 644
+
 - name: add default route
   lineinfile:
     path: /etc/config/static-route.options
     line: $ROUTE $QUIET add -net default {{ default_gw }}
+
+- name: set hostname
+  shell: hostname -s {{ inventory_hostname }}
+
+
+- name: set hosts in nsswitch.conf
+  lineinfile: 
+    path: /etc/nsswitch.conf
+    regexp: '^hosts'
+    line: 'hosts:                  files dns'
+
+
+
 - name: copy network restart script
   copy:
     src: files/restart_net.sh
     dest: /tmp/restart_net.sh
     mode: 0755
-- name: set hostname
-  shell: hostname -s {{ inventory_hostname }}
-- name: restarts networking
+
+
+- name: now restarting your networking
   shell: /tmp/restart_net.sh

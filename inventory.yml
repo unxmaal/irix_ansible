@@ -1,13 +1,13 @@
 ---
 ungrouped:
   hosts:
-    yellow:
-      ansible_host:   192.168.0.80
+    challenge:
+      ansible_host:   192.168.251.41
       become-method:  su
-      default_gw:     192.168.0.1
-      nameserver:     192.168.0.1
-      domain:         devonshire.local
+      default_gw:     192.168.251.1
+      nameserver:     75.75.75.75
+      domain:         diller.org
       tzone:          EST5EDT
   vars:
     ansible_python_interpreter:   /usr/nekoware/bin/python
-    fetchfrom:                    "https://s3.amazonaws.com"
+    fetchfrom:                    "https://sgi-irix.s3.amazonaws.com"

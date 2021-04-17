@@ -1,9 +1,0 @@
-- name: install openssh
-  shell: "cd /usr/nekoware ; ./nekodeps.pl openssh ; ./install.sh"
-  become: true
-  ignore_errors: yes
-  register: openssh_output
-
-- name: openssh results
-  debug: 
-    msg: "{{ openssh_output }}"
