@@ -46,7 +46,7 @@
     prompts:
       - "[>|#]"
     command:
-      - cd /usr && gunzip -dc /usr/people/ansible/sgug-rse-selfhoster-0.0.4beta.tar.gz |tar xf -
+      - cd /usr && gunzip -dc /usr/people/ansible/sgug-rse-selfhoster-0.0.7beta.tar.gz |tar xf -
   register: tarout
 
 - name: print tarout
